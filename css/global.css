@@ -11,13 +11,12 @@ a {
 }
 
 .btn {
-  .flex-row;
   font-weight: 500;
   border-radius: 3px;
   background: #006e2f;
   border: 1px solid #007c36;
   color: #fff;
-  padding: 10px 45px;
+  padding: 12px 45px;
   font-size: 18px;
   @media @md {
     padding: 5px 15px;
@@ -37,4 +36,12 @@ h3 {
   color: #007c36;
   @media @md {
   }
+}
+
+.more {
+  font-weight: 500;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px 45px;
+  font-size: 18px;
 }
