@@ -268,8 +268,8 @@
 }
 .home-research .cen-wrap .right-text-wrap .right-label {
   color: #888888;
+  margin: 20px 0;
   @media (max-width: 1300px) {
-    margin: 20px 0;
   }
 }
 .home-research .cen-wrap .right-text-wrap .info-list {
@@ -300,7 +300,7 @@
   }
 }
 .home-research .cen-wrap .right-text-wrap .btn {
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 .home-research .con-main-wrap .con-bottom-wrap {
   margin-top: 80px;
@@ -769,7 +769,7 @@
 }
 
 .home-news .con-main-wrap .text-right-wrap {
-  padding: 0 0 0 53px;
+  padding: 0 0 0 33px;
   @media (max-width: 1300px) {
     padding: 0;
   }
@@ -779,7 +779,7 @@
   margin-bottom: 40px;
   font-size: 14px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #dbdbdb;
   cursor: pointer;
   @media (max-width: 1300px) {
     padding: 20px;
@@ -789,7 +789,7 @@
 }
 .home-news .con-main-wrap .text-right-wrap .text-item .text-item-label {
   padding: 0 16px;
-  color: #333;
+  color: #999;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;

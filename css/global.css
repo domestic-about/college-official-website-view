@@ -37,7 +37,7 @@ h3 {
   @media @md {
   }
 }
-
+/* 更多的css样式 比如首页的more */
 .more {
   font-weight: 500;
   border-radius: 3px;
@@ -45,3 +45,11 @@ h3 {
   padding: 10px 45px;
   font-size: 18px;
 }
+/* admissions里面的介绍标签 */
+.admiss-label {
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 从这里开始就是global页面的样式 */
