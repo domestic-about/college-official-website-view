@@ -1,0 +1,141 @@
+/* 顶部导航区域 */
+.header-nav {
+  padding: 10px 24px;
+  background: #fcfdf7;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav ul {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.header-nav ul li {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.header-nav ul li a {
+  margin-right: 10px;
+}
+/* banner图片 */
+.down-banner img {
+  width: 100%;
+}
+/* 内容区域 */
+/* 面包屑 */
+.con-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+.con-wrap .people-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #007e37;
+}
+.con-wrap .people-title h5 {
+  font-size: 22px;
+  padding: 20px 0;
+}
+.con-wrap .people-title .people-nav-title {
+  color: #999;
+}
+.con-wrap .people-title .people-nav-title a {
+  color: #999;
+  font-size: 14px;
+}
+/* 内容分类人的名字拼音导航 */
+.people-text-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background: #b29873;
+  margin: 20px 0;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+}
+/* 单元格 左边是分类的拼音 右边是名字*/
+.con-wrap .name-item {
+  display: flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  border-bottom: 1px dashed #d8d8d8;
+}
+.con-wrap .nav-item {
+  font-size: 18px;
+  color: #007e37;
+  font-weight: 500;
+  margin-right: 35px;
+}
+.con-wrap .name-item .name-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.con-wrap .name-item .name-text a {
+  margin: 0 15px;
+}
+/* 底部 */
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 100px 285.3px 100px 200px;
+  background-color: #000000;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+}
+
+.footer-wrap .label {
+  font-size: 12px;
+  color: #8e8c95;
+
+  @media (max-width: 1300px) {
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.footer-wrap .card-list {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+.footer-wrap .card-list .card-item {
+  margin-left: 170px;
+  color: #fff;
+
+  @media (max-width: 1300px) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.footer-wrap .card-list .card-item .title {
+  font-weight: 700;
+  margin-bottom: 18px;
+
+  @media (max-width: 1300px) {
+    text-align: center;
+  }
+}
+
+.footer-wrap .card-list .card-item .label {
+  font-size: 14px;
+  margin-top: 14px;
+}

@@ -93,6 +93,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .ships-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item .info {
   display: flex;
