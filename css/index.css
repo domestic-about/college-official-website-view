@@ -1,25 +1,3 @@
-/* 顶部导航区域 */
-.header-nav {
-  padding: 10px 24px;
-  background: #fcfdf7;
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 1300px) {
-    display: none;
-  }
-}
-.header-nav ul {
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-}
-.header-nav ul li {
-  margin-left: 50px;
-  cursor: pointer;
-}
-.header-nav ul li a {
-  margin-right: 10px;
-}
 /* banner区域 */
 .home-banner {
   background: url("../img/home/banner-bg.png");

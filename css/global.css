@@ -52,4 +52,29 @@ h3 {
   color: #333;
 }
 
-/* 从这里开始就是global页面的样式 */
+/* 顶部导航区域 */
+.header-nav {
+  padding: 10px 24px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+.header-nav ul {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.header-nav ul li {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.header-nav ul li a {
+  margin-right: 10px;
+}
+
+/* 从这里开始就是layui页面的样式 */
+.layui-nav {
+}
