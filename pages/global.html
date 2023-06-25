@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="../layui/css/layui.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
 </head>
 
@@ -13,60 +14,58 @@
   <div class="app">
     <!-- nav导航区域 -->
     <section class="header-nav">
-      <img class="logo" src="../../img/home/logo.png" alt="">
-      <ul>
-        <li><a href="#">News</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Research</li>
-        <li><a href="#">Global</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">Campus Life</a><img src="../img/home/jiantou.png" alt=""></li>
-        <li>Admission</li>
-        <li><a href="#">People</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">About us</a><img src="../../img/home/jiantou.png" alt=""></li>
+      <img class="logo" src="../img/home/logo.png" alt="">
+      <ul class="layui-nav layui-bg-gray">
+        <li class="layui-nav-item layui-this">
+          <a href="javascript:;">News</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./news/news.html">Latest News</a></dd>
+            <dd><a href="./news/notice.html">Latest Notice</a></dd>
+            <dd><a href="./news/upcoming.html">Upcoming Events</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="./research/research.html">Research</a>
+        </li>
+        <li class="layui-nav-item"><a href="./global.html">Global</a>
+        </li>
+        <li class="layui-nav-item"><a href="./campus/programmes.html">Campus Life</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./campus/programmes.html">Student Programmes</a></dd>
+            <dd><a href="./campus/sport.html">Sporting Events</a></dd>
+            <dd><a href="./campus/downLoad.html">Download</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="./admissions/scholarShips/scholarShip.html">Admission</a>
+        </li>
+        <li class="layui-nav-item"><a href="./people/faculty.html">People</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./people/faculty.html">Faculty</a></dd>
+            <dd><a href="./people/department.html">Department Staff</a></dd>
+            <dd><a href="./people/postdoctoral.html">Postdoctoral Fellows</a></dd>
+            <dd><a href="./people/researchCenter.html">Lab staff and Researchers</a></dd>
+            <dd><a href="./people/directory.html">Directory Search</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="./about/adimission.html">About us</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./about/history.html">History</a></dd>
+            <dd><a href="./about/media.html">Media</a></dd>
+            <dd><a href="./about/adimission.html">Administration</a></dd>
+            <dd><a href="./about/careere.html">Careers</a></dd>
+            <dd><a href="./about/contact.html">Contact Us</a></dd>
+          </dl>
+        </li>
       </ul>
     </section>
     <!-- banner区域 -->
-    <section class="campus-banner">
-      <div class="bg-color">
-        <h4>Campus life</h4>
-      </div>
-      <img src="../../img/campus/banner.png" alt="">
-    </section>
-    <!-- 图片6张加文字区域 -->
-    <section class="campus-info-list">
-      <p class="admiss-label">Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are
-        available for outstanding international students who graduated from top universities. Chinese Government and
-        Huazhong Agricultural University scholarships cover tuition and accommodation fees and provide monthly living
-        expenses for post-graduation studies.</p>
-      <div class="img-list">
-        <div class="img-itme">
-          <img src="../" alt="">
-          <p>Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are available for
-            outstanding</p>
-        </div>
-        <div class="img-itme">
-          <p>Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are available for
-            outstanding</p>
-        </div>
-        <div class="img-itme">
-          <p>Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are available for
-            outstanding</p>
-        </div>
-        <div class="img-itme">
-          <p>Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are available for
-            outstanding</p>
-        </div>
-        <div class="img-itme">
-          <p>Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are available for
-            outstanding</p>
-        </div>
-        <div class="img-itme">
-          <p>Chinese Government (CSC) and Huazhong Agricultural University (HZAUS) scholarships are available for
-            outstanding</p>
-        </div>
-      </div>
-    </section>
+
+    <img class="banner" src="../img/campus/banner.png" alt="">
+
+
     <!-- 底部区域 -->
-    <section class="footer-wrap">
+    <!-- <section class="footer-wrap">
       <p class="label">© 2010-2020 Access Media. All rights reserved.</p>
       <div class="card-list">
         <div class="card-item">
@@ -136,120 +135,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </body>
 <style>
-
+  .banner {
+    width: 100%;
+  }
 </style>
 
 </html>
-
-/* 顶部导航区域 */
-.header-nav {
-padding: 10px 24px;
-background: #fcfdf7;
-display: flex;
-justify-content: space-between;
-}
-.header-nav ul {
-padding: 0 10px;
-display: flex;
-align-items: center;
-}
-.header-nav ul li {
-margin-left: 50px;
-cursor: pointer;
-}
-.header-nav ul li a {
-margin-right: 10px;
-}
-/* banner区域 */
-.campus-banner {
-display: flex;
-}
-.campus-banner .bg-color {
-width: 40%;
-background-color: #006e2f;
-padding: 221px 0 229px;
-}
-.campus-banner .bg-color h4 {
-font-size: 30px;
-color: #fff;
-text-align: right;
-margin-right: 40px;
-}
-
-/* 6个图片加顶部文字介绍区域 */
-.campus-info-list {
-margin-top: 20px;
-}
-.campus-info-list .img-list {
-display: flex;
-flex-wrap: wrap;
-}
-.campus-info-list .img-list .img-item img {
-width: 32%;
-}
-/* 底部 */
-.footer-wrap {
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-padding: 100px 285.3px 100px 200px;
-background-color: #000000;
-
-@media (max-width: 1300px) {
-flex-direction: column;
-padding: 30px 0;
-}
-}
-
-.footer-wrap .label {
-font-size: 12px;
-color: #8e8c95;
-
-@media (max-width: 1300px) {
-width: 80%;
-margin: 0 auto 30px;
-text-align: center;
-font-size: 16px;
-}
-}
-
-.footer-wrap .card-list {
-display: flex;
-align-items: flex-start;
-box-sizing: border-box;
-
-@media (max-width: 1300px) {
-flex-wrap: wrap;
-margin: 0 auto;
-}
-}
-
-.footer-wrap .card-list .card-item {
-margin-left: 170px;
-color: #fff;
-
-@media (max-width: 1300px) {
-width: 50%;
-display: flex;
-flex-direction: column;
-margin-left: 0;
-}
-}
-
-.footer-wrap .card-list .card-item .title {
-font-weight: 700;
-margin-bottom: 18px;
-
-@media (max-width: 1300px) {
-text-align: center;
-}
-}
-
-.footer-wrap .card-list .card-item .label {
-font-size: 14px;
-margin-top: 14px;
-}
