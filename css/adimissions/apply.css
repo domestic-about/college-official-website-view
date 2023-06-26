@@ -1,92 +1,27 @@
-/* banner区域 */
-.ships-banner {
-}
-.ships-banner img {
-  width: 100%;
-}
-/* 内容区域左边导航和右边展示 */
-.ships-body {
-}
-.ships-body .con-main-wrap .nav-text {
-  margin: 20px 0;
-}
-.ships-body .con-main-wrap .nav-text a {
-  font-size: 14px;
-  color: #808080;
-}
-.ships-body .con-main-wrap .body-wrap {
-  display: flex;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap {
-  width: 300px;
-  text-align: center;
-  border: 1px solid #d9d9d9;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap h3 {
-  padding: 22px 0;
-  font-size: 22px;
-  color: #fff;
-  background: #0b7b44;
-}
-
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap li {
-  padding: 20px 0;
-  border-bottom: 1px solid #d9d9d9;
-  font-weight: 500;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap li:nth-child(3) {
-  color: #0b7b44;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap ul li a {
-  font-size: 14px;
-  color: #808080;
-}
-.ships-body .con-main-wrap .body-wrap .text-right-wrap {
-  box-sizing: border-box;
-  padding: 0 0 100px 40px;
-  width: 900px;
-}
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .title {
-  display: flex;
-  align-items: center;
-  color: #0b7b44;
-  font-size: 24px;
-  font-weight: 500;
-}
-.ships-body .con-main-wrap .body-wrap .text-right-wrap h3 {
-  margin-top: 30px;
-}
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .title .xian {
-  display: block;
-  width: 100px;
-  height: 2px;
-  background: #d9d9d9;
-  margin-right: 30px;
-}
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .text-item-title {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .text-item-title {
   margin: 30px 0 10px;
   font-weight: 500;
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .admiss-label a {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .admiss-label a {
   color: #00753c;
 }
 /* 两个图片框 */
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list {
   margin: 20px 0;
   padding: 0 0 0 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list .card-item {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list .card-item {
   padding: 14px 10px;
   display: flex;
   align-items: center;
   border: 1px solid #dbdbdb;
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list .card-item img {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list .card-item img {
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list .card-item h5 {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .top-card-list .card-item h5 {
   margin-left: 15px;
   font-size: 18px;
   font-weight: 700;
@@ -103,4 +38,9 @@
 }
 .layui-table tr span {
   color: red;
+}
+/* 表格2 我是截图当图片的 */
+.table-img2 {
+  width: 860px;
+  margin: 10px 0;
 }

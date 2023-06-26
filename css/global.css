@@ -9,7 +9,7 @@ a {
   text-decoration: none;
   color: #1d1d1b;
 }
-
+/* 按钮 */
 .btn {
   font-weight: 500;
   border-radius: 3px;
@@ -23,19 +23,16 @@ a {
     font-size: 14px;
   }
 }
-
 .con-main-wrap {
   width: 1200px;
   margin: 0 auto;
-  @media @md {
+  @media (max-width: 1300px) {
     width: 100%;
   }
 }
 h3 {
   font-weight: 700;
   color: #007c36;
-  @media @md {
-  }
 }
 /* 更多的css样式 比如首页的more */
 .more {
@@ -51,13 +48,24 @@ h3 {
   font-size: 14px;
   color: #333;
 }
-
+/* 常用label标签 */
+.label {
+  color: #888888;
+  line-height: 30px;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+}
 /* 顶部导航区域 */
 .header-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 10px 24px;
   background: #fafafa;
   display: flex;
   justify-content: space-between;
+
   @media (max-width: 1300px) {
     display: none;
   }
@@ -74,6 +82,7 @@ h3 {
 .header-nav ul li a {
   margin-right: 10px;
 }
+/* 顶部结束 */
 /* 底部的样式 */
 .footer-wrap {
   display: flex;
@@ -135,7 +144,156 @@ h3 {
   font-size: 14px;
   margin-top: 14px;
 }
+/* footer底部结束 */
 
-/* 从这里开始就是layui页面的样式 */
-.layui-nav {
+/* adimissionsbanner区域 */
+.ships-banner {
+  padding-top: 100px;
+}
+.ships-banner img {
+  width: 100%;
+}
+
+/* 内容区域左边导航和右边展示 */
+.global-body {
+}
+.global-body .con-main-wrap .nav-text {
+  margin: 20px 0;
+}
+.global-body .con-main-wrap .nav-text a {
+  font-size: 14px;
+  color: #808080;
+}
+.global-body .con-main-wrap .body-wrap {
+  margin-top: 40px;
+  display: flex;
+}
+.global-body .con-main-wrap .body-wrap .nav-left-wrap {
+  width: 300px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+}
+.global-body .con-main-wrap .body-wrap .nav-left-wrap h3 {
+  padding: 22px 0;
+  font-size: 22px;
+  color: #fff;
+  background: #0b7b44;
+}
+
+.global-body .con-main-wrap .body-wrap .nav-left-wrap li {
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: 500;
+}
+.global-body .con-main-wrap .body-wrap .nav-left-wrap li:nth-child(3) {
+  color: #0b7b44;
+}
+.global-body .con-main-wrap .body-wrap .nav-left-wrap ul li a {
+  font-size: 14px;
+  color: #808080;
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap {
+  box-sizing: border-box;
+  padding: 0 0 100px 40px;
+  width: 900px;
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap .title {
+  display: flex;
+  align-items: center;
+  color: #0b7b44;
+  font-size: 24px;
+  font-weight: 500;
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap h3 {
+  margin-top: 30px;
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap .title .xian {
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #d9d9d9;
+  margin-right: 30px;
+}
+/* research公共banner区域 */
+/* banner区域 */
+.research-banner {
+  background: url("../img/research/bg.png");
+  background-size: 100% 100%;
+}
+
+.research-banner .con-main-wrap {
+  padding: 230px 0 200px;
+  @media (max-width: 1300px) {
+    width: 100%;
+    text-align: center;
+    padding: 130px 0 100px;
+  }
+}
+
+.research-banner .con-main-wrap h3 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.research-banner .con-main-wrap .label {
+  margin-top: 34px;
+  width: 410px;
+  font-size: 16px;
+  color: #fff;
+  @media (max-width: 1300px) {
+    margin: 40px auto;
+    width: 80%;
+  }
+}
+/* research公共banner区域结束 */
+/* 公共research adimissions左边导航 */
+.global-body .layui-nav {
+  height: 700px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  border-bottom: 0px solid #d9d9d9;
+}
+.global-body .layui-nav-item {
+  font-weight: 500;
+}
+.global-body .layui-nav-item:nth-child(1) {
+  padding: 22px 0;
+  background: #0b7b44;
+}
+.global-body .layui-nav-item:nth-child(1) a {
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+}
+
+.global-body .layui-nav-item a {
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px solid #d9d9d9;
+  &:hover {
+    color: #006e2f !important;
+  }
+}
+.global-body .layui-nav-item dl dd a {
+  color: #c6a16c;
+  font-weight: 400;
+}
+/* news页面公共 */
+.news-banner {
+  padding: 300px 0 200px;
+  background: url("../img/news/bg.png");
+  background-size: 100% 100%;
+}
+.news-banner h3 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+/* layui里面的分页 */
+#demo-laypage-all {
+  width: 800px;
+  margin: 40px auto 20px;
 }

@@ -1,7 +1,4 @@
 /* banner */
-.news-banner img {
-  width: 100%;
-}
 
 /*内容区域  */
 .notice-body {
@@ -48,45 +45,4 @@
   width: 100px;
   text-align: left;
   font-size: 14px;
-}
-.footer-go-item {
-  cursor: pointer;
-  font-size: 14px;
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  @media (max-width: 1300px) {
-    justify-content: space-between;
-  }
-}
-.footer-go-item .text {
-  padding: 3px 10px;
-  border: 1px solid skyblue;
-  margin-left: 5px;
-  @media (max-width: 1300px) {
-    margin: 0;
-  }
-}
-.footer-go-item .text .hei {
-  font-size: 12px;
-  color: #999;
-}
-.footer-go-item .zhuandao {
-  margin-left: 10px;
-  padding: 4px 10px;
-  background: skyblue;
-  @media (max-width: 1300px) {
-    margin: 0;
-  }
-}
-.footer-go-item .kong {
-  width: 26px;
-  height: 26px;
-  margin: 0 5px;
-  border: 1px solid #999;
-  @media (max-width: 1300px) {
-    margin: 0;
-  }
 }

@@ -1,67 +1,29 @@
-/* banner区域 */
-.ships-banner {
-}
-.ships-banner img {
-  width: 100%;
-}
-/* 内容区域左边导航和右边展示 */
-.ships-body {
-}
-.ships-body .con-main-wrap .nav-text {
-  margin: 20px 0;
-}
-.ships-body .con-main-wrap .nav-text a {
-  font-size: 14px;
-  color: #808080;
-}
-.ships-body .con-main-wrap .body-wrap {
+.global-body .body-wrap {
+  margin-top: 40px;
   display: flex;
+  justify-content: space-between;
 }
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap {
-  width: 300px;
-  text-align: center;
-  border: 1px solid #d9d9d9;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap h3 {
-  padding: 22px 0;
-  font-size: 22px;
-  color: #fff;
-  background: #0b7b44;
-}
-
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap li {
-  padding: 20px 0;
-  border-bottom: 1px solid #d9d9d9;
-  font-weight: 500;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap li:nth-child(1) {
-  color: #0b7b44;
-}
-.ships-body .con-main-wrap .body-wrap .nav-left-wrap ul li a {
-  font-size: 14px;
-  color: #808080;
-}
-.ships-body .con-main-wrap .body-wrap .text-right-wrap {
+.global-body .con-main-wrap .body-wrap .text-right-wrap {
   box-sizing: border-box;
   padding: 0 0 0 40px;
   width: 900px;
   height: 700px;
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .title {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .title {
   display: flex;
   align-items: center;
   color: #0b7b44;
   font-size: 24px;
   font-weight: 500;
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap .title span {
+.global-body .con-main-wrap .body-wrap .text-right-wrap .title span {
   display: block;
   width: 100px;
   height: 2px;
   background: #d9d9d9;
   margin-right: 30px;
 }
-.ships-body .con-main-wrap .body-wrap .text-right-wrap h5 {
+.global-body .con-main-wrap .body-wrap .text-right-wrap h5 {
   font-size: 22px;
   color: #0b7b44;
   margin: 40px 0 10px;

@@ -15,7 +15,6 @@
 <body>
   <div class="app">
     <!-- nav导航区域 -->
-    <!-- nav导航区域 -->
     <section class="header-nav">
       <a href="../index.html"> <img class="logo" src="../../img/home/logo.png" alt=""></a>
       <ul class="layui-nav layui-bg-gray">
@@ -72,23 +71,15 @@
       </div>
     </section>
     <!-- 内容区域 左边导航右边内容展示 -->
-    <section class="research-body">
+    <section class="global-body">
       <div class="con-main-wrap">
-        <div class="left-wrap">
-          <h3>Research</h3>
-          <div class="nav-title">
-            Introduction
-          </div>
-          <div class="nav-title">
-            Research Areas
-          </div>
-          <div class="nav-title">
-            Research Progress
-          </div>
-          <div class="nav-title">
-            Research Platforms
-          </div>
-        </div>
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item"><a href="javascript:;">RESEARCH</a></li>
+          <li class="layui-nav-item"><a href="./research.html">Introduction</a></li>
+          <li class="layui-nav-item"><a href="./researchAreas.html">Research Areas</a></li>
+          <li class="layui-nav-item"><a href="./researchProgress.html">Research Progress</a></li>
+          <li class="layui-nav-item"><a href="./researchPlatforms.html">Research Platforms</a></li>
+        </ul>
         <!-- 右边展示内容的区域 -->
         <div class="right-wrap">
           <div class="top-title">
@@ -208,14 +199,8 @@
             </div>
 
           </div>
-          <div class="footer-go-item">
-            共17条 1/2 <div class="text"><span class="hei">首页</span></div>
-            <div class="text"><span class="hei">上页</span> </div>
-            <div class="text"><span>下页</span></div>
-            <div class="text"><span>尾页</span></div>
-            <span class="zhuandao">转到</span>
-            <div class="kong"></div>页
-          </div>
+          <!-- 分页 -->
+          <div id="demo-laypage-all"></div>
         </div>
       </div>
     </section>
@@ -291,6 +276,21 @@
       </div>
     </section>
   </div>
+  <script src="../../layui//layui.js"></script>
+  <script>
+    layui.use(function () {
+      var laypage = layui.laypage;
+      // 完整显示
+      laypage.render({
+        elem: 'demo-laypage-all', // 元素 id
+        count: 100, // 数据总数
+        layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'], // 功能布局
+        jump: function (obj) {
+          console.log(obj);
+        }
+      });
+    });
+  </script>
 </body>
 <style>
 

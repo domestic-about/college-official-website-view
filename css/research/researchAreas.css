@@ -1,39 +1,8 @@
-/* banner区域 */
-.research-banner {
-  background: url("../../img/research/bg.png");
-  background-size: 100% 100%;
-}
-
-.research-banner .con-main-wrap {
-  padding: 130px 0 200px;
-  @media (max-width: 1300px) {
-    width: 100%;
-    text-align: center;
-    padding: 130px 0 100px;
-  }
-}
-
-.research-banner .con-main-wrap h3 {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.research-banner .con-main-wrap .label {
-  margin-top: 34px;
-  width: 410px;
-  font-size: 16px;
-  color: #fff;
-  @media (max-width: 1300px) {
-    margin: 40px auto;
-    width: 80%;
-  }
-}
 /* 内容区域左边导航 右边切换内容 */
 .research-body {
 }
 
-.research-body .con-main-wrap {
+.global-body .con-main-wrap {
   display: flex;
   @media (max-width: 1300px) {
     width: 100%;
@@ -42,44 +11,7 @@
     padding: 0 0 16px 0;
   }
 }
-/* 左边导航 */
-.research-body .con-main-wrap .left-wrap {
-  width: 240px;
-  background-color: #f7f7f7;
-  padding: 56px 0 0;
-  @media (max-width: 1300px) {
-    width: 100%;
-    display: flex;
-    padding: 0px;
-    background: #eefff7;
-    justify-content: space-between;
-  }
-}
-.research-body .con-main-wrap .left-wrap h3 {
-  padding-left: 30px;
-  font-size: 40px;
-  color: #1a1c19;
-  margin: 0 0 37px;
-  @media (max-width: 1300px) {
-    display: none;
-  }
-}
 
-.research-body .con-main-wrap .left-wrap .nav-title {
-  padding: 16px 30px;
-  cursor: pointer;
-  margin: 20px 0;
-  @media (max-width: 1300px) {
-    padding: 10px 0px;
-    font-size: 12px;
-    text-align: center;
-    width: 24%;
-  }
-}
-.research-body .con-main-wrap .left-wrap .nav-title:nth-child(3) {
-  background-color: #007c36;
-  color: #fff;
-}
 /* 右边内容 */
 .right-wrap {
   width: 960px;

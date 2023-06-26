@@ -64,23 +64,37 @@
       <img src="../../img/adimissions/banner.png" alt="">
     </section>
     <!-- 内容区域 左边导航右边展示 -->
-    <section class="ships-body">
+    <section class="global-body">
       <div class="con-main-wrap">
         <div class="nav-text">
           <a href="#">HOME ></a>
           <a href="#">ADMISSIONS</a>
         </div>
+        <!-- 下面的内容 左边导航右边内容 -->
         <div class="body-wrap">
-          <div class="nav-left-wrap">
-            <h3>ADMISSIONS</h3>
-            <ul>
-              <li>SCHOLARSHIPS <a href="#">>></a></li>
-              <li>PROGRAMS& SUPERVISORS
-              </li>
-              <li>APPLICATION <a href="#">>></a></li>
-              <li>DOWNLOAD</li>
-            </ul>
-          </div>
+          <ul class="layui-nav layui-nav-tree">
+            <li class="layui-nav-item"><a href="javascript:;">ADMISSIONS</a></li>
+            <li class="layui-nav-item layui-nav-itemed">
+              <a href="javascript:;">SCHOLARSHIPS</a>
+              <dl class="layui-nav-child">
+                <dd><a href="./scholarShips/scholarShip.html">Chinese Government Scholarship-Bilateral Program</a>
+                </dd>
+                <dd><a href="./scholarShips/postGraduates.html">Chinese Government Scholarship-University
+                    Postgraduates
+                    Program</a></dd>
+                <dd><a href="./scholarShips/program.html">Huazhong Agricultural University Scholarship</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item"><a href="./programs.html">PROGRAMS&SUPERVISOR</a></li>
+            <li class="layui-nav-item layui-nav-itemed">
+              <a href="javascript:;">APPLICATION</a>
+              <dl class="layui-nav-child">
+                <dd><a href="./appliCation/apply.html">How to Apply</a></dd>
+                <dd><a href="./appliCation/appliCation.html">FAQs for Application</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item"><a href="./downLoad.html">DOWNLOAD</a></li>
+          </ul>
           <div class="text-right-wrap">
             <div class="title"> <span class="xian"></span> DOWNLOAD</div>
             <div class="down-card-list">
@@ -125,14 +139,10 @@
                 </div>
               </div>
             </div>
-            <div class="page-item">
-              <div class="kuang">Previous</div>
-              <div class="num">1</div>
-              <div class="kuang">Next</div>
-            </div>
+            <!-- 分页 -->
+            <div id="demo-laypage-pn-show"></div>
           </div>
         </div>
-      </div>
     </section>
     <!-- 底部 -->
     <section class="footer-wrap">
@@ -207,6 +217,30 @@
       </div>
     </section>
   </div>
+
+  <script src="../../layui/layui.js"></script>
+  <script>
+    layui.use(function () {
+      var laypage = layui.laypage;
+      var layer = layui.layer;
+      // 只显示上一页、下一页、当前页
+      laypage.render({
+        elem: 'demo-laypage-pn-show',
+        count: 50,
+        groups: 1,
+        first: false,
+        last: false,
+        layout: ['prev', 'page', 'next'],
+        jump: function (obj, first) {
+          // 首次不执行
+          if (!first) {
+            // layer.msg('第 ' + obj.curr + ' 页');
+            layer.msg('page ' + obj.curr);
+          }
+        }
+      });
+    });
+  </script>
 </body>
 <style>
 

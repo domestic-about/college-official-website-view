@@ -62,7 +62,7 @@
     </section>
     <!-- banner区域 -->
     <section class="news-banner">
-      <img src="../../img/news/bg.png" alt="">
+      <h3>Latest Upcoming Evens</h3>
     </section>
     <!-- 展示内容区域 -->
     <section class="notice-body">
@@ -161,14 +161,8 @@
         </div>
         <span class="two-span">2017-05-02</span>
       </div>
-      <div class="footer-go-item">
-        共54条 1/4 <div class="text"><span class="hei">首页</span></div>
-        <div class="text"><span class="hei">上页</span> </div>
-        <div class="text"><span>下页</span></div>
-        <div class="text"><span>尾页</span></div>
-        <span class="zhuandao">转到</span>
-        <input class="kong"></input>页
-      </div>
+      <!-- 分页 -->
+      <div id="demo-laypage-all"></div>
     </section>
     <!-- 底部区域 -->
     <section class="footer-wrap">
@@ -243,6 +237,21 @@
       </div>
     </section>
   </div>
+  <script src="../../layui//layui.js"></script>
+  <script>
+    layui.use(function () {
+      var laypage = layui.laypage;
+      // 完整显示
+      laypage.render({
+        elem: 'demo-laypage-all', // 元素 id
+        count: 100, // 数据总数
+        layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'], // 功能布局
+        jump: function (obj) {
+          console.log(obj);
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
