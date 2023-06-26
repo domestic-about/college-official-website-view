@@ -1,5 +1,4 @@
 /* 内容区域左边导航 右边切换内容 */
-
 .global-body .con-main-wrap {
   display: flex;
   @media (max-width: 1300px) {
@@ -10,36 +9,16 @@
   }
 }
 /* 右边内容 */
-.right-wrap {
-  width: 960px;
-  padding: 66px 0 160px 36px;
-  @media (max-width: 1300px) {
-    width: 100%;
-    /* padding: 0 20px 30px; */
-    padding: 16px 20px;
-    box-sizing: border-box;
-  }
-}
 
-.right-wrap .title {
-}
-.right-wrap .title .one-span {
-  color: #999;
-}
-.right-wrap .title span {
-  @media (max-width: 1300px) {
-    font-size: 14px;
-  }
-}
-.right-wrap h3 {
+.research-right-wrap h3 {
   font-size: 20px;
-  margin: 60px 0 0;
+  margin: 20px 0 0;
   color: #000000;
   @media (max-width: 1300px) {
     margin: 10px 0 0;
   }
 }
-.right-wrap .label {
+.research-right-wrap .label {
   font-size: 14px;
   line-height: 150%;
   margin-top: 20px;

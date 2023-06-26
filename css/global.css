@@ -246,6 +246,17 @@ h3 {
     width: 80%;
   }
 }
+/* research-body里面的右边 */
+.research-right-wrap {
+  width: 960px;
+  padding: 26px 0 160px 36px;
+  @media (max-width: 1300px) {
+    width: 100%;
+    /* padding: 0 20px 30px; */
+    padding: 16px 20px;
+    box-sizing: border-box;
+  }
+}
 /* research公共banner区域结束 */
 /* 公共research adimissions左边导航 */
 .global-body .layui-nav {

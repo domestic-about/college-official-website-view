@@ -175,15 +175,8 @@
         </div>
 
       </div>
-      <div class="footer-go-item">
-        共153条 1/11 <div class="text"><span class="hei">首页</span></div>
-        <div class="text"><span class="hei">上页</span> </div>
-        <div class="text"><span>下页</span></div>
-        <div class="text"><span>尾页</span></div>
-        <span class="zhuandao">转到</span>
-        <div class="kong"></div>页
-      </div>
-
+      <!-- 分页 -->
+      <div id="demo-laypage-all"></div>
     </section>
 
     <!-- 底部区域 -->
@@ -257,6 +250,21 @@
           </div>
         </div>
       </div>
+      <script src="../../layui//layui.js"></script>
+      <script>
+        layui.use(function () {
+          var laypage = layui.laypage;
+          // 完整显示
+          laypage.render({
+            elem: 'demo-laypage-all', // 元素 id
+            count: 100, // 数据总数
+            layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'], // 功能布局
+            jump: function (obj) {
+              console.log(obj);
+            }
+          });
+        });
+      </script>
     </section>
   </div>
 </body>

@@ -13,31 +13,9 @@
 }
 
 /* 右边内容 */
-.right-wrap {
-  width: 960px;
-  padding: 62px 0 56px 36px;
-  box-sizing: border-box;
-  @media (max-width: 1300px) {
-    width: 100%;
-    /* padding: 0 20px 30px; */
-    padding: 16px 20px;
-    box-sizing: border-box;
-  }
-}
-.right-wrap .top-title {
-  margin-bottom: 80px;
-}
-.right-wrap .top-title .one-span {
-  color: #999;
-}
-.right-wrap .top-title span {
-  @media (max-width: 1300px) {
-    font-size: 14px;
-  }
-}
-.right-wrap .card-list .card-item .title {
+.research-right-wrap .card-list .card-item .title {
   font-size: 20px;
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   font-weight: 700;
   color: #000000;
   @media (max-width: 1300px) {
@@ -45,9 +23,9 @@
   }
 }
 
-.right-wrap .card-list .card-item .text-wrap {
+.research-right-wrap .card-list .card-item .text-wrap {
 }
-.right-wrap .card-list .card-item .text-wrap .label {
+.research-right-wrap .card-list .card-item .text-wrap .label {
   margin: 20px 0;
   line-height: 150%;
   font-size: 14px;
@@ -56,7 +34,7 @@
     margin: 10px 0 20px 0;
   }
 }
-.right-wrap .card-list .card-item .text-wrap span {
+.research-right-wrap .card-list .card-item .text-wrap span {
   display: block;
 
   font-size: 16px;
@@ -65,7 +43,7 @@
     padding: 0;
   }
 }
-.right-wrap .card-list .card-item .text-wrap ul li {
+.research-right-wrap .card-list .card-item .text-wrap ul li {
   margin: 20px 0;
   font-size: 14px;
   color: #333;

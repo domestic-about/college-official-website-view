@@ -43,3 +43,7 @@
   justify-content: space-between;
   align-items: end;
 }
+
+.item-coll {
+  color: blue;
+}

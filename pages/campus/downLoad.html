@@ -156,11 +156,8 @@
               Download
             </div>
           </div>
-          <div class="page-item">
-            <div class="kuang">Previous</div>
-            <div class="num">1</div>
-            <div class="kuang">Next</div>
-          </div>
+          <!-- 分页 -->
+          <div id="demo-laypage-pn-show"></div>
         </div>
       </div>
     </div>
@@ -237,7 +234,31 @@
       </div>
     </section>
   </div>
+  <script src="../../layui//layui.js"></script>
+  <script>
+    layui.use(function () {
+      var laypage = layui.laypage;
+      var layer = layui.layer;
+      // 只显示上一页、下一页、当前页
+      laypage.render({
+        elem: 'demo-laypage-pn-show',
+        count: 50,
+        groups: 1,
+        first: false,
+        last: false,
+        layout: ['prev', 'page', 'next'],
+        jump: function (obj, first) {
+          // 首次不执行
+          if (!first) {
+            layer.msg('第 ' + obj.curr + ' 页');
+          }
+        }
+      });
+    });
+  </script>
+
 </body>
+
 <style>
 
 </style>
