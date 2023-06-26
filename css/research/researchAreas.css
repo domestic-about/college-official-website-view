@@ -1,7 +1,10 @@
 /* 内容区域左边导航 右边切换内容 */
 .research-body {
 }
-
+.global-body .layui-nav-item:nth-child(3) a {
+  font-size: 14px;
+  color: #0b7b44;
+}
 .global-body .con-main-wrap {
   display: flex;
   @media (max-width: 1300px) {

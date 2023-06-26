@@ -3,23 +3,7 @@
   width: 1200px;
   margin: 0 auto;
 }
-.admin-people .admin-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #007e37;
-}
-.admin-people .admin-title h5 {
-  font-size: 22px;
-  padding: 20px 0;
-}
-.admin-people .admin-title .admin-nav-title {
-  color: #999;
-}
-.admin-people .admin-title .admin-nav-title a {
-  color: #999;
-  font-size: 14px;
-}
+
 .admin-people .admin-card-list {
 }
 .admin-people .admin-card-list .admin-card-item {

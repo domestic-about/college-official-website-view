@@ -1,7 +1,5 @@
 /* banner图片 */
-.down-banner img {
-  width: 100%;
-}
+
 /* 内容区域 */
 /* 面包屑 */
 .con-wrap {
@@ -9,23 +7,7 @@
   margin: 0 auto;
   padding: 0 0 30px;
 }
-.con-wrap .people-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #007e37;
-}
-.con-wrap .people-title h5 {
-  font-size: 22px;
-  padding: 20px 0;
-}
-.con-wrap .people-title .people-nav-title {
-  color: #999;
-}
-.con-wrap .people-title .people-nav-title a {
-  color: #999;
-  font-size: 14px;
-}
+
 /* 搜索区域 */
 .con-wrap .search-info {
   margin-top: 30px;

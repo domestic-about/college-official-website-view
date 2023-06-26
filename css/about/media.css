@@ -5,21 +5,3 @@
   width: 1200px;
   margin: 0 auto 30px;
 }
-.admin-people .admin-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.admin-people .admin-title h5 {
-  font-size: 22px;
-  padding: 20px 0;
-  border-bottom: 2px solid #007e37;
-  margin: 0;
-}
-.admin-people .admin-title .admin-nav-title {
-  color: #999;
-}
-.admin-people .admin-title .admin-nav-title a {
-  color: #999;
-  font-size: 14px;
-}

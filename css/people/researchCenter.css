@@ -1,30 +1,11 @@
 /* banner图片 */
-.down-banner img {
-  width: 100%;
-}
+
 /* 内容区域 */
 /* 面包屑 */
 .con-wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 300px;
-}
-.con-wrap .people-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #007e37;
-}
-.con-wrap .people-title h5 {
-  font-size: 22px;
-  padding: 20px 0;
-}
-.con-wrap .people-title .people-nav-title {
-  color: #999;
-}
-.con-wrap .people-title .people-nav-title a {
-  color: #999;
-  font-size: 14px;
 }
 /* 姓名 */
 .con-wrap .post-card-list {

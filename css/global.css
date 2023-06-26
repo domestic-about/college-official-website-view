@@ -61,22 +61,23 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   padding: 10px 24px;
   background: #fafafa;
   display: flex;
   justify-content: space-between;
-
   @media (max-width: 1300px) {
     display: none;
   }
 }
 .header-nav ul {
+  width: 60%;
   padding: 0 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-nav ul li {
-  margin-left: 50px;
   cursor: pointer;
 }
 .header-nav ul li a {
@@ -148,10 +149,14 @@ h3 {
 
 /* adimissionsbanner区域 */
 .ships-banner {
-  padding-top: 100px;
+  padding: 330px 0 200px;
+  background: url("../img/adimissions/banner.png");
+  background-size: 100% 100%;
 }
-.ships-banner img {
-  width: 100%;
+.ships-banner h4 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
 }
 
 /* 内容区域左边导航和右边展示 */
@@ -165,7 +170,6 @@ h3 {
   color: #808080;
 }
 .global-body .con-main-wrap .body-wrap {
-  margin-top: 40px;
   display: flex;
 }
 .global-body .con-main-wrap .body-wrap .nav-left-wrap {
@@ -278,6 +282,9 @@ h3 {
   font-size: 14px;
   color: #fff;
   border: 0;
+  &:hover {
+    color: #fff !important;
+  }
 }
 
 .global-body .layui-nav-item a {
@@ -289,7 +296,7 @@ h3 {
   }
 }
 .global-body .layui-nav-item dl dd a {
-  color: #c6a16c;
+  color: #c6a16c !important;
   font-weight: 400;
 }
 /* news页面公共 */
@@ -302,6 +309,25 @@ h3 {
   color: #fff;
   font-size: 40px;
   text-align: center;
+}
+/* people和about样式公共 */
+.down-banner {
+  padding-top: 100px;
+}
+.down-banner img {
+  width: 100%;
+}
+/* global和about的导航 */
+.global-people-about-title {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #007e37;
+}
+.global-people-about-title h5 {
+  font-size: 22px;
+  color: #00712f;
 }
 /* layui里面的分页 */
 #demo-laypage-all {

@@ -1,3 +1,7 @@
+.global-body .layui-nav-item:nth-child(4) a {
+  font-size: 14px;
+  color: #0b7b44;
+}
 .global-body .con-main-wrap .body-wrap .text-right-wrap .text-item-title {
   margin: 30px 0 10px;
   font-weight: 500;
@@ -43,4 +47,7 @@
 .table-img2 {
   width: 860px;
   margin: 10px 0;
+}
+.layui-breadcrumb {
+  margin: 30px 0;
 }

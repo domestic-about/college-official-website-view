@@ -1,3 +1,7 @@
+.global-body .layui-nav-item:nth-child(5) a {
+  font-size: 14px;
+  color: #0b7b44;
+}
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list {
   margin: 40px 0 100px;
 }
@@ -45,4 +49,7 @@
 #demo-laypage-pn-show {
   width: 180px;
   margin: 0 auto;
+}
+.layui-breadcrumb {
+  margin: 30px 0;
 }
