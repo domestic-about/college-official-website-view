@@ -1,20 +1,14 @@
-.layui-breadcrumb {
-  margin: 30px 0;
-}
 .global-body .layui-nav-item:nth-child(4) a {
   font-size: 14px;
   color: #0b7b44;
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list {
-  margin: 40px 0 100px;
+  margin: 20px 0 0;
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item p {
   font-size: 14px;
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item .info {
@@ -29,89 +23,6 @@
   margin-right: 10px;
   background: #0b7b44;
 }
-
-.global-body .con-main-wrap .body-wrap .text-right-wrap .page-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .page-item .kuang {
-  border: 1px solid #ccc;
-  padding: 4px 10px;
-  color: #dbdbdb;
-  font-size: 13px;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .page-item .num {
-  padding: 3px 20px;
-  margin: 0 3px;
-  color: #fff;
-  background: #888888;
-}
-/* 底部 */
-.footer-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 100px 285.3px 100px 200px;
-  background-color: #000000;
-
-  @media (max-width: 1300px) {
-    flex-direction: column;
-    padding: 30px 0;
-  }
-}
-
-.footer-wrap .label {
-  font-size: 12px;
-  color: #8e8c95;
-
-  @media (max-width: 1300px) {
-    width: 80%;
-    margin: 0 auto 30px;
-    text-align: center;
-    font-size: 16px;
-  }
-}
-
-.footer-wrap .card-list {
-  display: flex;
-  align-items: flex-start;
-  box-sizing: border-box;
-
-  @media (max-width: 1300px) {
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
-.footer-wrap .card-list .card-item {
-  margin-left: 170px;
-  color: #fff;
-
-  @media (max-width: 1300px) {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0 0 0;
-  }
-}
-
-.footer-wrap .card-list .card-item .title {
-  font-weight: 700;
-  margin-bottom: 18px;
-
-  @media (max-width: 1300px) {
-    text-align: center;
-  }
-}
-/*  */
-.footer-wrap .card-list .card-item .label {
-  font-size: 14px;
-  margin-top: 14px;
-}
-
-/* 底部的第几页 */
 #demo-laypage-pn-show {
-  width: 180px;
-  margin: 0 auto;
+  margin-top: 30px;
 }

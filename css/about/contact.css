@@ -1,20 +1,21 @@
-.down-banner img {
-  width: 100%;
-}
-/* 展示联系我们的区域 */
-.admin-people {
-  width: 1200px;
-  margin: 0 auto 30px;
-}
-
 .admin-people h5 {
   text-align: center;
   font-size: 25px;
   margin: 30px 0;
 }
+.global-people-about-title h5 {
+  margin: 0;
+}
 .layui-table {
+}
+.layui-table th {
+  background: #f3f3f3;
 }
 .layui-table td {
   text-align: center;
   color: #888888;
+}
+.layui-table td:nth-child(4) {
+  text-align: left;
+  padding-left: 20px;
 }

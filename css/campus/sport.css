@@ -1,84 +1,20 @@
-/* banner区域 */
-.campus-banner {
-  display: flex;
-}
+/* 顶部颜色 */
+
 .campus-banner .bg-color {
-  width: 40%;
   background-color: #eea923;
-  padding: 221px 0 229px;
 }
-.campus-banner img {
-  width: 60%;
-}
-.campus-banner .bg-color h4 {
-  font-size: 30px;
-  color: #fff;
-  text-align: right;
-  margin-right: 40px;
-}
-/* 内容区域 */
-
-.campus-body .con-main-wrap {
-  width: 1200px;
-  margin: 0 auto;
-
-  @media (max-width: 1300px) {
-    width: 100%;
-  }
-}
-
-.campus-body .con-main-wrap .top-label {
-  color: #006e2f;
-  font-size: 38px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 30px;
-
-  @media (max-width: 1300px) {
-    width: 90%;
-    margin: 38px auto 22px;
-    max-width: 600px;
-    font-size: 14px;
-  }
-}
-.campus-body .con-main-wrap .img-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 30px;
-  justify-content: space-between;
-  gap: 25px 0;
-}
-.campus-body .con-main-wrap .img-list .img-item {
-  width: 32%;
-  position: relative;
-}
-.campus-body .con-main-wrap .img-list .img-item img {
-  width: 100%;
-
-  &:hover {
-    filter: brightness(50%);
-  }
-}
-.campus-body .con-main-wrap .img-list .img-item p {
-  position: absolute;
-  bottom: 0px;
-  padding: 10px 10px 0;
+.campus-info-list .img-list .img-item .label {
   background-color: #eea923;
-  color: #fff;
-  overflow: hidden;
-  word-break: break-all;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 /* sport-body */
 .sport-body .banner {
   background: url("../../img/campus/sport/banner.png");
   padding: 127px 0 167px;
   margin-top: 83px;
+  background-size: 100% 100%;
+  @media (max-width: 1300px) {
+    margin-top: 10px;
+  }
 }
 .sport-body .banner h4 {
   font-size: 48px;
@@ -94,7 +30,9 @@
   justify-content: space-between;
 
   @media (max-width: 1300px) {
-    padding: 0 0 30px;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -106,9 +44,10 @@
 
   @media (max-width: 1300px) {
     width: 100%;
-    padding: 16px 20px 0;
+    padding: 0;
     flex-direction: column-reverse;
     border-top: 0;
+    margin: 20px 0;
   }
 }
 
@@ -117,6 +56,7 @@
   height: 120px;
   @media (max-width: 1300px) {
     width: 100%;
+    height: 250px;
     border-radius: 6px 6px 0 0;
   }
 }

@@ -4,6 +4,9 @@
 .notice-body {
   width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .notice-body h5 {
   text-align: center;
@@ -20,17 +23,33 @@
   &:hover {
     background: #f3f3f3;
   }
+  @media (max-width: 1300px) {
+    padding: 10px 20px;
+  }
 }
 .notice-body .news-item .label {
   display: flex;
   align-items: center;
   width: 80%;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .notice-body .news-item .label p {
   line-height: 30px;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   width: 90%;
+  @media (max-width: 1300px) {
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
 }
 .notice-body .news-item .one-span {
   display: block;
@@ -45,4 +64,7 @@
   width: 100px;
   text-align: left;
   font-size: 14px;
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }

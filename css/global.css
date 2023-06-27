@@ -18,10 +18,6 @@ a {
   color: #fff;
   padding: 12px 45px;
   font-size: 18px;
-  @media @md {
-    padding: 5px 15px;
-    font-size: 14px;
-  }
 }
 .con-main-wrap {
   width: 1200px;
@@ -66,23 +62,49 @@ h3 {
   background: #fafafa;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 1300px) {
-    display: none;
-  }
 }
 .header-nav ul {
   width: 60%;
-  padding: 0 10px;
+  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.header-nav .layui-bg-gray {
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
 .header-nav ul li {
   cursor: pointer;
 }
+
 .header-nav ul li a {
   margin-right: 10px;
+  font-size: 18px;
 }
+.header-nav .layui-nav-item {
+}
+.header-nav .layui-nav-child {
+  padding: 0;
+}
+.header-nav .layui-nav-child dd {
+  margin: 0;
+  border-bottom: 1px solid #dbdbdb;
+  &:hover {
+    background: #16b777;
+  }
+}
+.header-nav .layui-nav-child dd a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #333 !important;
+  &:hover {
+    background: #16b777;
+    color: #fff !important;
+  }
+}
+
 /* 顶部结束 */
 /* 底部的样式 */
 .footer-wrap {
@@ -147,81 +169,27 @@ h3 {
 }
 /* footer底部结束 */
 
-/* adimissionsbanner区域 */
-.ships-banner {
-  padding: 330px 0 200px;
-  background: url("../img/adimissions/banner.png");
+/* news页面公共 */
+.news-banner {
+  padding: 300px 0 200px;
+  background: url("../img/news/bg.png");
   background-size: 100% 100%;
+  @media (max-width: 1300px) {
+    padding: 130px 0 130px;
+  }
 }
-.ships-banner h4 {
+.news-banner h3 {
+  color: #fff;
   font-size: 40px;
   text-align: center;
-  color: #fff;
 }
 
-/* 内容区域左边导航和右边展示 */
-.global-body {
-}
-.global-body .con-main-wrap .nav-text {
-  margin: 20px 0;
-}
-.global-body .con-main-wrap .nav-text a {
-  font-size: 14px;
-  color: #808080;
-}
-.global-body .con-main-wrap .body-wrap {
-  display: flex;
-}
-.global-body .con-main-wrap .body-wrap .nav-left-wrap {
-  width: 300px;
-  text-align: center;
-  border: 1px solid #d9d9d9;
-}
-.global-body .con-main-wrap .body-wrap .nav-left-wrap h3 {
-  padding: 22px 0;
-  font-size: 22px;
-  color: #fff;
-  background: #0b7b44;
-}
+/* news页面结束 */
 
-.global-body .con-main-wrap .body-wrap .nav-left-wrap li {
-  padding: 20px 0;
-  border-bottom: 1px solid #d9d9d9;
-  font-weight: 500;
-}
-.global-body .con-main-wrap .body-wrap .nav-left-wrap li:nth-child(3) {
-  color: #0b7b44;
-}
-.global-body .con-main-wrap .body-wrap .nav-left-wrap ul li a {
-  font-size: 14px;
-  color: #808080;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap {
-  box-sizing: border-box;
-  padding: 0 0 100px 40px;
-  width: 900px;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .title {
-  display: flex;
-  align-items: center;
-  color: #0b7b44;
-  font-size: 24px;
-  font-weight: 500;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap h3 {
-  margin-top: 30px;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .title .xian {
-  display: block;
-  width: 100px;
-  height: 2px;
-  background: #d9d9d9;
-  margin-right: 30px;
-}
 /* research公共banner区域 */
 /* banner区域 */
 .research-banner {
-  background: url("../img/research/bg.png");
+  background: url("../img/home/banner-bg.png");
   background-size: 100% 100%;
 }
 
@@ -261,15 +229,254 @@ h3 {
     box-sizing: border-box;
   }
 }
-/* research公共banner区域结束 */
+.research-right-wrap .progress-list {
+  @media (max-width: 1300px) {
+    margin-top: 20px;
+  }
+}
+.research-right-wrap .progress-list .progress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #f3f3f3;
+  &:hover {
+    background: #f3f3f3;
+    border-top: 1px solid #007e37;
+  }
+}
+.research-right-wrap .progress-list .progress-item .label {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+.research-right-wrap .progress-list .progress-item .label p {
+  width: 90%;
+  @media (max-width: 1300px) {
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}
+.research-right-wrap .progress-list .progress-item .one-span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: #007e37;
+}
+.research-right-wrap .progress-list .progress-item .two-span {
+  color: #999999;
+  width: 18%;
+  text-align: right;
+  font-size: 14px;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+/* research页面结束 */
+/* about页面的样式 */
+.admin-people {
+  width: 1200px;
+  margin: 0 auto 30px;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+
+/* campus banner和6个图片的公共样式 */
+/* banner区域 */
+.campus-banner {
+  display: flex;
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
+}
+.campus-banner .bg-color {
+  width: 40%;
+  background-color: #006e2f;
+  padding: 321px 0 229px;
+  @media (max-width: 1300px) {
+    width: 100%;
+    padding: 131px 0 139px;
+  }
+}
+.campus-banner .bg-color h4 {
+  font-size: 50px;
+  color: #fff;
+  margin-right: 40px;
+  text-align: right;
+  @media (max-width: 1300px) {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+.campus-banner img {
+  width: 60%;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+/* 6个图片加顶部文字介绍区域 */
+.campus-info-list {
+  width: 1200px;
+  margin: 30px auto;
+  @media (max-width: 1300px) {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+.campus-info-list .label {
+  color: #006e2f;
+  font-size: 38px;
+  text-align: center;
+  font-weight: 700;
+  @media (max-width: 1300px) {
+    line-height: 40px;
+    font-size: 22px;
+  }
+}
+.campus-info-list .img-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+  gap: 25px 0;
+  @media (max-width: 1300px) {
+    margin-top: 30px;
+  }
+}
+.campus-info-list .img-list .img-item {
+  width: 32%;
+  position: relative;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+.campus-info-list .img-list .img-item img {
+  width: 100%;
+  @media (max-width: 1300px) {
+    height: 350px;
+  }
+  &:hover {
+    filter: brightness(50%);
+  }
+}
+.campus-info-list .img-list .img-item .label {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #006e2f;
+  &:hover {
+    bottom: 10px;
+  }
+}
+.campus-info-list .img-list .img-item p {
+  color: #fff;
+  overflow: hidden;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+/* campus结束 */
+/* adimissionsbanner区域 */
+.ships-banner {
+  padding: 330px 0 200px;
+  background: url("../img/adimissions/banner.png");
+  background-size: 100% 100%;
+  @media (max-width: 1300px) {
+    padding: 150px 20px 150px;
+  }
+}
+.ships-banner h4 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  @media (max-width: 1300px) {
+    font-size: 26px;
+  }
+}
+
+.global-body .con-main-wrap .body-wrap {
+  display: flex;
+  @media (max-width: 1300px) {
+  }
+}
+.global-body .con-main-wrap .body-wrap .layui-nav {
+  padding-bottom: 500px;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap {
+  box-sizing: border-box;
+  padding: 30px 0 0 40px;
+  width: 900px;
+  @media (max-width: 1300px) {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap .layui-breadcrumb {
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap .title {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #0b7b44;
+  font-size: 24px;
+  font-weight: 500;
+  @media (max-width: 1300px) {
+    font-size: 16px;
+    justify-content: center;
+  }
+}
+
+.global-body .con-main-wrap .body-wrap .text-right-wrap .title .xian {
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #d9d9d9;
+  margin-right: 30px;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap h5 {
+  font-size: 22px;
+  color: #0b7b44;
+  margin: 30px 0 18px;
+  font-weight: 700;
+}
+
 /* 公共research adimissions左边导航 */
 .global-body .layui-nav {
-  height: 700px;
   width: 300px;
   text-align: center;
   border: 1px solid #d9d9d9;
   background: #fff;
   border-bottom: 0px solid #d9d9d9;
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }
 .global-body .layui-nav-item {
   font-weight: 500;
@@ -299,17 +506,23 @@ h3 {
   color: #c6a16c !important;
   font-weight: 400;
 }
-/* news页面公共 */
-.news-banner {
-  padding: 300px 0 200px;
-  background: url("../img/news/bg.png");
-  background-size: 100% 100%;
+/* research里面progress和platforms的公共样式 右边的 */
+.global-body .con-main-wrap {
+  display: flex;
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 0 0 16px 0;
+  }
 }
-.news-banner h3 {
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
+#demo-laypage-all {
+  width: 800px;
+  margin: 40px auto 0;
+  @media (max-width: 1300px) {
+    width: 90% !important;
+    padding-left: 30px;
+  }
 }
+
 /* people和about样式公共 */
 .down-banner {
   padding-top: 100px;
@@ -324,13 +537,32 @@ h3 {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #007e37;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 }
 .global-people-about-title h5 {
   font-size: 22px;
   color: #00712f;
 }
+
 /* layui里面的分页 */
 #demo-laypage-all {
   width: 800px;
   margin: 40px auto 20px;
+}
+
+/* layui里面的 面包屑 */
+.layui-breadcrumb {
+  margin: 0;
+  display: block;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+
+/* 底部的第几页 */
+#demo-laypage-pn-show {
+  width: 180px;
+  margin: 0 auto;
 }

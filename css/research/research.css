@@ -3,16 +3,6 @@
   font-size: 14px;
   color: #0b7b44;
 }
-.global-body .con-main-wrap {
-  display: flex;
-  @media (max-width: 1300px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 16px 0;
-  }
-}
-/* 右边内容 */
 
 .research-right-wrap h3 {
   font-size: 20px;
@@ -20,11 +10,11 @@
   color: #000000;
   @media (max-width: 1300px) {
     margin: 10px 0 0;
+    color: #007e37;
   }
 }
 .research-right-wrap .label {
   font-size: 14px;
-  line-height: 150%;
   margin-top: 20px;
   color: #333;
   @media (max-width: 1300px) {

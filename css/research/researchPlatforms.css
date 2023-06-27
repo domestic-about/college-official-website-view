@@ -1,57 +1,10 @@
 /* 内容区域左边导航 右边切换内容 */
-.global-body {
-}
+
 .global-body .layui-nav-item:nth-child(5) a {
   font-size: 14px;
   color: #0b7b44;
 }
-.global-body .con-main-wrap {
-  display: flex;
-  @media (max-width: 1300px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 16px 0;
-  }
-}
-/* 右边内容 */
-
-.research-right-wrap .platforms-list {
-  @media (max-width: 1300px) {
-    margin-top: 15px;
-  }
-}
-.research-right-wrap .platforms-list .platforms-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #f3f3f3;
-}
-.research-right-wrap .platforms-list .platforms-item .label {
-  display: flex;
-  align-items: center;
-  width: 80%;
-}
-.research-right-wrap .platforms-list .platforms-item .label p {
-  width: 90%;
-  font-size: 14px;
-}
-.research-right-wrap .platforms-list .platforms-item .one-span {
+.layui-breadcrumb {
+  margin: 0 0 30px;
   display: block;
-  width: 7px;
-  height: 7px;
-  margin-right: 20px;
-  border-radius: 50%;
-  background: #007e37;
-}
-.research-right-wrap .platforms-list .platforms-item .two-span {
-  color: #999999;
-  width: 18%;
-  text-align: right;
-  font-size: 14px;
-}
-#demo-laypage-all {
-  width: 800px;
-  margin: 40px auto 0;
 }

@@ -1,33 +1,35 @@
-.down-banner img {
-  width: 100%;
-}
-/* 展示历史的区域 */
-.admin-people {
-  width: 1200px;
-  margin: 0 auto 30px;
-}
-
 /*学校历史介绍 */
-.history {
-}
+
 .history .title {
   text-align: center;
   font-size: 28px;
   font-weight: 600;
-  margin: 20px 0;
+  margin: 30px 0 10px;
 }
 .history .label {
   color: #333;
   margin: 10px 0;
+  @media (max-width: 1300px) {
+    padding: 0 20px;
+  }
 }
 /* 电话传真 */
 .coll {
   display: flex;
   justify-content: space-between;
   align-items: end;
-}
-
-.item-coll {
   color: #00712f;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #00712f;
+  @media (max-width: 1300px) {
+    padding: 0 20px;
+  }
+}
+.time {
+  @media (max-width: 1300px) {
+    margin-bottom: 5px;
+  }
+}
+.item-coll {
   line-height: 30px;
 }

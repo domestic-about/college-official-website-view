@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link href="../layui/css/layui.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/index.css">
@@ -18,7 +17,7 @@
     <section class="header-nav">
       <a href="./index.html"> <img class="logo" src="../img/home/logo.png" alt=""></a>
       <ul class="layui-nav layui-bg-gray">
-        <li class="layui-nav-item layui-this">
+        <li class="layui-nav-item ">
           <a href="javascript:;">News</a>
           <dl class="layui-nav-child">
             <dd><a href="./news/news.html">Latest News</a></dd>
@@ -60,6 +59,7 @@
           </dl>
         </li>
       </ul>
+
     </section>
     <!-- banner区域 -->
     <section class="home-banner">
@@ -91,7 +91,7 @@
       <div class="con-main-wrap">
         <div class="text-wrap">
           <h3> Huazhong Agricultural University Animal Science and Technology College </h3>
-          <p class="label">
+          <p class="text-wrap-label">
             The College of Animal Science and Technology and the College of Veterinary Medicine are among the earliest
             established faculties at Huazhong Agricultural University. In 1898, under the leadership of Governor-General
             Zhang Zhidong, the Hubei Provincial Agricultural School (predecessor of Huazhong Agricultural University)
@@ -411,8 +411,6 @@
                 Genome Committee, among others.
 
 
-
-
               </p>
               <p class="label">Dr. Zhao Shuhong's main research focus is on pig genomics and breeding. In response to
                 the major needs of basic research and industry in the Chinese pig sector, he has deciphered the
@@ -488,7 +486,6 @@
         <p class="label">
           Welcome to the College of Animal Science and Technology, School of Veterinary Medicine, Huazhong Agricultural
           University.
-
         </p>
         <p class="label">
           The college has under its jurisdiction the Department of Animal Genetics and Breeding, the Department of
@@ -498,7 +495,7 @@
           Science, and the Department of Public Health There are 9 departments including academic departments
           Ministry of Education.
         </p>
-        <button class="btn">Apply</button>
+        <div class="btn">Apply</div>
       </div>
     </section>
     <!-- News区域 新闻区域 -->
@@ -696,11 +693,16 @@
   </div>
 
   <script src="../layui//layui.js"></script>
+  <script>
+    layui.use(function () {
+      var element = layui.element;
+      element.render('nav');
+    });
+  </script>
+
 </body>
 <style>
-  h6 {
-    line-height: 20px;
-  }
+
 </style>
 
 </html>

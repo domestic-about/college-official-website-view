@@ -6,25 +6,33 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 30px;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 
 /* 内容分类人的名字拼音导航 */
 .people-text-nav {
   display: flex;
   justify-content: space-around;
-  padding: 12px 0;
+  padding: 24px 0;
   background: #b29873;
   margin: 20px 0;
   font-weight: 500;
   color: #fff;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 40px;
+  @media (max-width: 1300px) {
+    padding: 24px 20px;
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 /* 单元格 左边是分类的拼音 右边是名字*/
 .con-wrap .name-item {
   display: flex;
-  padding: 10px 20px;
-  align-items: flex-start;
+  padding: 20px;
+  align-items: center;
   border-bottom: 1px dashed #d8d8d8;
 }
 .con-wrap .nav-item {
@@ -38,5 +46,7 @@
   flex-wrap: wrap;
 }
 .con-wrap .name-item .name-text a {
-  margin: 0 15px;
+  padding: 15px;
+  width: 150px;
+  font-size: 18px;
 }

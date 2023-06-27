@@ -1,33 +1,49 @@
 /* banner图片 */
 
-/* 内容区域 */
-/* 面包屑 */
 .con-wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 30px;
+  @media (max-width: 1300px) {
+    width: 100%;
+    padding: 0 0 30px;
+  }
 }
 
 /* 搜索区域 */
 .con-wrap .search-info {
   margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
+  position: relative;
+  @media (max-width: 1300px) {
+    width: 96%;
+    margin: 30px auto;
+  }
 }
 .con-wrap .search-info .search-people {
-  width: 80%;
+  width: 100%;
   padding: 20px 50px;
   border-radius: 30px;
   border: 1px solid #dbdbdb;
   outline: none;
+  box-sizing: border-box;
+  @media (max-width: 1300px) {
+    padding: 15px;
+  }
 }
 .con-wrap .search-info .search-button {
+  position: absolute;
+  right: 0;
   padding: 20px 0;
   width: 10%;
   border-radius: 30px;
-  border: 1px solid skyblue;
+  border: 0;
   color: #fff;
-  background: skyblue;
+  background: #007e37;
+  cursor: pointer;
+  @media (max-width: 1300px) {
+    width: 100px;
+    padding: 15px;
+  }
 }
 /* 内容分类人的名字拼音导航 */
 .people-text-nav {
@@ -40,12 +56,17 @@
   color: #fff;
   cursor: pointer;
   border-radius: 20px;
+  @media (max-width: 1300px) {
+    width: 96%;
+    padding: 12px 5px;
+    margin: 30px auto;
+  }
 }
 /* 单元格 左边是分类的拼音 右边是名字*/
 .con-wrap .name-item {
   display: flex;
-  padding: 10px 20px;
-  align-items: flex-start;
+  padding: 20px;
+  align-items: center;
   border-bottom: 1px dashed #d8d8d8;
 }
 .con-wrap .nav-item {
@@ -59,5 +80,7 @@
   flex-wrap: wrap;
 }
 .con-wrap .name-item .name-text a {
-  margin: 0 15px;
+  padding: 15px;
+  width: 150px;
+  font-size: 18px;
 }

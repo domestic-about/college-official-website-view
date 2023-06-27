@@ -1,25 +1,44 @@
-.down-banner img {
+/* banner */
+.down-banner {
   width: 100%;
-  margin-top: 100px;
+  padding: 330px 0 200px;
+  background: url("../../img/adimissions/banner.png");
+  background-size: 100% 100%;
+  @media (max-width: 1300px) {
+    padding: 130px 0;
+  }
+}
+.down-banner h4 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
 }
 /* 内容 */
-.campus-body {
-}
+
 .campus-body .con-main-wrap {
   display: flex;
   justify-content: space-between;
   width: 1000px;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .campus-body .con-main-wrap .body-right-wrap {
   /* width: 930px; */
   width: 100%;
-  padding-top: 60px;
+  padding: 60px 0 30px;
   text-align: center;
+  @media (max-width: 1300px) {
+    padding: 20px 0;
+  }
 }
 .campus-body .con-main-wrap .body-right-wrap h5 {
   font-size: 26px;
   color: #00753c;
   margin-bottom: 35px;
+  @media (max-width: 1300px) {
+    font-size: 20px;
+  }
 }
 .down-card-item {
   display: flex;
@@ -32,12 +51,26 @@
   border-bottom: 1px solid #f3f3f3;
   &:hover {
     background: #f3f3f3;
-    color: red;
+    color: #276fda;
+  }
+  @media (max-width: 1300px) {
+    margin: 0;
   }
 }
 .down-card-item .info {
   display: flex;
   align-items: center;
+}
+.down-card-item .info .admiss-label {
+  @media (max-width: 1300px) {
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
 }
 .down-card-item .info span {
   display: block;
@@ -47,23 +80,8 @@
   margin-right: 10px;
   background: #0b7b44;
 }
-.down-card-item .info .admiss-label {
-}
-.page-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 0 100px;
-}
-.page-item .kuang {
-  border: 1px solid #ccc;
-  padding: 4px 10px;
-  color: #dbdbdb;
-  font-size: 13px;
-}
-.page-item .num {
-  padding: 3px 20px;
-  margin: 0 3px;
-  color: #fff;
-  background: #888888;
+.down-card-item .down-img-text {
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }

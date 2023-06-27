@@ -7,7 +7,7 @@
   padding: 170px 0 230px;
   background: linear-gradient(180deg, #006e2f 0%, rgba(0, 110, 47, 0) 100%);
   @media (max-width: 1300px) {
-    padding: 60px 0 80px;
+    padding: 160px 0 80px;
   }
 }
 .home-banner .con-main-wrap {
@@ -17,6 +17,7 @@
   @media (max-width: 1300px) {
     width: 100%;
     flex-direction: column-reverse;
+    max-width: 500px;
     text-align: center;
   }
 }
@@ -28,6 +29,7 @@
   @media (max-width: 1300px) {
     font-size: 16px;
     width: 90%;
+    max-width: 500px;
     margin: 0 auto;
   }
 }
@@ -72,6 +74,7 @@
   @media (max-width: 1300px) {
     font-size: 27px;
     font-weight: 500;
+    color: #007c36;
   }
 }
 .home-introduction .con-main-wrap {
@@ -101,11 +104,12 @@
   @media (max-width: 1300px) {
     font-size: 14px;
     text-align: center;
+    color: #333;
   }
 }
-.home-introduction .con-main-wrap .text-wrap .label {
+.home-introduction .con-main-wrap .text-wrap .text-wrap-label {
   @media (max-width: 1300px) {
-    padding: 0px 16px;
+    padding: 0px;
     margin: 20px 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -146,7 +150,8 @@
   padding: 52px 0;
   border-top: 1px solid #dbdbdb;
   @media (max-width: 1300px) {
-    padding: 10px 20px 10px;
+    padding: 20px 20px 10px;
+    text-align: center;
   }
 }
 
@@ -161,8 +166,11 @@
   margin-top: 10px;
   padding-bottom: 30px;
   border-bottom: 1px solid #dbdbdb;
+
   @media (max-width: 1300px) {
     padding: 0;
+    margin-bottom: 20px;
+    border-bottom: 0px solid #dbdbdb;
     overflow: hidden;
     word-break: break-all;
     -o-text-overflow: ellipsis;
@@ -188,20 +196,25 @@
   justify-content: space-between;
   @media (max-width: 1300px) {
     width: 100%;
-    padding: 10px 16px;
+    padding: 10px 0;
     box-sizing: border-box;
   }
 }
 .home-research .cen-wrap .right-text-wrap h4 {
   font-size: 20px;
   color: #00712f;
+  word-break: break-all;
   @media (max-width: 1300px) {
     font-size: 18px;
+    padding: 10px 16px;
   }
 }
 .home-research .cen-wrap .right-text-wrap .label {
   margin: 20px 0;
+  word-break: break-all;
   @media (max-width: 1300px) {
+    margin: 10px 0;
+    padding: 0 16px;
   }
 }
 .home-research .cen-wrap .right-text-wrap .info-list {
@@ -225,6 +238,7 @@
   text-align: center;
   @media (max-width: 1300px) {
     padding: 20px 16px;
+    color: #00712f;
   }
 }
 /* research下面部分 */
@@ -234,6 +248,7 @@
   justify-content: space-between;
   @media (max-width: 1300px) {
     flex-direction: column;
+    margin-top: 20px;
   }
 }
 .home-research .con-main-wrap .con-bottom-wrap .left-text-wrap {
@@ -312,6 +327,7 @@
   justify-content: space-between;
   gap: 20px;
   @media (max-width: 1300px) {
+    display: none;
   }
 }
 .home-research .con-main-wrap .con-bottom-wrap .img-right-list img {
@@ -379,6 +395,8 @@
   @media (max-width: 1300px) {
     border-radius: 6px;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 .home-articles .con-main-wrap .card-list .card-item:hover {
@@ -387,11 +405,15 @@
 .home-articles .con-main-wrap .card-list .card-item img {
   width: 100%;
   height: 248px;
+  @media (max-width: 1300px) {
+    height: 260px;
+  }
 }
 .home-articles .con-main-wrap .card-list .card-item .text-wrap {
   padding: 20px 20px 40px;
   @media (max-width: 1300px) {
-    padding: 20px 16px;
+    padding: 15px 16px;
+    border-top: 1px solid #999;
   }
 }
 
@@ -405,9 +427,9 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  /* @media (max-width: 1300px) {
-    color: #006e2f;
-  } */
+  @media (max-width: 1300px) {
+    -webkit-line-clamp: 2;
+  }
 }
 
 .home-articles .con-main-wrap .card-list .card-item p {
@@ -421,6 +443,9 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  @media (max-width: 1300px) {
+    margin: 10px;
+  }
 }
 
 /* expert区域 */
@@ -431,6 +456,11 @@
     padding: 0;
   }
 }
+.home-expert .con-main-wrap {
+  @media (max-width: 1300px) {
+    background: #eefff7;
+  }
+}
 .home-expert .con-main-wrap .card-item {
   margin-bottom: 46px;
   display: flex;
@@ -438,12 +468,19 @@
   align-items: flex-start;
   @media (max-width: 1300px) {
     white: 100%;
+    max-width: 500px;
     border-radius: 6px;
-    margin-bottom: 0px;
     flex-direction: column;
-    background: #eefff7;
+    margin: 0 auto;
   }
 }
+.home-expert .con-main-wrap .card-item h3 {
+  @media (max-width: 1300px) {
+    margin: 15px auto 0px;
+    font-size: 18px;
+  }
+}
+
 .home-expert .con-main-wrap .card-item .card-img-text {
   word-break: break-all;
   display: flex;
@@ -550,12 +587,16 @@
 }
 .home-admission .con-main-wrap .title {
   font-size: 40px;
+  @media (max-width: 1300px) {
+    text-align: center;
+  }
 }
 
 .home-admission .con-main-wrap .label {
   font-size: 20px;
   margin: 36px 0;
   line-height: 40px;
+  color: #333;
   @media (max-width: 1300px) {
     margin: 20px 0;
     font-size: 14px;
@@ -566,6 +607,13 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+  }
+}
+.home-admission .con-main-wrap .btn {
+  width: 50px;
+  @media (max-width: 1300px) {
+    margin: 0 auto;
+    text-align: center;
   }
 }
 /* news区域 */
@@ -603,6 +651,8 @@
   width: 786px;
   @media (max-width: 1300px) {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 10px 20px;
     box-sizing: border-box;
   }
@@ -627,7 +677,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   @media (max-width: 1300px) {
-    font-size: 23px;
+    font-size: 20px;
     margin: 20px 0 10px;
     padding: 0 16px;
   }
@@ -645,6 +695,7 @@
   @media (max-width: 1300px) {
     padding: 0 16px;
     font-size: 14px;
+    border-bottom: 1px solid #999;
   }
 }
 
@@ -660,6 +711,10 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #dbdbdb;
   cursor: pointer;
+  &:hover {
+    background: #006e2f;
+    color: #fff;
+  }
   @media (max-width: 1300px) {
     padding: 20px;
     border-top: 0;
@@ -668,6 +723,7 @@
 }
 .home-news .con-main-wrap .text-right-wrap .text-item .label {
   padding: 0;
+  color: #333;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;
@@ -675,6 +731,10 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  &:hover {
+    background: #006e2f;
+    color: #fff;
+  }
 }
 .home-news .con-main-wrap .text-right-wrap .more {
   display: flex;
@@ -718,6 +778,11 @@
   padding: 20px 0;
   border-bottom: 1px solid #f3f3f3;
   font-size: 16px;
+  color: #174794;
+  &:hover {
+    background: #006e2f;
+    color: #fff;
+  }
   @media (max-width: 1300px) {
     padding: 20px 20px;
     overflow: hidden;
@@ -727,7 +792,6 @@
   }
 }
 .home-notice .con-main-wrap .card-item p {
-  color: #174794;
   width: 85%;
   overflow: hidden;
   word-break: break-all;

@@ -1,31 +1,33 @@
 /* 展示历史的区域 */
-.admin-people {
-  width: 1200px;
-  margin: 0 auto 30px;
-}
 
-.progress-list {
-  margin-top: 20px;
-
-  @media (max-width: 1300px) {
-    margin-top: 20px;
-  }
-}
 .progress-list .progress-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  @media (max-width: 1300px) {
+    padding: 20px 10px;
+  }
   border-bottom: 1px solid #f3f3f3;
+  &:hover {
+    background: #f3f3f3;
+  }
 }
 .progress-list .progress-item .label {
   display: flex;
   align-items: center;
   width: 85%;
+  padding: 0;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .progress-list .progress-item .label p {
   width: 90%;
   font-size: 14px;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .progress-list .progress-item .one-span {
   display: block;
@@ -40,95 +42,7 @@
   width: 18%;
   text-align: right;
   font-size: 14px;
-}
-.footer-go-item {
-  cursor: pointer;
-  font-size: 14px;
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-}
-.footer-go-item .text {
-  padding: 3px 10px;
-  border: 1px solid skyblue;
-  margin-left: 5px;
-}
-.footer-go-item .text .hei {
-  font-size: 12px;
-  color: #999;
-}
-.footer-go-item .zhuandao {
-  margin-left: 10px;
-  padding: 4px 10px;
-  background: skyblue;
-}
-.footer-go-item .kong {
-  width: 26px;
-  height: 26px;
-  margin: 0 5px;
-  border: 1px solid #999;
-}
-/* 底部 */
-.footer-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 100px 285.3px 100px 200px;
-  background-color: #000000;
-
   @media (max-width: 1300px) {
-    flex-direction: column;
-    padding: 30px 0;
+    display: none;
   }
-}
-
-.footer-wrap .label {
-  font-size: 12px;
-  color: #8e8c95;
-
-  @media (max-width: 1300px) {
-    width: 80%;
-    margin: 0 auto 30px;
-    text-align: center;
-    font-size: 16px;
-  }
-}
-
-.footer-wrap .card-list {
-  display: flex;
-  align-items: flex-start;
-  box-sizing: border-box;
-
-  @media (max-width: 1300px) {
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
-.footer-wrap .card-list .card-item {
-  margin-left: 170px;
-  color: #fff;
-
-  @media (max-width: 1300px) {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0 0 0;
-  }
-}
-
-.footer-wrap .card-list .card-item .title {
-  font-weight: 700;
-  margin-bottom: 18px;
-
-  @media (max-width: 1300px) {
-    text-align: center;
-  }
-}
-
-.footer-wrap .card-list .card-item .label {
-  font-size: 14px;
-  margin-top: 14px;
 }

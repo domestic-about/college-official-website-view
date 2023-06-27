@@ -2,6 +2,13 @@
   font-size: 14px;
   color: #0b7b44;
 }
+.global-body .con-main-wrap .body-wrap .text-right-wrap {
+  padding: 30px 0 300px 40px;
+  @media (max-width: 1300px) {
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list {
   margin: 40px 0 100px;
 }
@@ -11,6 +18,10 @@
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #dbdbdb;
+  &:hover {
+    background: #f3f3f3;
+    color: #276fda;
+  }
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item .info {
   display: flex;
@@ -27,29 +38,7 @@
 
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item .down-img-text {
   font-size: 14px;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .page-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .page-item .kuang {
-  border: 1px solid #ccc;
-  padding: 4px 10px;
-  color: #dbdbdb;
-  font-size: 13px;
-}
-.global-body .con-main-wrap .body-wrap .text-right-wrap .page-item .num {
-  padding: 3px 20px;
-  margin: 0 3px;
-  color: #fff;
-  background: #888888;
-}
-/* 底部的第几页 */
-#demo-laypage-pn-show {
-  width: 180px;
-  margin: 0 auto;
-}
-.layui-breadcrumb {
-  margin: 30px 0;
+  @media (max-width: 1300px) {
+    display: flex;
+  }
 }

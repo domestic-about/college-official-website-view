@@ -6,6 +6,9 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 300px;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 
 /* 姓名 */
@@ -16,6 +19,9 @@
   color: #007e37;
   font-size: 18px;
   font-weight: 700;
+  @media (max-width: 1300px) {
+    text-align: center;
+  }
 }
 .con-wrap .text-wrap {
   padding: 20px;
@@ -23,5 +29,7 @@
   flex-wrap: wrap;
 }
 .con-wrap .text-wrap a {
-  margin: 10px 20px;
+  margin: 10px 30px;
+  width: 150px;
+  font-size: 18px;
 }

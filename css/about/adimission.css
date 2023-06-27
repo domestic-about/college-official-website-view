@@ -1,27 +1,35 @@
-/* 展示领导的区域 */
-.admin-people {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .admin-people .admin-card-list {
 }
 .admin-people .admin-card-list .admin-card-item {
   padding: 30px 130px 20px 130px;
   display: flex;
   border-top: 1px solid #dbdbdb;
+  &:hover {
+    background: #dbdbdb;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
 }
+
 .admin-people .admin-card-list .admin-card-item .left-img-wrap {
   width: 81px;
   height: 113px;
+  @media (max-width: 1300px) {
+    margin: 0 auto;
+  }
 }
 .admin-people .admin-card-list .admin-card-item .text-right-wrap {
   margin-left: 30px;
+  @media (max-width: 1300px) {
+    margin: 30px 0 0 0;
+  }
 }
 .admin-people .admin-card-list .admin-card-item .text-right-wrap .text-name {
   font-size: 20px;
-  color: #b29873;
   font-weight: 600;
+  color: #006e2f;
 }
 .admin-people .admin-card-list .admin-card-item .text-right-wrap .admin-label {
   font-size: 14px;
