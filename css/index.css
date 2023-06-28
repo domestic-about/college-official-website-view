@@ -7,7 +7,7 @@
   padding: 170px 0 230px;
   background: linear-gradient(180deg, #006e2f 0%, rgba(0, 110, 47, 0) 100%);
   @media (max-width: 1300px) {
-    padding: 160px 0 80px;
+    padding: 130px 0 80px;
   }
 }
 .home-banner .con-main-wrap {

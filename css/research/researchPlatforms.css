@@ -1,7 +1,7 @@
 /* 内容区域左边导航 右边切换内容 */
 
 .global-body .layui-nav-item:nth-child(5) a {
-  font-size: 14px;
+  font-size: 20px;
   color: #0b7b44;
 }
 .layui-breadcrumb {
