@@ -10,7 +10,10 @@
   }
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list {
-  margin: 40px 0 100px;
+  margin: 10px 0 100px;
+  @media (max-width: 1300px) {
+    margin: 20px 0;
+  }
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item {
   display: flex;
@@ -39,6 +42,6 @@
 .global-body .con-main-wrap .body-wrap .text-right-wrap .down-card-list .down-card-item .down-img-text {
   font-size: 14px;
   @media (max-width: 1300px) {
-    display: flex;
+    display: none;
   }
 }

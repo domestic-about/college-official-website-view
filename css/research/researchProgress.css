@@ -4,6 +4,16 @@
   color: #0b7b44;
 }
 .layui-breadcrumb {
-  margin: 0 0 30px;
+  margin: 0 0 0 20px;
   display: block;
+  @media (max-width: 1300px) {
+    padding: 5px 0 0 0;
+  }
+}
+.global-news-info-time {
+  @media (max-width: 1300px) {
+    border-top: 1px solid #dbdbdb;
+
+    border-bottom: 0;
+  }
 }

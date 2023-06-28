@@ -10,10 +10,14 @@
 }
 .layui-table th {
   background: #f3f3f3;
+  color: #333;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px !important;
 }
 .layui-table td {
   text-align: center;
-  color: #888888;
+  font-weight: 500;
 }
 .layui-table td:nth-child(4) {
   text-align: left;

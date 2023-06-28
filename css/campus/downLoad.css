@@ -5,7 +5,7 @@
   background: url("../../img/adimissions/banner.png");
   background-size: 100% 100%;
   @media (max-width: 1300px) {
-    padding: 130px 0;
+    padding: 230px 0 130px;
   }
 }
 .down-banner h4 {
@@ -38,6 +38,7 @@
   margin-bottom: 35px;
   @media (max-width: 1300px) {
     font-size: 20px;
+    margin: 0 0 5px;
   }
 }
 .down-card-item {
@@ -83,5 +84,11 @@
 .down-card-item .down-img-text {
   @media (max-width: 1300px) {
     display: none;
+  }
+}
+
+#demo-laypage-pn-show {
+  @media (max-width: 1300px) {
+    margin-top: 20px;
   }
 }

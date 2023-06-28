@@ -2,6 +2,9 @@
 
 .campus-banner .bg-color {
   background-color: #eea923;
+  @media (max-width: 1300px) {
+    background: #fff;
+  }
 }
 .campus-info-list .img-list .img-item .label {
   background-color: #eea923;

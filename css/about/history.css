@@ -27,7 +27,7 @@
 }
 .time {
   @media (max-width: 1300px) {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 }
 .item-coll {

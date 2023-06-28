@@ -11,20 +11,26 @@
   border-radius: 50%;
   background: #000;
   margin-right: 10px;
+  @media (max-width: 1300px) {
+    background: #007e37;
+  }
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .text-title {
   display: flex;
   align-items: center;
   font-weight: 700;
   margin: 40px 0 10px;
+  @media (max-width: 1300px) {
+  }
+}
+.global-body .con-main-wrap .body-wrap .text-right-wrap .text-title .pro-title {
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .text-title span {
   width: 5px;
   height: 5px;
-  @media (max-width: 1300px) {
-    width: 2px;
-    height: 2px;
-  }
 }
 .global-body .con-main-wrap .body-wrap .text-right-wrap .admiss-label {
   display: flex;

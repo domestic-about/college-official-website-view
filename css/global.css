@@ -58,6 +58,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 3;
   padding: 10px 24px;
   background: #fafafa;
   display: flex;
@@ -183,6 +184,21 @@ h3 {
   font-size: 40px;
   text-align: center;
 }
+/* 新闻页面展示内容的地方 */
+.new-body-news {
+  width: 1200px;
+  margin: 0 auto;
+  @media (max-width: 1300px) {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.new-body-news h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #007c36;
+}
 
 /* news页面结束 */
 
@@ -234,55 +250,6 @@ h3 {
     margin-top: 20px;
   }
 }
-.research-right-wrap .progress-list .progress-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-top: 1px solid #f3f3f3;
-  &:hover {
-    background: #f3f3f3;
-    border-top: 1px solid #007e37;
-  }
-}
-.research-right-wrap .progress-list .progress-item .label {
-  display: flex;
-  align-items: center;
-  width: 85%;
-  @media (max-width: 1300px) {
-    width: 100%;
-  }
-}
-.research-right-wrap .progress-list .progress-item .label p {
-  width: 90%;
-  @media (max-width: 1300px) {
-    width: 100%;
-    overflow: hidden;
-    word-break: break-all;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-  }
-}
-.research-right-wrap .progress-list .progress-item .one-span {
-  display: block;
-  width: 7px;
-  height: 7px;
-  margin-right: 20px;
-  border-radius: 50%;
-  background: #007e37;
-}
-.research-right-wrap .progress-list .progress-item .two-span {
-  color: #999999;
-  width: 18%;
-  text-align: right;
-  font-size: 14px;
-  @media (max-width: 1300px) {
-    display: none;
-  }
-}
 /* research页面结束 */
 /* about页面的样式 */
 .admin-people {
@@ -307,7 +274,8 @@ h3 {
   padding: 321px 0 229px;
   @media (max-width: 1300px) {
     width: 100%;
-    padding: 131px 0 139px;
+    padding: 131px 0 39px;
+    background-color: #fff;
   }
 }
 .campus-banner .bg-color h4 {
@@ -318,6 +286,8 @@ h3 {
   @media (max-width: 1300px) {
     text-align: center;
     margin-right: 0;
+    color: #006e2f;
+    font-size: 30px;
   }
 }
 .campus-banner img {
@@ -333,6 +303,7 @@ h3 {
   @media (max-width: 1300px) {
     width: 100%;
     padding: 10px 20px;
+    margin: 0;
     box-sizing: border-box;
   }
 }
@@ -353,7 +324,7 @@ h3 {
   justify-content: space-between;
   gap: 25px 0;
   @media (max-width: 1300px) {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 .campus-info-list .img-list .img-item {
@@ -399,7 +370,7 @@ h3 {
   background: url("../img/adimissions/banner.png");
   background-size: 100% 100%;
   @media (max-width: 1300px) {
-    padding: 150px 20px 150px;
+    padding: 250px 20px 150px;
   }
 }
 .ships-banner h4 {
@@ -465,6 +436,9 @@ h3 {
   color: #0b7b44;
   margin: 30px 0 18px;
   font-weight: 700;
+  @media (max-width: 1300px) {
+    margin: 10px 0 5px;
+  }
 }
 
 /* 公共research adimissions左边导航 */
@@ -545,11 +519,68 @@ h3 {
   font-size: 22px;
   color: #00712f;
 }
-
+/* 所有页面通用的表格样式 左边绿色的圆 右边是时间 */
+.global-news-info-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #dbdbdb;
+  &:hover {
+    background: #f3f3f3;
+  }
+  @media (max-width: 1300px) {
+    padding: 10px 20px;
+  }
+}
+.global-news-info-time .label {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+.global-news-info-time .label p {
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  width: 90%;
+  @media (max-width: 1300px) {
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}
+.global-news-info-time .one-span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: #007e37;
+}
+.global-news-info-time .two-span {
+  color: #999999;
+  width: 100px;
+  text-align: left;
+  font-size: 14px;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
 /* layui里面的分页 */
 #demo-laypage-all {
   width: 800px;
   margin: 40px auto 20px;
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }
 
 /* layui里面的 面包屑 */
