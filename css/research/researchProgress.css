@@ -17,3 +17,9 @@
     border-bottom: 0;
   }
 }
+#demo-laypage-pn-show {
+  display: none;
+  @media (max-width: 1300px) {
+    display: block;
+  }
+}

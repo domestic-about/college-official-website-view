@@ -184,6 +184,8 @@
             </div>
             <!-- 分页 -->
             <div id="demo-laypage-all"></div>
+            <!-- 手机端的 -->
+            <div id="demo-laypage-pn-show"></div>
           </div>
         </div>
     </section>
@@ -271,6 +273,26 @@
         layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'], // 功能布局
         jump: function (obj) {
           console.log(obj);
+        }
+      });
+    });
+    // 手机端
+    layui.use(function () {
+      var laypage = layui.laypage;
+      var layer = layui.layer;
+      // 只显示上一页、下一页、当前页
+      laypage.render({
+        elem: 'demo-laypage-pn-show',
+        count: 50,
+        groups: 1,
+        first: false,
+        last: false,
+        layout: ['prev', 'page', 'next'],
+        jump: function (obj, first) {
+          // 首次不执行
+          if (!first) {
+            layer.msg('第 ' + obj.curr + ' 页');
+          }
         }
       });
     });

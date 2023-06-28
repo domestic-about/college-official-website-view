@@ -14,7 +14,12 @@
 .global-news-info-time {
   @media (max-width: 1300px) {
     border-top: 1px solid #dbdbdb;
-
     border-bottom: 0;
+  }
+}
+#demo-laypage-pn-show {
+  display: none;
+  @media (max-width: 1300px) {
+    display: block;
   }
 }
