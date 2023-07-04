@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="../../layui/css/layui.css" rel="stylesheet">
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/about/careere.css">
 </head>
@@ -14,31 +15,169 @@
   <div class="app">
     <!-- nav导航区域 -->
     <section class="header-nav">
-      <img class="logo" src="../../img/home/logo.png" alt="">
-      <ul>
-        <li><a href="#">News</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Research</li>
-        <li><a href="#">Global</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">Campus Life</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Admission</li>
-        <li><a href="#">People</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">About us</a><img src="../../img/home/jiantou.png" alt=""></li>
+      <a href="../index.html"> <img class="logo" src="../../img/home/logo.png" alt=""></a>
+      <ul class="layui-nav layui-bg-gray">
+        <li class="layui-nav-item ">
+          <a href="../news/news.html">News</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../news/news.html">Latest News</a></dd>
+            <dd><a href="../news/notice.html">Latest Notice</a></dd>
+            <dd><a href="../news/upcoming.html">Upcoming Events</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../research/research.html">Research</a>
+        </li>
+        <li class="layui-nav-item"><a href="../global.html">Global</a>
+        </li>
+        <li class="layui-nav-item"><a href="../campus/programmes.html">Campus Life</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../campus/programmes.html">Student Programmes</a></dd>
+            <dd><a href="../campus/sport.html">Sporting Events</a></dd>
+            <dd><a href="../campus/downLoad.html">Download</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../admissions/scholarShips/scholarShip.html">Admission</a>
+        </li>
+        <li class="layui-nav-item"><a href="../people/faculty.html">People</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../people/faculty.html">Faculty</a></dd>
+            <dd><a href="../people/department.html">Department Staff</a></dd>
+            <dd><a href="../people/postdoctoral.html">Postdoctoral Fellows</a></dd>
+            <dd><a href="../people/researchCenter.html">Lab staff and Researchers</a></dd>
+            <dd><a href="../people/directory.html">Directory Search</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-this"><a href="../about/administrators.html">About us</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../about/history.html">History</a></dd>
+            <dd><a href="../about/media.html">Media</a></dd>
+            <dd><a href="../about/administrators.html">Administration</a></dd>
+            <dd><a href="../about/careere.html">Careers</a></dd>
+            <dd><a href="../about/contact.html">Contact Us</a></dd>
+          </dl>
+        </li>
       </ul>
     </section>
-    <!-- banner区域 -->
-    <section class="down-banner">
-      <img src="../../img/adimissions/banner.png" alt="">
+    <!-- 这是banner -->
+    <section class="ships-banner">
+      <h4>Careers</h4>
     </section>
     <!-- 展示的内容区域 -->
     <section class="admin-people">
-      <div class="admin-title">
-        <h5>HISTORY
+      <div class="global-people-about-title">
+        <h5>Careers
         </h5>
-        <div class="admin-nav-title">
-          <a href="#">HOME</a> > <a href="#">ABOUT</a> > <a href="#">HISTORY
-          </a>
-        </div>
+        <span class="layui-breadcrumb">
+          <a href="../index.html">Home</a>
+          <a href="./administrators.html">About</a>
+          <a href="./careere.html"> Careers</a>
+        </span>
       </div>
+      <!-- 工作信息 -->
+      <div class="progress-list">
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Muyuan Group 2023 Global Campus Recruitment Seminar2022</a></p>
+          </div>
+          <span class="two-span">2022-10-24</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Beijing Sentaier Technology Co., Ltd. presentation</a></p>
+          </div>
+          <span class="two-span">2022-09-21</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Twins (Group) Co., Ltd. recruitment presentation</a></p>
+          </div>
+          <span class="two-span">2022-09-19</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Guilin Liyuan Group Campus Recruitment</a></p>
+          </div>
+          <span class="two-span">2022-09-19</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Dabeinong Group Campus Presentation</a></p>
+          </div>
+          <span class="two-span">2022-06-23</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Beijing Shounong Future Biotechnology Co., Ltd. Recruitment Brochure</a></p>
+          </div>
+          <span class="two-span">2022-06-22</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">The He Chunjiang Research Group of the School of Biomedicine and Health recruits 1 research
+                assistant</a></p>
+          </div>
+          <span class="two-span">2022-06-19</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Announcement of the second batch of talent introduction of public institutions in Shishou
+                City in 2022</a></p>
+          </div>
+          <span class="two-span">2022-06-15</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">2022 Bingtuan's postgraduate special intern recruitment announcement for Xinjiang Xingye
+                Program</a></p>
+          </div>
+          <span class="two-span">2022-06-10</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Announcement of Jingzhou Vocational and Technical College's recruitment of staff for the
+                society in 2022</a></p>
+          </div>
+          <span class="two-span">2022-06-07</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">School Recruitment of Dekang Group—Graduation Season & Internship Season Hot Recruitment
+                Session</a></p>
+          </div>
+          <span class="two-span">2022-06-07</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">In 2022, Yueyang City Institutions' Recruitment of Talents from All Over the World" Changsha
+                Special Recruitment Announcement</a></p>
+          </div>
+          <span class="two-span">2022-06-07</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Yisheng shares campus recruitment</a></p>
+          </div>
+          <span class="two-span">2022-06-02</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Rizhao Danfus Feed Co., Ltd. campus recruitment</a></p>
+          </div>
+          <span class="two-span">2022-05-31</span>
+        </div>
+        <div class="global-news-info-time">
+          <div class="label"> <span class="one-span"></span>
+            <p><a href="#">Announcement of Xinjiang Institute of Technology's open recruitment of teachers and
+                counselors for the public in the spring of 2022</a></p>
+          </div>
+          <span class="two-span">2022-05-30</span>
+        </div>
+
+      </div>
+      <!-- 分页 -->
+      <div id="demo-laypage-all"></div>
     </section>
 
     <!-- 底部区域 -->
@@ -112,8 +251,28 @@
           </div>
         </div>
       </div>
+      <script src="../../layui//layui.js"></script>
+      <script>
+        layui.use(function () {
+          var laypage = layui.laypage;
+          // 完整显示
+          laypage.render({
+            elem: 'demo-laypage-all', // 元素 id
+            count: 100, // 数据总数
+            layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'], // 功能布局
+            jump: function (obj) {
+              console.log(obj);
+            }
+          });
+        });
+      </script>
     </section>
   </div>
 </body>
+<style>
+  ed {
+    flex-wrap: wrap;
+  }
+</style>
 
 </html>

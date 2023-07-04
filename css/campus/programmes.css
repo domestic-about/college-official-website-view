@@ -1,94 +1,29 @@
-/* 顶部导航区域 */
-.header-nav {
-  padding: 10px 24px;
-  background: #fcfdf7;
-  display: flex;
-  justify-content: space-between;
-}
-.header-nav ul {
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-}
-.header-nav ul li {
-  margin-left: 50px;
-  cursor: pointer;
-}
-.header-nav ul li a {
-  margin-right: 10px;
-}
-/* banner区域 */
-.campus-banner {
-  display: flex;
-}
-.campus-banner .bg-color {
-  width: 40%;
-  background-color: #006e2f;
-  padding: 221px 0 229px;
-}
-.campus-banner .bg-color h4 {
-  font-size: 30px;
-  color: #fff;
-  text-align: right;
-  margin-right: 40px;
-}
-.campus-banner img {
-  width: 60%;
-}
-
-/* 6个图片加顶部文字介绍区域 */
-.campus-info-list {
-  width: 1200px;
-  margin: 30px auto 50px;
-}
-.campus-info-list .label {
-  color: #006e2f;
-  font-size: 38px;
-  text-align: center;
-  font-weight: 700;
-}
-.campus-info-list .img-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 30px;
-  justify-content: space-between;
-  gap: 25px 0;
-}
-.campus-info-list .img-list .img-item {
-  width: 32%;
-  position: relative;
-}
-.campus-info-list .img-list .img-item img {
-  width: 100%;
-
-  &:hover {
-    filter: brightness(50%);
-  }
-}
-.campus-info-list .img-list .img-item p {
-  position: absolute;
-  bottom: 0px;
-  padding: 10px 10px 0 10px;
-  background-color: #006e2f;
-  color: #fff;
-  overflow: hidden;
-  word-break: break-all;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
 /* 左边图片右边文字介绍 */
 .campus-card {
   margin: 26px 0 50px;
+}
+.campus-card .con-main-wrap {
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 }
 .campus-card .card-list .label {
   font-size: 24px;
   font-weight: 700;
   color: #006e2f;
   margin: 20px 0 36px;
+  @media (max-width: 1300px) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
 }
 .campus-card .card-list .card-item {
   display: flex;
@@ -100,79 +35,24 @@
   flex-direction: row-reverse;
 }
 .campus-card .card-list:nth-child(2) .card-item :nth-child(2) {
-  padding: 30px 5px 0 0;
+  padding: 0 5px 0 0;
 }
 .campus-card .card-list .card-item img {
   width: 580px;
   height: 300px;
+  @media (max-width: 1300px) {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
-.campus-card .card-list .card-item .text-label {
+.campus-card .card-list .card-item .label {
   width: 600px;
   box-sizing: border-box;
-  padding: 30px 0 0 30px;
-  color: #1a1c19;
+  padding: 0 0 0 30px;
   font-size: 18px;
-}
-
-/* 底部 */
-.footer-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 100px 285.3px 100px 200px;
-  background-color: #000000;
-
+  color: #333;
   @media (max-width: 1300px) {
-    flex-direction: column;
-    padding: 30px 0;
+    display: none;
   }
-}
-
-.footer-wrap .label {
-  font-size: 12px;
-  color: #8e8c95;
-
-  @media (max-width: 1300px) {
-    width: 80%;
-    margin: 0 auto 30px;
-    text-align: center;
-    font-size: 16px;
-  }
-}
-
-.footer-wrap .card-list {
-  display: flex;
-  align-items: flex-start;
-  box-sizing: border-box;
-
-  @media (max-width: 1300px) {
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
-.footer-wrap .card-list .card-item {
-  margin-left: 170px;
-  color: #fff;
-
-  @media (max-width: 1300px) {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-  }
-}
-
-.footer-wrap .card-list .card-item .title {
-  font-weight: 700;
-  margin-bottom: 18px;
-
-  @media (max-width: 1300px) {
-    text-align: center;
-  }
-}
-
-.footer-wrap .card-list .card-item .label {
-  font-size: 14px;
-  margin-top: 14px;
 }

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=\, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../../layui/css/layui.css">
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/campus/downLoad.css">
 </head>
@@ -14,31 +15,57 @@
   <div class="app">
     <!-- nav导航区域 -->
     <section class="header-nav">
-      <img class="logo" src="../../img/home/logo.png" alt="">
-      <ul>
-        <li><a href="#">News</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Research</li>
-        <li><a href="#">Global</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">Campus Life</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Admission</li>
-        <li><a href="#">People</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">About us</a><img src="../../img/home/jiantou.png" alt=""></li>
+      <a href="../index.html"> <img class="logo" src="../../img/home/logo.png" alt=""></a>
+      <ul class="layui-nav layui-bg-gray">
+        <li class="layui-nav-item ">
+          <a href="../news/news.html">News</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../news/news.html">Latest News</a></dd>
+            <dd><a href="../news/notice.html">Latest Notice</a></dd>
+            <dd><a href="../news/upcoming.html">Upcoming Events</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../research/research.html">Research</a>
+        </li>
+        <li class="layui-nav-item"><a href="../global.html">Global</a>
+        </li>
+        <li class="layui-nav-item layui-this"><a href="../campus/programmes.html">Campus Life</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../campus/programmes.html">Student Programmes</a></dd>
+            <dd><a href="../campus/sport.html">Sporting Events</a></dd>
+            <dd><a href="../campus/downLoad.html">Download</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../admissions/scholarShips/scholarShip.html">Admission</a>
+        </li>
+        <li class="layui-nav-item"><a href="../people/faculty.html">People</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../people/faculty.html">Faculty</a></dd>
+            <dd><a href="../people/department.html">Department Staff</a></dd>
+            <dd><a href="../people/postdoctoral.html">Postdoctoral Fellows</a></dd>
+            <dd><a href="../people/researchCenter.html">Lab staff and Researchers</a></dd>
+            <dd><a href="../people/directory.html">Directory Search</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="../about/administrators.html">About us</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../about/history.html">History</a></dd>
+            <dd><a href="../about/media.html">Media</a></dd>
+            <dd><a href="../about/administrators.html">Administration</a></dd>
+            <dd><a href="../about/careere.html">Careers</a></dd>
+            <dd><a href="../about/contact.html">Contact Us</a></dd>
+          </dl>
+        </li>
       </ul>
     </section>
     <!-- banner区域 -->
     <section class="down-banner">
-      <img src="../../img/adimissions/banner.png" alt="">
+      <h4>DownLoad</h4>
     </section>
     <div class="campus-body">
       <div class="con-main-wrap">
-        <!-- <div class="nav-left-wrap">
-          <h3>CAMPUS-LIFE</h3>
-          <ul>
-            <li>STUDENT PROGRAMMES</li>
-            <li>SPORTING EVENTS</li>
-            <li>DOWNLOAD</li>
-          </ul>
-        </div> -->
         <div class="body-right-wrap">
           <h5>DOWNLOAD</h5>
           <div class="down-card-item">
@@ -121,11 +148,8 @@
               Download
             </div>
           </div>
-          <div class="page-item">
-            <div class="kuang">Previous</div>
-            <div class="num">1</div>
-            <div class="kuang">Next</div>
-          </div>
+          <!-- 分页 -->
+          <div id="demo-laypage-pn-show"></div>
         </div>
       </div>
     </div>
@@ -202,7 +226,31 @@
       </div>
     </section>
   </div>
+  <script src="../../layui//layui.js"></script>
+  <script>
+    layui.use(function () {
+      var laypage = layui.laypage;
+      var layer = layui.layer;
+      // 只显示上一页、下一页、当前页
+      laypage.render({
+        elem: 'demo-laypage-pn-show',
+        count: 50,
+        groups: 1,
+        first: false,
+        last: false,
+        layout: ['prev', 'page', 'next'],
+        jump: function (obj, first) {
+          // 首次不执行
+          if (!first) {
+            layer.msg('第 ' + obj.curr + ' 页');
+          }
+        }
+      });
+    });
+  </script>
+
 </body>
+
 <style>
 
 </style>

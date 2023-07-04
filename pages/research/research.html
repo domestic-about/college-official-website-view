@@ -16,15 +16,49 @@
   <div class="app">
     <!-- nav导航区域 -->
     <section class="header-nav">
-      <img src="../../img/home/logo.png" alt="">
-      <ul>
-        <li><a href="#">News</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Research</a></li>
-        <li><a href="#">Global</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">Campus Life</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Admissions</li>
-        <li><a href="#">People</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">About us</a><img src="../../img/home/jiantou.png" alt=""></li>
+      <a href="../index.html"> <img class="logo" src="../../img/home/logo.png" alt=""></a>
+      <ul class="layui-nav layui-bg-gray">
+        <li class="layui-nav-item ">
+          <a href="../news/news.html">News</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../news/news.html">Latest News</a></dd>
+            <dd><a href="../news/notice.html">Latest Notice</a></dd>
+            <dd><a href="../news/upcoming.html">Upcoming Events</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-this">
+          <a href="../research/research.html">Research</a>
+        </li>
+        <li class="layui-nav-item"><a href="../global.html">Global</a>
+        </li>
+        <li class="layui-nav-item"><a href="../campus/programmes.html">Campus Life</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../campus/programmes.html">Student Programmes</a></dd>
+            <dd><a href="../campus/sport.html">Sporting Events</a></dd>
+            <dd><a href="../campus/downLoad.html">Download</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../admissions/scholarShips/scholarShip.html">Admission</a>
+        </li>
+        <li class="layui-nav-item"><a href="../people/faculty.html">People</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../people/faculty.html">Faculty</a></dd>
+            <dd><a href="../people/department.html">Department Staff</a></dd>
+            <dd><a href="../people/postdoctoral.html">Postdoctoral Fellows</a></dd>
+            <dd><a href="../people/researchCenter.html">Lab staff and Researchers</a></dd>
+            <dd><a href="../people/directory.html">Directory Search</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="../about/administrators.html">About us</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../about/history.html">History</a></dd>
+            <dd><a href="../about/media.html">Media</a></dd>
+            <dd><a href="../about/administrators.html">Administration</a></dd>
+            <dd><a href="../about/careere.html">Careers</a></dd>
+            <dd><a href="../about/contact.html">Contact Us</a></dd>
+          </dl>
+        </li>
       </ul>
     </section>
     <!-- 这是banner -->
@@ -37,36 +71,22 @@
       </div>
     </section>
     <!-- 内容区域 左边导航右边内容展示 -->
-    <section class="research-body">
+    <section class="global-body">
       <div class="con-main-wrap">
-        <div class="left-wrap">
-          <h3>Research
-          </h3>
-          <div class="nav-title">
-            Introduction
-          </div>
-          <div class="nav-title">
-            Research Areas
-          </div>
-          <div class="nav-title">
-            Research Progress
-          </div>
-          <div class="nav-title">
-            Research Platforms
-          </div>
-        </div>
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item"><a href="./research.html">RESEARCH</a></li>
+          <li class="layui-nav-item"><a href="./research.html">Introduction</a></li>
+          <li class="layui-nav-item"><a href="./researchAreas.html">Research Areas</a></li>
+          <li class="layui-nav-item"><a href="./researchProgress.html">Research Progress</a></li>
+          <li class="layui-nav-item"><a href="./researchPlatforms.html">Research Platforms</a></li>
+        </ul>
         <!-- 右边展示内容的区域 -->
-        <div class="right-wrap">
+        <div class="research-right-wrap">
           <span class="layui-breadcrumb">
-            <a href="">home</a>
-            <a href="">research</a>
-            <a><cite>Research Introduction</cite></a>
+            <a href="../index.html">Home</a>
+            <a href="./research.html">Research</a>
+            <a href="./research.html">Research Introduction</a>
           </span>
-          <!-- <div class="title">
-            <span class="one-span">home / research /</span>
-            <span class="two-span"> Research Introduction
-            </span>
-          </div> -->
           <h3>Research Introduction</h3>
           <p class="label">
             The college currently has 6 national-level research institutions, 1 collaborative innovation center, 3
@@ -133,10 +153,6 @@
             Technology Research Center for Improvement of Local Pig Breeds in Hubei Province, the Technical Innovation
             Center for Livestock Seed Industry of Hubei Province, the Feed Quality Supervision and Inspection Station of
             Hubei Province, and the Level 3 Laboratory of Animal Biosafety at Huazhong Agricultural University.
-
-
-
-
           </p>
           <p class="label"></p>
         </div>

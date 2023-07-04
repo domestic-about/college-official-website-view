@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../../layui/css/layui.css">
   <link rel="stylesheet" href="../../css/campus/programmes.css">
   <link rel="stylesheet" href="../../css/global.css">
 </head>
@@ -14,17 +15,52 @@
   <div class="app">
     <!-- nav导航区域 -->
     <section class="header-nav">
-      <img class="logo" src="../../img/home/logo.png" alt="">
-      <ul>
-        <li><a href="#">News</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li>Research</li>
-        <li><a href="#">Global</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">Campus Life</a><img src="../img/home/jiantou.png" alt=""></li>
-        <li>Admission</li>
-        <li><a href="#">People</a><img src="../../img/home/jiantou.png" alt=""></li>
-        <li><a href="#">About us</a><img src="../../img/home/jiantou.png" alt=""></li>
+      <a href="../index.html"> <img class="logo" src="../../img/home/logo.png" alt=""></a>
+      <ul class="layui-nav layui-bg-gray">
+        <li class="layui-nav-item ">
+          <a href="../news/news.html">News</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../news/news.html">Latest News</a></dd>
+            <dd><a href="../news/notice.html">Latest Notice</a></dd>
+            <dd><a href="../news/upcoming.html">Upcoming Events</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../research/research.html">Research</a>
+        </li>
+        <li class="layui-nav-item"><a href="../global.html">Global</a>
+        </li>
+        <li class="layui-nav-item layui-this"><a href="../campus/programmes.html">Campus Life</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../campus/programmes.html">Student Programmes</a></dd>
+            <dd><a href="../campus/sport.html">Sporting Events</a></dd>
+            <dd><a href="../campus/downLoad.html">Download</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../admissions/scholarShips/scholarShip.html">Admission</a>
+        </li>
+        <li class="layui-nav-item"><a href="../people/faculty.html">People</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../people/faculty.html">Faculty</a></dd>
+            <dd><a href="../people/department.html">Department Staff</a></dd>
+            <dd><a href="../people/postdoctoral.html">Postdoctoral Fellows</a></dd>
+            <dd><a href="../people/researchCenter.html">Lab staff and Researchers</a></dd>
+            <dd><a href="../people/directory.html">Directory Search</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="../about/administrators.html">About us</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../about/history.html">History</a></dd>
+            <dd><a href="../about/media.html">Media</a></dd>
+            <dd><a href="../about/administrators.html">Administration</a></dd>
+            <dd><a href="../about/careere.html">Careers</a></dd>
+            <dd><a href="../about/contact.html">Contact Us</a></dd>
+          </dl>
+        </li>
       </ul>
     </section>
+
     <!-- banner区域 -->
     <section class="campus-banner">
       <div class="bg-color">
@@ -38,37 +74,51 @@
       <div class="img-list">
         <div class="img-item">
           <img src="../../img/campus/list2.png" alt="">
-          <p>The Chorus of Animal Science and Veterinary Medicine won the first prize in the "May Flower Sea" College
-            Student Choral Competition</p>
+          <div class="label">
+            <p>The Chorus of Animal Science and Veterinary Medicine won the first prize in the "May Flower Sea" College
+              Student Choral Competition</p>
+          </div>
         </div>
         <div class="img-item">
           <img src="../../img/campus/list5.png" alt="">
-          <p>Learn from Lei Feng, Foster a New Spirit": The Sunshine Volunteer Service Team of the College of Animal
-            Science and Veterinary Medicine conducted the Lei Feng Month Volunteer Activities at Mingxing Kindergarten.
-          </p>
+          <div class="label">
+            <p>Learn from Lei Feng, Foster a New Spirit": The Sunshine Volunteer Service Team of the College of Animal
+              Science and Veterinary Medicine conducted the Lei Feng Month Volunteer Activities at Mingxing
+              Kindergarten.
+            </p>
+          </div>
         </div>
         <div class="img-item">
           <img src="../../img/campus/list3.png" alt="">
-          <p>The opening match of the "Lion Mountain Cup" basketball tournament took place at the basketball court of
-            the West Sports Center, with the College of Animal Science and Veterinary Medicine competing against the
-            College of Fisheries.</p>
+          <div class="label">
+            <p>The opening match of the "Lion Mountain Cup" basketball tournament took place at the basketball court of
+              the West Sports Center, with the College of Animal Science and Veterinary Medicine competing against the
+              College of Fisheries.</p>
+          </div>
         </div>
         <div class="img-item">
           <img src="../../img/campus/list4.png" alt="">
-          <p>The Sunshine Volunteer Service Team of the College of Animal Science and Veterinary Medicine carried out
-            the "Lei Feng Month" volunteer activities at Star Kindergarten.</p>
+          <div class="label">
+            <p>The Sunshine Volunteer Service Team of the College of Animal Science and Veterinary Medicine carried out
+              the "Lei Feng Month" volunteer activities at Star Kindergarten.</p>
+          </div>
         </div>
         <div class="img-item">
           <img src="../../img/campus/list1.png" alt="">
-          <p>The College of Animal Science and Veterinary Medicine held the 8th "Unleash Your Creativity - Animal
-            Science and Veterinary Medicine Mascot" Design Competition.
-          </p>
+          <div class="label">
+            <p>The College of Animal Science and Veterinary Medicine held the 8th "Unleash Your Creativity - Animal
+              Science and Veterinary Medicine Mascot" Design Competition.
+            </p>
+          </div>
         </div>
         <div class="img-item">
           <img src="../../img/campus/list6.png" alt="">
-          <p>Spreading Cuteness with Love, Handmade Crafts for Animal Care: The Sunshine Volunteer Service Team of the
-            College of Animal Science and Veterinary Medicine organized a charity sale to support and care for animals.
-          </p>
+          <div class="label">
+            <p>Spreading Cuteness with Love, Handmade Crafts for Animal Care: The Sunshine Volunteer Service Team of the
+              College of Animal Science and Veterinary Medicine organized a charity sale to support and care for
+              animals.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -76,51 +126,51 @@
     <section class="campus-card">
       <div class="con-main-wrap">
         <div class="card-list">
-          <div class="label">
+          <p class="label">
             The College of Animal Science and Veterinary Medicine achieved excellent results in the 2022 "Lion Mountain
             Cup" Freshman Table Tennis Tournament
-          </div>
+          </p>
           <div class="card-item">
             <img src="../../img/campus/list8.png" alt="">
-            <div class="text-label">
+            <p class="label">
               On October 8th, the 2022 "Lion Mountain Cup" Freshman Table Tennis Tournament of Huazhong Agricultural
               University was successfully held at the East Sports Hall. The tournament was jointly organized by the
               Communist Youth League Committee of Huazhong Agricultural University, the Publicity Department of the
               University Party Committee, the Undergraduate School, and the Sports Department. It was open to all
               first-year students of the university.
-            </div>
+            </p>
           </div>
         </div>
         <div class="card-list">
-          <div class="label">
+          <p class="label">
             Class 2102 of the College of Animal Science and Veterinary Medicine organized a themed public welfare
             activity called "Handmade Transformation: Turning Waste into Treasure."
-          </div>
+          </p>
           <div class="card-item">
             <img src="../../img/campus/list7.png" alt="">
-            <div class="text-label">
+            <p class="label">
               To enhance the environmental awareness among students and promote the virtue of frugality in the Chinese
               culture, on the afternoon of September 19th, Class 2102 of the College of Animal Science and Veterinary
               Medicine organized a voluntary activity with the theme "Handmade Transformation: Turning Waste into
               Treasure" along Huwu Main Avenue. The main focus of this activity was to create flower vases through
               handcrafting, guiding students and teachers to utilize everyday items to create useful objects and turn
               waste into treasure.
-            </div>
+            </p>
           </div>
         </div>
         <div class="card-list">
-          <div class="label">
+          <p class="label">
             Hold high the banner to honor the great, and sing the red songs to celebrate a prosperous era.
-          </div>
+          </p>
           <div class="card-item">
             <img src="../../img/campus/list9.png" alt="">
-            <div class="text-label">
+            <p class="label">
               On the evening of September 19th, Huazhong Agricultural University held the New Students' Song Festival
               titled "Youth Dedication to the Top 20 Strong Nations, Our New Journey" at the East Sports Field. The 12th
               Group of the College of Animal Science and Technology and the College of Veterinary Medicine showcased
               their patriotic spirit by singing the song "Defend the Yellow River," while another group chose the song
               "When That Day Comes" to express their bright vision for the Top 20 Strong Nations.
-            </div>
+            </p>
           </div>
         </div>
       </div>
@@ -198,6 +248,10 @@
       </div>
     </section>
   </div>
+  <script src="../../layui//layui.js"></script>
+  <script>
+
+  </script>
 </body>
 <style>
 

@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link href="../layui/css/layui.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/index.css">
@@ -16,44 +15,47 @@
   <div class="app">
     <!-- nav导航区域 -->
     <section class="header-nav">
-      <img class="logo" src="../img/home/logo.png" alt="">
+      <a href="./index.html"> <img class="logo" src="../img/home/logo.png" alt=""></a>
       <ul class="layui-nav layui-bg-gray">
-        <li class="layui-nav-item layui-this">
+        <li class="layui-nav-item ">
           <a href="javascript:;">News</a>
           <dl class="layui-nav-child">
-            <dd><a href="">菜单1</a></dd>
-            <dd><a href="">菜单2</a></dd>
-            <dd><a href="">菜单3</a></dd>
+            <dd><a href="./news/news.html">Latest News</a></dd>
+            <dd><a href="./news/notice.html">Latest Notice</a></dd>
+            <dd><a href="./news/upcoming.html">Upcoming Events</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item">Research</li>
-        <li class="layui-nav-item"><a href="javascript:;">Global</a>
+        <li class="layui-nav-item">
+          <a href="./research/research.html">Research</a>
+        </li>
+        <li class="layui-nav-item"><a href="./global.html">Global</a>
+        </li>
+        <li class="layui-nav-item"><a href="./campus/programmes.html">Campus Life</a>
           <dl class="layui-nav-child">
-            <dd><a href="">菜单1</a></dd>
-            <dd><a href="">菜单2</a></dd>
-            <dd><a href="">菜单3</a></dd>
+            <dd><a href="./campus/programmes.html">Student Programmes</a></dd>
+            <dd><a href="./campus/sport.html">Sporting Events</a></dd>
+            <dd><a href="./campus/downLoad.html">Download</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item"><a href="javascript:;">Campus Life</a>
-          <dl class="layui-nav-child">
-            <dd><a href="">菜单1</a></dd>
-            <dd><a href="">菜单2</a></dd>
-            <dd><a href="">菜单3</a></dd>
-          </dl>
+        <li class="layui-nav-item">
+          <a href="./admissions/scholarShips/scholarShip.html">Admission</a>
         </li>
-        <li class="layui-nav-item">Admission</li>
         <li class="layui-nav-item"><a href="javascript:;">People</a>
           <dl class="layui-nav-child">
-            <dd><a href="">菜单1</a></dd>
-            <dd><a href="">菜单2</a></dd>
-            <dd><a href="">菜单3</a></dd>
+            <dd><a href="./people/faculty.html">Faculty</a></dd>
+            <dd><a href="./people/department.html">Department Staff</a></dd>
+            <dd><a href="./people/postdoctoral.html">Postdoctoral Fellows</a></dd>
+            <dd><a href="./people/researchCenter.html">Lab staff and Researchers</a></dd>
+            <dd><a href="./people/directory.html">Directory Search</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item"><a href="javascript:;">About us</a>
+        <li class="layui-nav-item"><a href="./about/administrators.html">About</a>
           <dl class="layui-nav-child">
-            <dd><a href="">菜单1</a></dd>
-            <dd><a href="">菜单2</a></dd>
-            <dd><a href="">菜单3</a></dd>
+            <dd><a href="./about/history.html">History</a></dd>
+            <dd><a href="./about/media.html">Media</a></dd>
+            <dd><a href="./about/administrators.html">Administration</a></dd>
+            <dd><a href="./about/careere.html">Careers</a></dd>
+            <dd><a href="./about/contact.html">Contact Us</a></dd>
           </dl>
         </li>
       </ul>
@@ -88,7 +90,7 @@
       <div class="con-main-wrap">
         <div class="text-wrap">
           <h3> Huazhong Agricultural University Animal Science and Technology College </h3>
-          <div class="intro-label">
+          <p class="text-wrap-label">
             The College of Animal Science and Technology and the College of Veterinary Medicine are among the earliest
             established faculties at Huazhong Agricultural University. In 1898, under the leadership of Governor-General
             Zhang Zhidong, the Hubei Provincial Agricultural School (predecessor of Huazhong Agricultural University)
@@ -102,26 +104,26 @@
             College of Animal Science and Veterinary Medicine was established at Huazhong Agricultural University, which
             was later renamed as the College of Animal Science and Technology and the College of Veterinary Medicine in
             July 2002.
-          </div>
+          </p>
           <button class="btn">Learn more </button>
           <div class="info-wrap">
             <div class="info-item">
               <div class="time">
                 <h4>1898</h4>
               </div>
-              <div class="label">time</div>
+              <span class="label">time</span>
             </div>
             <div class="info-item">
               <div class="time">
                 <h4>38</h4>
               </div>
-              <div class="label">research bases</div>
+              <span class="label">research bases</span>
             </div>
             <div class="info-item">
               <div class="time">
                 <h4>216</h4>
               </div>
-              <div class="label">faculty members</div>
+              <span class="label">faculty members</span>
             </div>
           </div>
         </div>
@@ -134,7 +136,7 @@
         <div class="con-top-wrap">
           <div class="top-wrap">
             <h4>RESEARCH</h4>
-            <div class="label">
+            <p class="label">
               Our college currently houses 6 national-level research institutions, 1 collaborative innovation center, 3
               provincial-level international science and technology cooperation bases, and 18 provincial and
               ministerial-level research institutions. Additionally, we have been approved to establish a national
@@ -142,7 +144,7 @@
               cooperation
               talent training base for pig farming in collaboration with the Ministry of Education and the Ministry of
               Agriculture, as well as an innovation activity base for undergraduate students majoring in animal science
-              and technology in Hubei Province.
+              and technology in Hubei Province.</br>
 
               Since 2011 to 2017, we have published over 1600 articles of various types, with nearly 1200 SCI-indexed
               papers. The average annual number of published SCI papers is 169, with the highest impact factor being
@@ -159,17 +161,17 @@
 
               Furthermore, we have obtained 218 authorized patents, 11 certificates for newly approved veterinary drugs,
               and have formulated 12 national standards and 5 local standards.
-            </div>
+            </p>
           </div>
           <div class="cen-wrap">
             <img src="../img/home/research/list1.png" alt="">
             <div class="right-text-wrap">
               <h4> Huazhong Agricultural University Animal Science and Technology College</h4>
-              <div class="right-label">
+              <p class="label">
                 From 2011 to 2016, a total of 6,479 research projects were undertaken, including 1,583 national-level
                 projects. A sum of 4.03 billion yuan in scientific and technological funds was obtained during this
                 period. Numerous high-level research achievements were obtained, with distinct characteristics.
-              </div>
+              </p>
               <div class="info-list">
                 <div class="info-item">
                   <img src="../img/home/research/list2.png" alt="">
@@ -198,25 +200,25 @@
           <div class="left-text-wrap">
             <div class="top-title">
               College of Animal Science and Technology
-              <div class="top-span">
+              <p class="label">
                 Huazhong Agricultural University
-              </div>
+              </p>
             </div>
             <div class="card-list">
               <div class="card-item">
                 <h5>28</h5>
-                <div class="info">research institution</div>
+                <p class="label">research institution</p>
               </div>
               <div class="card-item">
                 <h5>1600</h5>
-                <div class="info">research papers</div>
+                <div class="label">research papers</div>
               </div>
               <div class="card-item">
                 <h5>16</h5>
-                <div class="info">awards</div>
+                <div class="label">awards</div>
               </div>
             </div>
-            <div class="research-label">
+            <p class="label">
               The college currently has 6 national-level research institutions, 1 collaborative innovation center, 3
               provincial-level international science and technology cooperation bases, and 18 provincial and
               ministerial-level research institutions. It has been approved to establish a National Experimental
@@ -234,7 +236,7 @@
               technological progress, 2 second prizes and 1 third prize for Hubei Province’s technological invention. A
               total of 218 patents have been granted, 11 new veterinary drug registration certificates have been
               approved, and 12 national standards and 5 local standards have been formulated.
-            </div>
+            </p>
             <button class="btn">Learn more </button>
           </div>
           <div class="img-right-list">
@@ -380,16 +382,63 @@
           </div>
           <h3>Expert Staffs</h3>
         </div>
+
         <div class="card-item">
           <div class="card-img-text">
             <img src="../img/home/expert/list2.png" alt="">
             <div class="text-wrap">
-              <h5>Goegoe</h5>
-              <p class="info">Engaging Gen Z: The informationand channels that matter most toa prospective
-                international…</p>
-              <p class="label">Lorem ipsum dolor sit amet consectetur. Neque volutpat tortor pellentesque tellus viverra
-                mauris lectus. Sed ultrices volutpat ultrices placerat euismod aliquet. Ultricies eget diam maecenas in
-                urna cursus diam est.</p>
+              <h5>Zhao Shuhong</h5>
+              <p class="info">Dr. Zhao Shuhong is a professor and doctoral supervisor at Huazhong Agricultural
+                University, holding a second-level position. He is also a visiting professor at Murdoch University in
+                Australia. He is a member of the 7th and 8th Discipline Evaluation Committees (Animal Husbandry) of the
+                Academic Degrees Committee of the State Council. He serves as a member of the 8th Advisory Committee of
+                the Department of Life Sciences of the National Natural Science Foundation of China. Dr. Zhao is a
+                scientist in the National Pig System Whole Genome Selection Position, as well as a Tang Scholar at
+                Cornell University in the United States.
+
+                Currently, Dr. Zhao is the Dean of the College of Animal Science and Technology and the College of
+                Veterinary Medicine at Huazhong Agricultural University. He also serves as the Director of the National
+                Livestock Engineering Technology Research Center, the Director of the Key Laboratory of Agricultural
+                Animal Genetics, Breeding, and Reproduction of the Ministry of Education, and the Executive Deputy
+                Director of the Supervision, Inspection, and Testing Center for Swine Quality of the Ministry of
+                Agriculture (Wuhan).
+
+                Dr. Zhao has held various important positions, including Co-Chair of the International Symposium on
+                Animal and Plant Genomes (2009-2011), member of the organizing committee of the Asian Symposium on
+                Animal and Plant Genomes, Executive Council member and Vice Chairman of the Animal Genetics and Breeding
+                Society of China, and Executive Committee member of the International Society for Animal Genetics Pig
+                Genome Committee, among others.
+
+
+              </p>
+              <p class="label">Dr. Zhao Shuhong's main research focus is on pig genomics and breeding. In response to
+                the major needs of basic research and industry in the Chinese pig sector, he has deciphered the
+                regulatory mechanisms of important economic traits in pigs. He has developed a series of omics methods
+                and tools, created an integrated omics gene mining technology system for pigs, and developed a number of
+                molecular breeding markers with independent intellectual property rights. He has also established a pig
+                genomics breeding technology system and successfully bred and created several lean meat pig lines,
+                high-quality black pigs, and genetically edited breeding materials. His achievements in the field of pig
+                omics technology and germplasm innovation are outstanding.
+
+                Dr. Zhao has undertaken more than 20 projects, including the Key Program of the National High Technology
+                Research and Development Program (863 Program), major projects of the National Natural Science
+                Foundation of China, major international cooperation projects, and the 973 Program. He has published
+                over 200 papers in journals such as Nature Biotechnology and Nature Communications. He has been granted
+                more than 60 national invention patents and has received numerous scientific and technological awards,
+                including the National Technical Invention Second Prize, the Ministry of Education Science and
+                Technology Progress First Prize, and the Hubei Provincial Technical Invention First Prize. He has also
+                been honored with the Chinese Young Women Scientist Award, the Chinese Youth Science and Technology
+                Award, the National March 8th Red Flag Bearer, the Advanced Individual in Ethical Education in Hubei
+                Province, and the Outstanding Communist Party Member in Hubei Province.
+
+                Dr. Zhao has led his team to be selected as an innovative team in the field of pig genomics and
+                germplasm innovation by the Ministry of Education, an outstanding talent in agricultural scientific
+                research by the Ministry of Agriculture, and an innovative team of leading talents by the Ministry of
+                Science and Technology. He has served as an editorial board member for more than 10 journals, including
+                China Science - Life Sciences, FASE, PLOS ONE, Frontiers in Genetics, and Chinese Agricultural Science.
+                He has trained and provided a large number of technical backbone and senior management talents for
+                universities, research institutes, and leading agricultural and animal husbandry enterprises
+                nationwide</p>
             </div>
           </div>
         </div>
@@ -397,12 +446,33 @@
           <div class="card-img-text">
             <img src="../img/home/expert/list3.png" alt="">
             <div class="text-wrap">
-              <h5>Goegoe</h5>
-              <p class="info">Engaging Gen Z: The informationand channels that matter most toa prospective
-                international…</p>
-              <p class="label">Lorem ipsum dolor sit amet consectetur. Neque volutpat tortor pellentesque tellus viverra
-                mauris lectus. Sed ultrices volutpat ultrices placerat euismod aliquet. Ultricies eget diam maecenas in
-                urna cursus diam est.</p>
+              <h5>Zhou Rui</h5>
+              <p class="info">Male, native of Zhushan, Hubei. Professor and doctoral supervisor at Huazhong Agricultural
+                University, Deputy Dean of the College. Also serves as the Director of the International Joint Research
+                Center for Animal Disease Prevention and Control under the Ministry of Science and Technology, Deputy
+                Director of the Key Laboratory of Diagnostic Agents for Animal Diseases under the Ministry of
+                Agriculture, and Executive Director of the Teaching Guidance Committee of the National Experimental
+                Teaching Demonstration Center for Veterinary Medicine (Huazhong Agricultural University). Selected as a
+                participant of the Ministry of Education's "New Century Excellent Talents Support Program" (2004),
+                recipient of the Outstanding Young Scientist Fund of Hubei Province, Chief Scientist of the National 973
+                Program (2012), and academic leader of the Hubei Provincial Natural Science Foundation "Innovative
+                Research Group on the Pathogen Biology and Pathogenic Mechanisms of Porcine Bacterial Diseases". </p>
+              <p class="label">He mainly engages in the epidemiology, pathogen biology, and control technology research
+                of animal bacterial infectious diseases. He has established close scientific research and talent
+                cultivation cooperation relationships with the University of Cambridge and Imperial College London in
+                the United Kingdom. He has been the principal investigator of more than 20 projects, including the
+                National Basic Research Program (973 Program), National High Technology Research and Development Program
+                (863 Program), National Key Research and Development Program, Major Special Projects for the Cultivation
+                of Genetically Modified New Varieties, National Natural Science Foundation of China, key cooperation
+                projects between international organizations, national international scientific and technological
+                cooperation projects, major science and technology projects of the Ministry of Education, major
+                biotechnology projects of Hubei Province, and China-UK cooperative projects. He has published over 100
+                papers in academic journals such as the Journal of Bacteriology, Infection and Immunity, Veterinary
+                Microbiology, Environmental Microbiology, BMC Microbiology, Microbial Pathogenesis, FEMS Microbiology
+                Letters, and Molecular Immunology. He has obtained 1 national key new product certificate, 2 national
+                new veterinary drug registration certificates, and 6 granted invention patents. He has also formulated 1
+                local standard in Hubei Province and received 2 first prizes for scientific and technological progress
+                in Hubei Province </p>
             </div>
           </div>
         </div>
@@ -412,9 +482,10 @@
     <section class="home-admission">
       <div class="con-main-wrap">
         <h3 class="title">Admission</h3>
-        <div class="admission-info">
-          Huazhong Agricultural University Animal Science and Technology CollegeVeterinary College Admissions
-        </div>
+        <p class="label">
+          Welcome to the College of Animal Science and Technology, School of Veterinary Medicine, Huazhong Agricultural
+          University.
+        </p>
         <p class="label">
           The college has under its jurisdiction the Department of Animal Genetics and Breeding, the Department of
           Animal Nutrition and Feed Science, the Department of Animal Reproduction and Special Economic Zoology, the
@@ -423,7 +494,7 @@
           Science, and the Department of Public Health There are 9 departments including academic departments
           Ministry of Education.
         </p>
-        <button class="btn">Apply</button>
+        <div class="btn">Apply</div>
       </div>
     </section>
     <!-- News区域 新闻区域 -->
@@ -437,49 +508,47 @@
           <h5>The 6th "Huanchun Fund" Award Ceremony for Outstanding Teachers and Students and the College of Animal
             Science and Veterinary Medicine Enterprise Scholarship Award Ceremony, along with the 21st Entrepreneur
             Forum, were held. .</h5>
-          <div class="img-left-wrap-label">
-            <p class="label">
-              On the afternoon of June 12th, the 6th "Huanchun Fund" Award Ceremony for Outstanding Teachers and
-              Students,
-              along with the 2023 College of Animal Science and Veterinary Medicine Enterprise Scholarship Award
-              Ceremony,
-              was held in the F101 Lecture Hall of the Fourth Comprehensive Building. Chen Huanchun, an academician of
-              the
-              Chinese Academy of Engineering, and Liao Jizhong, Deputy Secretary of the Party Committee and Secretary of
-              the Discipline Inspection Commission, attended the award ceremony and delivered speeches. More than 400
-              representatives from supporting units of the "Huanchun Fund" Award, donating units of the College of
-              Animal
-              Science and Veterinary Medicine Enterprise Scholarship, relevant university departments, and faculty and
-              students of the College of Animal Science and Veterinary Medicine participated in the conference.
-            </p>
-          </div>
+          <p class="label">
+            On the afternoon of June 12th, the 6th "Huanchun Fund" Award Ceremony for Outstanding Teachers and
+            Students,
+            along with the 2023 College of Animal Science and Veterinary Medicine Enterprise Scholarship Award
+            Ceremony,
+            was held in the F101 Lecture Hall of the Fourth Comprehensive Building. Chen Huanchun, an academician of
+            the
+            Chinese Academy of Engineering, and Liao Jizhong, Deputy Secretary of the Party Committee and Secretary of
+            the Discipline Inspection Commission, attended the award ceremony and delivered speeches. More than 400
+            representatives from supporting units of the "Huanchun Fund" Award, donating units of the College of
+            Animal
+            Science and Veterinary Medicine Enterprise Scholarship, relevant university departments, and faculty and
+            students of the College of Animal Science and Veterinary Medicine participated in the conference.
+          </p>
         </div>
         <div class="text-right-wrap">
           <div class="text-item">
-            <p class="text-item-label">The feasibility study meeting for the renovation project of the Teaching Animal
+            <p class="label">The feasibility study meeting for the renovation project of the Teaching Animal
               Hospital at Huazhong Agricultural University was held</p>
           </div>
           <div class="text-item">
-            <p class="text-item-label"> Yan Xianghua and his delegation visited Hainan to visit the production interns
+            <p class="label"> Yan Xianghua and his delegation visited Hainan to visit the production interns
             </p>
           </div>
           <div class="text-item">
-            <p class="text-item-label"> The experimental bee farm collaborated with Huafarm Kindergarten to carry out
+            <p class="label"> The experimental bee farm collaborated with Huafarm Kindergarten to carry out
               bee
               science popularization and education activities</p>
           </div>
           <div class="text-item">
-            <p class="text-item-label">The "Muyi Nianhua" Chorus of the College of Animal Science and Veterinary
+            <p class="label">The "Muyi Nianhua" Chorus of the College of Animal Science and Veterinary
               Medicine won
               the first prize in the "May Flower Sea" University Chorus Competition</p>
           </div>
           <div class="text-item">
-            <p class="text-item-label"> The "Muyi Nianhua" Chorus of the College of Animal Science and Veterinary
+            <p class="label"> The "Muyi Nianhua" Chorus of the College of Animal Science and Veterinary
               Medicine won the first prize in
               the "May Flower Sea" University Chorus Competition.</p>
           </div>
           <div class="text-item">
-            <p class="text-item-label">The college organized a symposium with student representatives to conduct
+            <p class="label">The college organized a symposium with student representatives to conduct
               research on the main issues concerning the enhancement of the political and organizational functions of
               the
               Party branches.</p>
@@ -623,7 +692,16 @@
   </div>
 
   <script src="../layui//layui.js"></script>
-</body>
+  <script>
+    layui.use(function () {
+      var element = layui.element;
+      element.render('nav');
+    });
+  </script>
 
+</body>
+<style>
+
+</style>
 
 </html>
