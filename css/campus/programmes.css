@@ -31,11 +31,10 @@
   border-bottom: 1px solid #dbdbbd;
   justify-content: space-between;
 }
-.campus-card .card-list:nth-child(2) .card-item:nth-child(2) {
+.campus-card .card-list:nth-child(2) .card-item a {
+  display: flex;
   flex-direction: row-reverse;
-}
-.campus-card .card-list:nth-child(2) .card-item :nth-child(2) {
-  padding: 0 5px 0 0;
+  gap: 20px;
 }
 .campus-card .card-list .card-item img {
   width: 580px;

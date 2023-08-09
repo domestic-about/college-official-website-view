@@ -1,0 +1,32 @@
+.details {
+}
+
+.con-main-wrap {
+  padding: 0 0 100px;
+  box-sizing: border-box;
+  @media (max-width: 1300px) {
+    padding: 20px 16px 50px;
+  }
+}
+
+.con-main-wrap .top-nav {
+  padding: 25px 0;
+  border-bottom: 3px solid #007e37;
+  margin-bottom: 20px;
+}
+
+.con-main-wrap .top-nav a {
+  font-size: 18px;
+}
+
+.con-main-wrap h3 {
+  font-size: 30px;
+  text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 18px;
+  }
+}
+
+.con-main-wrap p {
+  text-align: center;
+}
