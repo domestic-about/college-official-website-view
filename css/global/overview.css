@@ -1,0 +1,15 @@
+.global-center-wrap .left-nav .layui-nav.layui-nav-tree .layui-nav-item .layui-nav-child dd:nth-child(1) a {
+  background: #103675;
+  color: #fff;
+  font-size: 20px;
+}
+
+.right-wrap {
+}
+
+.right-wrap h3 {
+  font-size: 28px;
+  margin: 20px 0 0;
+  text-align: center;
+  padding: 0 0 5px 0;
+}

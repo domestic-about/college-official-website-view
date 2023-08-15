@@ -3,669 +3,179 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../../layui/css/layui.css">
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/about/contact.css">
-  <link rel="stylesheet" href="../../layui/css/layui.css">
 </head>
 
 <body>
   <div class="app">
-    <!-- nav导航区域 -->
+    <!-- header-nav -->
     <section class="header-nav">
       <div class="language">
+        <!-- tabbar -->
         <div class="nav">
           <div></div>
           <ul>
-            <li><a href="">English</a></li>
-            <li><a href="https://my.hzau.edu.cn/index.htm">中文</a></li>
+            <li><a href="../index.html">Home<img src="../../img/global/home.png" alt=""></a></li>
+            <li><a href="">English<img src="../../img/global/ch.png" alt=""></a></li>
+            <li><a href="https://my.hzau.edu.cn/index.htm">中文<img src="../../img/global/en.png" alt=""> </a></li>
           </ul>
         </div>
       </div>
+      <!-- nav -->
       <div class="nav-wrap">
-        <a href="../index.html"> <img class="logo" src="../../img/home/logo.png" alt=""></a>
+        <a href="../index.html"> <img class="logo" src="../../img/global/logo.png" alt=""></a>
         <ul class="layui-nav layui-bg-gray">
-          <li class="layui-nav-item"><a href="../index.html">Home</a>
+          <li class="layui-nav-item "><a href="../index.html">Home</a>
           </li>
           <li class="layui-nav-item layui-this"><a href="../about/introduction.html">About</a>
             <dl class="layui-nav-child">
-              <dd><a href="../about/introduction.html">Introduction</a></dd>
-              <dd><a href="../about/leadership.html">Leadership</a></dd>
-              <dd><a href="">Orgnazational Structure</a></dd>
-              <dd><a href="../about/contact.html">Contact Us</a></dd>
+              <dd><a href="./introduction.html">
+                  <span>
+                    Introduction
+                  </span>
+                  <img src="../../img/global/navigation.png" alt="">
+                </a></dd>
+              <dd><a href="../about/leadership.html">Leadership <img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="../about/orgnazationalStructure.html">Orgnazational Structure<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="../about/contact.html">Contact Us<img src="../../img/global/navigation.png" alt=""></a></dd>
             </dl>
           </li>
-          <li class="layui-nav-item"><a href="javascript:;">People</a>
+          <li class="layui-nav-item"><a href="../people/overview.html">People</a>
             <dl class="layui-nav-child">
-              <dd><a href="../people/overview.html">Overview</a></dd>
-              <dd><a href="">Academician</a></dd>
-              <dd><a href="../people/faculty.html">Faculty</a></dd>
-              <dd><a href="../people/postdoctoral.html">Postdoctoral</a></dd>
+              <dd><a href="../people/overview.html">Overview<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="">Academician<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="./people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="./people/postdoctoral.html">Postdoctor<img src="../../img/global/navigation.png" alt=""></a>
+              </dd>
             </dl>
           </li>
           <li class="layui-nav-item"><a href="">Education</a>
             <dl class="layui-nav-child">
-              <dd><a href="">Teaching Information</a></dd>
-              <dd><a href="">Programs</a></dd>
+              <dd><a href="">Teaching Information<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="">Programs<img src="../../img/global/navigation.png" alt=""></a></dd>
             </dl>
           </li>
           <li class="layui-nav-item">
             <a href="../research/institutes.html">Research</a>
             <dl class="layui-nav-child">
-              <dd><a href="../research/institutes.html">Institutes</a></dd>
-              <dd><a href="../research/Projects.html">Projects</a></dd>
-              <dd><a href="../research/researchHighlights.html">Highlights</a></dd>
-              <dd><a href="../research/researchProgress.html">Progress</a></dd>
+              <dd><a href="../research/institutes.html">Institutes<img src="../../img/global/navigation.png" alt=""></a>
+              </dd>
+              <dd><a href="../research/Projects.html">Projects<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="../research/researchHighlights.html">Highlights<img src="../../img/global/navigation.png"
+                    alt=""></a></dd>
+              <dd><a href="../research/researchProgress.html">Progress<img src="../../img/global/navigation.png" alt=""></a>
+              </dd>
             </dl>
           </li>
           <li class="layui-nav-item"><a href="../global.html">Global</a>
             <dl class="layui-nav-child">
-              <dd><a href="../global/overview.html">Overview</a></dd>
-              <dd><a href="../global/partners.html">Partners</a></dd>
+              <dd><a href="../global/overview.html">Overview<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="../global/partners.html">Partners<img src="../../img/global/navigation.png" alt=""></a></dd>
             </dl>
           </li>
           <li class="layui-nav-item ">
             <a href="javascript:;">News</a>
             <dl class="layui-nav-child">
-              <dd><a href="../news/news.html">Events</a></dd>
-              <dd><a href="../news/notice.html">Notices</a></dd>
+              <dd><a href="../news/events.html">Events<img src="../../img/global/navigation.png" alt=""></a></dd>
+              <dd><a href="../news/notices.html">Notices<img src="../../img/global/navigation.png" alt=""></a>
+              </dd>
             </dl>
           </li>
         </ul>
       </div>
     </section>
-    <!-- 这是banner -->
-    <!-- <section class="ships-banner">
-      <h4>Contact Us</h4>
-    </section> -->
-
-    <!-- 联系我们的方式 -->
-    <section class="admin-people">
-      <div class="global-people-about-title">
-        <h5>Contact
-        </h5>
-        <span class="layui-breadcrumb">
-          <a href="../index.html">Home</a>
-          <a href="./introduction.html">About</a>
-          <a href="./contact.html">Contact Us</a>
-        </span>
-      </div>
-      <h5>College Office Phone</h5>
-      <table class="layui-table">
-        <colgroup>
-          <col width="200">
-          <col width="200">
-          <col width="400">
-          <col width="400">
-          <col>
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Office Setup</th>
-            <th>Telephone</th>
-            <th>Office Email</th>
-            <th>Office Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Office of the College</td>
-            <td>027-87280408 </br>
-              027-87282091</td>
-            <td>myoffice@mail.hzau.edu.cn </br>
-
-              dkky@mail.hzau.edu.cn（Research） </br>
-
-              dkdj@mail.hzau.edu.cn（Party Building）</td>
-            <td> Fourth Comprehensive Building, Room D314 (Chai Qian)</br>
-              Fourth Comprehensive Building, Room D316 (Xiao Jinhua, Lin Yi)</br>
-              Fourth Comprehensive Building, Room D317 (Chang Shuai, Li Jingyu)</br>
-            </td>
-          </tr>
-          <tr>
-            <td>Undergraduate Teaching Affairs Office
-            </td>
-            <td>027-87282939</td>
-            <td>dkjwb@mail.hzau.edu.cn</td>
-            <td>Fourth Comprehensive Building, Room D321 (Shuai Uprising)</br>
-              Fourth Comprehensive Building, Room D322 (Lu Xidong, Zhang Yue)
-            </td>
-          </tr>
-          <tr>
-            <td>Undergraduate Counseling Office</td>
-            <td>027-87774636</td>
-            <td>dkxg@mail.hzau.edu.cn</td>
-            <td>Fourth Comprehensive Building, Room D311 (Wang Yujun, Cheng Tangyu, Zhang Jiawen)</br>
-              Fourth Comprehensive Building, Room D312 (Tan Liming, Gao Hongming)</br>
-              Fourth Comprehensive Building, Room D324 (Wang Yuntao)
-            </td>
-          </tr>
-          <tr>
-            <td>Research Office</td>
-            <td>027-87281378</td>
-            <td></td>
-            <td>Fourth Comprehensive Building, Room D301 (Wang Huaxin, Zhi Caixia)
-            </td>
-          </tr>
-          <tr>
-            <td>Discipline Office
-            <td>027-87281378</td>
-            <td>dkxkjs@mail.hzau.edu.cn (Discipline Construction)</td>
-            <td>Fourth Comprehensive Building, Room D313 (Wang Yan, Xiao Yueqing)
-            </td>
-          </tr>
-          <tr>
-            <td>Graduate Teaching Office </br>
-              International Cooperation and Exchange Office
-            </td>
-            <td>027-87281255</td>
-            <td>dkygb@mail.hzau.edu.cn (Graduate Teaching)</br>
-              dkws@mail.hzau.edu.cn (International Cooperation and Exchange)
-            </td>
-            <td>Fourth Comprehensive Building, Room D320 (Liu Jia, Li Lu)</br>
-              Fourth Comprehensive Building, Room D321 (Fu Nan)
-            </td>
-          </tr>
-          <tr>
-            <td>Graduate Counseling Office</td>
-            <td>027-87285108</td>
-            <td>dkyg@mail.hzau.edu.cn
-            </td>
-            <td>Fourth Comprehensive Building, Room D324 (Chen Boning) </br>
-              Fourth Comprehensive Building, Room D325 (Wang Chuqi, Yang Chenglong)
-            </td>
-          </tr>
-          <tr>
-            <td>Experimental Animal Center Office</td>
-            <td>027-87285032 </br>
-              027-87285031</td>
-            <td></td>
-            <td>Ground floor of the Experimental Animal Center building
-            </td>
-          </tr>
-          <tr>
-            <td>Animal Hospital
-            </td>
-            <td>027-87286251</td>
-            <td></td>
-            <td>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Livestock Engineering Center Office
-            </td>
-            <td>027-87287466</td>
-            <td>livestocklab@mail.hzau.edu.cn</td>
-            <td>Ground floor of the Livestock Engineering Center building
-            </td>
-          </tr>
-          <tr>
-            <td>Asset Management Office</td>
-            <td>027-87281185</td>
-            <td></td>
-            <td>Fourth Comprehensive Building, Room E214 (Cheng Feng)</td>
-          </tr>
-          <tr>
-            <td>Swine Quality Inspection Center Office
-
-            </td>
-            <td>027-87287127</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Experimental Teaching Center Office
-            </td>
-            <td>027-87281336</td>
-            <td>myshyjx@mail.hzaucn.edu</td>
-            <td>Building E215, Fourth Comprehensive Building</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- banner -->
+    <section class="global-banner">
+      <!-- <img src="../../img/global/banner.png" alt=""> -->
+      banner
     </section>
-    <!-- 移动端的联系我们 -->
-    <section class="phone-admin-people">
-      <div class="phone-people-item">
-        <div class="name title">
-          Office of the College
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87280408
-            </span>
-            <span class="value">
-              027-87282091
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">myoffice@mail.hzau.edu.cn </span>
-            <span class="value">
-              dkky@mail.hzau.edu.cn（Research） </span>
-            <span class="value">
-              dkdj@mail.hzau.edu.cn（Party Building） </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room D314 (Chai Qian)</span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D316 (Xiao Jinhua, Lin Yi)</span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D317 (Chang Shuai, Li Jingyu)</span>
-          </div>
-        </div>
+    <!-- 内容展示区域 -->
+    <section class="global-center-wrap">
+      <div class="left-nav">
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item "><a href="./introduction.html">Introduction</a></li>
+          <li class="layui-nav-item"><a href="./leadership.html">leadership</a></li>
+          <li class="layui-nav-item"><a href="./orgnazationalStructure.html">orgnazationalStructure</a></li>
+          <li class="layui-nav-item layui-this"><a href="./contact.html">contact us</a></li>        
+        </ul>
       </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Undergraduate Teaching Affairs Office
-
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87282939
+      <div class="right-wrap">
+        <!-- 联系我们的方式 -->
+          <div class="nav-wrap">
+            <h5>Contact
+            </h5>
+            <span class="layui-breadcrumb">
+              <a href="../index.html">Home</a>
+              <a href="./introduction.html">About</a>
+              <a href="./contact.html"><cite>Contact Us</cite></a>
             </span>
           </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">dkjwb@mail.hzau.edu.cn </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room D321 (Shuai Uprising)</span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D322 (Lu Xidong, Zhang Yue)
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Undergraduate Counseling Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87774636
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">dkxg@mail.hzau.edu.cn </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room D311 (Wang Yujun, Cheng Tangyu, Zhang
-              Jiawen)</span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D312 (Tan Liming, Gao Hongming)
-            </span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D324 (Wang Yuntao)
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Research Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87281378
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room D301 (Wang Huaxin, Zhi Caixia)
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Discipline Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87281378
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">dkxkjs@mail.hzau.edu.cn (Discipline Construction) </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value">
-              Fourth Comprehensive Building, Room D313 (Wang Yan, Xiao Yueqing)
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Graduate Teaching Office
-          International Cooperation and Exchange Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87281255
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">dkygb@mail.hzau.edu.cn (Graduate Teaching) </span>
-            <span class="value">
-              dkws@mail.hzau.edu.cn (International Cooperation and Exchange)
-            </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room D320 (Liu Jia, Li Lu)</span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D321 (Fu Nan)
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Graduate Counseling Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87285108
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">dkyg@mail.hzau.edu.cn
-            </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room D324 (Chen Boning) </span>
-            <span class="value">
-              Fourth Comprehensive Building, Room D325 (Wang Chuqi, Yang Chenglong)
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Experimental Animal Center Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87285032
-            </span>
-            <span class="value">
-              027-87285031
-            </span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Ground floor of the Experimental Animal Center building
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Animal Hospital
-
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87286251
-            </span>
+          <div class="cen-text">
+            <h5>Contact us</h5>
+         <div class="title"> College Location:  <p class="info-label">Forth Comprehensive Building, No.1,Shizishan Street ,  Hongshan District , Wuhan,  Hubei Province, China </p></div>
+         <div class="title"> Office phone:  <p class="info-label">+86027-87282091/87280408 </p></div>
+         <div class="title">Email:  <p class="info-label">myoffice@mail.hzau.edu..cn </p></div>
 
           </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Livestock Engineering Center Office
-
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87287466
-            </span>
-
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">livestocklab@mail.hzau.edu.cn </span>
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Ground floor of the Livestock Engineering Center building
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Asset Management Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87281185
-            </span>
-
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Fourth Comprehensive Building, Room E214 (Cheng Feng)</span>
-
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Swine Quality Inspection Center Office
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87287127
-            </span>
-
-          </div>
-        </div>
-      </div>
-      <div class="phone-people-item">
-        <div class="name title">
-          Experimental Teaching Center Office
-
-        </div>
-        <div class="telephone">
-          <div class="name">Telephone</div>
-          <div class="text-wrap">
-            <span class="value">
-              027-87281336
-            </span>
-
-          </div>
-        </div>
-        <div class="email">
-          <div class="name">Office Email</div>
-          <div class="text-wrap">
-            <span class="value">myshyjx@mail.hzaucn.edu </span>
-
-          </div>
-        </div>
-        <div class="name1">
-          <div class="name">Office Location</div>
-          <div class="text-wrap">
-            <span class="value"> Building E215, Fourth Comprehensive Building</span>
-
-          </div>
-        </div>
       </div>
     </section>
-    <!-- 底部区域 -->
-    <section class="footer-wrap">
-      <p class="label">© 2010-2020 Access Media. All rights reserved.</p>
-      <div class="card-list">
-        <div class="card-item">
-          <div class="title">Product</div>
-          <div class="label">
-            Landingpage
+        <!-- footer -->
+        <section class="footer">
+          <div class="cen-wrap">
+            <div class="footer-wrap">
+              <div class="bg-filter-wrap">
+              </div>
+            </div>
+            <div class="text-wrap">
+              <img src="../../img/global/footer-logo.png" alt="">
+              <div class="cen-text">
+                <div class="nav-item"><a href="">Home</a></div>
+                <div class="nav-item">
+                  <a href="">Education</a>
+                  <a href="">Teaching Information</a>
+                  <a href="">Programs</a>
+                </div>
+                <div class="nav-item">
+                  <a href="">Global</a>
+                  <a href="">Overview</a>
+                  <a href="">Partners</a>
+                </div>
+                <div class="nav-item">
+                  <a href="">News</a>
+                  <a href="">Events</a>
+                  <a href="">Notices</a>
+                </div>
+                <div class="nav-item">
+                  <a href="">People</a>
+                  <a href="">Overview</a>
+                  <a href="">Academician</a>
+                  <a href="">Faculty</a>
+                  <a href="">postdoctor</a>
+                </div>
+                <div class="nav-item">
+                  <a href="">About</a>
+                  <a href="">Introduction</a>
+                  <a href="">Leadership</a>
+                  <a href="">Qrgnazational Structure</a>
+                  <a href="">Contact Us</a>
+                </div>
+                <div class="nav-item">
+                  <a href="">Research</a>
+                  <a href="">Key Institutes</a>
+                  <a href="">Research Projects</a>
+                  <a href="">Research Highlights</a>
+                  <a href="">Research Progress</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="label">
-            Features
-          </div>
-          <div class="label">
-            Documentation
-          </div>
-          <div class="label">
-            Referal Program
-          </div>
-          <div class="label">
-            Pricing
-          </div>
-        </div>
-        <div class="card-item">
-          <div class="title">Services</div>
-          <div class="label">
-            Documentation
-          </div>
-          <div class="label">
-            Design
-          </div>
-          <div class="label">
-            Themes
-          </div>
-          <div class="label">
-            lllustrations
-          </div>
-          <div class="label">
-            Ul kit
-          </div>
-        </div>
-        <div class="card-item">
-          <div class="title">Company</div>
-          <div class="label">
-            About
-          </div>
-          <div class="label">
-            Terms
-          </div>
-          <div class="label">
-            Privacy Policy
-          </div>
-          <div class="label">
-            Careers
-          </div>
-        </div>
-        <div class="card-item">
-          <div class="title">More</div>
-          <div class="label">
-            Documentation
-          </div>
-          <div class="label">
-            Features
-          </div>
-          <div class="label">
-            License
-          </div>
-          <div class="label">
-            Changelog
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
   </div>
-  <script src="../../layui//layui.js"></script>
+  <script src="../../layui/layui.js"></script>
 </body>
 <style>
 

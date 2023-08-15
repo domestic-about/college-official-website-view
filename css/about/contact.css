@@ -1,58 +1,28 @@
-.admin-people {
-  padding-top: 180px;
-  @media (max-width: 1300px) {
-    display: none;
-  }
-}
-.admin-people h5 {
-  text-align: center;
-  font-size: 25px;
-  margin: 30px 0;
-}
-.global-people-about-title h5 {
-  margin: 0;
-}
-.layui-table {
-}
-.layui-table th {
-  background: #f3f3f3;
-  color: #333;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  font-size: 18px !important;
-}
-.layui-table td {
-  color: #333;
-  text-align: center;
-  font-weight: 500;
-}
-.layui-table td:nth-child(4) {
-  text-align: left;
-  padding-left: 20px;
-}
-/* 移动端的样式 */
-.phone-admin-people {
-  display: none;
-  @media (max-width: 1300px) {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-}
-.phone-admin-people .phone-people-item .title {
-  color: #007e37;
-}
-.phone-admin-people .phone-people-item .name {
-  font-weight: 500;
+.global-center-wrap .left-nav .layui-nav.layui-nav-tree .layui-nav-item .layui-nav-child dd:nth-child(2) a {
+  background: #103675;
+  color: #fff;
   font-size: 20px;
-  margin: 20px 0;
 }
 
-.phone-admin-people .phone-people-item .text-wrap {
-  display: flex;
-  flex-wrap: wrap;
+.right-wrap {
 }
-.phone-admin-people .phone-people-item .text-wrap .value {
-  padding: 10px;
+.right-wrap .cen-text {
+  padding: 20px 0;
+}
+
+.right-wrap .cen-text h5 {
+  font-size: 28px;
+  text-align: center;
+  color: #007306;
+}
+.right-wrap .cen-text .title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.right-wrap .cen-text .info-label {
+  font-size: 16px;
+  text-indent: 0;
 }
