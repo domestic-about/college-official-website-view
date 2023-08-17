@@ -1,8 +1,7 @@
-.global-center-wrap .left-nav .layui-nav.layui-nav-tree .layui-nav-item .layui-nav-child dd:nth-child(2) a {
-  background: #103675;
-  color: #fff;
-  font-size: 20px;
+.left-nav .layui-this a {
+  color: #fff !important;
 }
+
 //右边内容样式.
 .right-wrap {
 }

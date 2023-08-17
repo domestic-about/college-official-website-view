@@ -1,3 +1,7 @@
+.left-nav .layui-this a {
+  color: #fff !important;
+}
+
 .right-wrap {
 }
 .right-wrap h3 {

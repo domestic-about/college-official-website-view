@@ -1,54 +1,48 @@
-.global-center-wrap .left-nav .layui-nav.layui-nav-tree .layui-nav-item .layui-nav-child dd:nth-child(1) a {
-  background: #103675;
-  color: #fff;
-  font-size: 20px;
+.left-nav .layui-this a {
+  color: #fff !important;
 }
 
 .right-wrap {
 }
-.right-wrap h3 {
-  text-align: center;
-  font-size: 28px;
-  margin: 20px;
-}
-.right-wrap {
-}
-.right-wrap .progress-list {
+
+.right-wrap .card-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 30px;
-  padding: 30px;
+  margin: 20px 0 0;
 }
-.right-wrap .progress-list a {
-  width: 47%;
-}
-.right-wrap .progress-list .progress-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.right-wrap .card-list a {
+  width: 48%;
+  color: #1a1c19;
   transition: transform 2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+
   &:hover {
+    color: #007306;
     transform: scale(1.1);
   }
 }
-.right-wrap .progress-list .progress-item .img-bg {
-  border-radius: 10px 10px 0 0;
-  height: 300px;
-  filter: brightness(0.6);
+
+.right-wrap .card-list a .card-item {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid #dbdbdb;
 }
-.right-wrap .progress-list .progress-item .text-wrap {
-  padding: 20px 16px;
-  border: 1px solid #dbdbbd;
-  border-radius: 0 0 10px 10px;
+
+.right-wrap .card-list a .card-item img {
+  height: 120px;
 }
-.right-wrap .progress-list .progress-item .text-wrap .title {
-  font-size: 20px;
+
+.right-wrap .card-list a .card-item .title {
+  font-size: 16px;
+  font-weight: 500;
   overflow: hidden;
+  font-family: times new roman, serif;
   word-break: break-all;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -56,8 +50,14 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.right-wrap .progress-list .progress-item .text-wrap .label {
-  padding: 10px 0 0;
+
+.right-wrap .card-list a .card-item .label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 16px;
+
+  color: #999;
+  font-family: times new roman, serif;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;
@@ -65,17 +65,4 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  font-size: 16px;
-  color: #999;
-}
-
-.right-wrap .progress-list .progress-item .more {
-  position: absolute;
-  bottom: 175px;
-  right: 1px;
-  padding: 5px 50px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007306;
-  cursor: pointer;
 }
