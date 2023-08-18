@@ -1,0 +1,47 @@
+/* 内容区域左边导航 右边切换内容 */
+.left-nav .layui-this a {
+  color: #fff !important;
+}
+
+.right-wrap {
+  width: 922px;
+}
+.right-wrap h3 {
+  font-size: 28px;
+  margin: 20px 0 0;
+  text-align: center;
+}
+.right-wrap .partners-table {
+  margin-top: 20px;
+  border: 1px solid #d6d6d6;
+}
+.right-wrap .partners-table .info-label {
+  text-align: center;
+  padding: 10px 10px;
+  color: #007e37;
+  font-weight: 500;
+  font-size: 18px;
+}
+.right-wrap .partners-table .table-body {
+  border-top: 1px solid #d6d6d6;
+  display: flex;
+  align-items: center;
+}
+.right-wrap .partners-table .left-table {
+  width: 20%;
+  padding: 10px 40px;
+  color: #333;
+  font-family: times new roman, serif;
+  font-size: 19px;
+}
+.right-wrap .partners-table .right-table {
+  width: 100%;
+}
+.right-wrap .partners-table .label {
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  border-top: 0;
+  color: #333;
+  font-family: times new roman, serif;
+  font-size: 19px;
+}
