@@ -1,0 +1,11 @@
+.left-nav .layui-this a {
+  color: #fff !important;
+}
+
+.right-wrap {
+}
+.right-wrap h5 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}

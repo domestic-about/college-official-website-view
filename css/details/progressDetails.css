@@ -1,0 +1,50 @@
+.details-progress {
+}
+
+.details-progress .center-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+.details-progress .center-wrap .nav-wrap {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #007306;
+}
+.details-progress .center-wrap .nav-wrap h5 {
+  font-size: 22px;
+  order: 0;
+  margin: 0;
+  color: #007306;
+}
+.details-progress .center-wrap .title h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 28px;
+}
+.details-progress .center-wrap .title .info-label {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.details-progress .center-wrap .info-label {
+  margin: 20px 0;
+  font-size: 16px;
+}
+.details-progress .center-wrap .cen-img {
+  text-align: center;
+}
+.details-progress .center-wrap .cen-img img {
+  height: 400px;
+}
+.details-progress .center-wrap a {
+  color: #007306;
+}
+
+.details-progress .center-wrap .label {
+  text-align: center;
+  color: #999;
+}

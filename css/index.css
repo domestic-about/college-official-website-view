@@ -1,0 +1,181 @@
+/* home-swiper */
+.swiper {
+  position: relative;
+  padding-top: 130px;
+}
+.layui-carousel {
+  background: transparent;
+}
+
+.swiper .swiper-blur {
+  /* filter: brightness(0.2); */
+  position: relative;
+  background: transparent;
+}
+.swiper .swiper-blur .bg {
+  background: url("../img/home/swiper/location.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+.swiper .swiper-item {
+  width: 100%;
+  height: 100%;
+
+  background-size: 100% 100%;
+  /* filter: blur(5px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 37px;
+  color: #fff;
+}
+/* 新闻和通知 */
+.home-events .con-main-wrap h3 {
+  font-size: 40px;
+  margin: 30px 0;
+}
+.home-events .con-main-wrap .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.home-events .con-main-wrap .card-list .card-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background: #007306;
+  }
+}
+.home-events .con-main-wrap .card-list .card-item img {
+  width: 100%;
+  height: 256px;
+}
+.home-events .con-main-wrap .card-list .top-wrap {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+.home-events .con-main-wrap .card-list .top-wrap .card-item {
+  width: 100%;
+  display: flex;
+}
+.home-events .con-main-wrap .card-list .top-wrap .card-item img {
+  height: 388px;
+}
+.home-events .con-main-wrap .card-list .card-item .text-wrap {
+  padding: 20px 16px;
+}
+.home-events .con-main-wrap .card-list .card-item .text-wrap .title {
+  overflow: hidden;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 20px;
+}
+.home-events .con-main-wrap .card-list .card-item .text-wrap .text-label {
+  overflow: hidden;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 16px;
+  font-family: times new roman, serif;
+  margin-top: 10px;
+}
+
+/* 科研进展 */
+.home-research {
+  margin-top: 60px;
+}
+.home-research .con-main-wrap {
+}
+.home-research .con-main-wrap h3 {
+  font-size: 28px;
+}
+.home-research .con-main-wrap .info-label {
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #000;
+  text-indent: 0;
+}
+.home-research .con-main-wrap .card-list {
+  padding: 60px 0 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.home-research .con-main-wrap .card-list .card-item {
+  position: relative;
+  width: 31%;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.home-research .con-main-wrap .card-list .card-item .top-img {
+  width: 100%;
+  height: 248px;
+  border-radius: 12px 12px 0 0;
+  filter: brightness(0.6);
+}
+.home-research .con-main-wrap .card-list .card-item .text-wrap {
+  border-top: 1px solid #d6d6d6;
+  padding: 20px 20px 40px;
+}
+.home-research .con-main-wrap .card-list .card-item .text-wrap .title {
+  font-size: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  font-family: times new roman, serif;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.home-research .con-main-wrap .card-list .card-item .text-wrap .label {
+  padding: 10px 0 0;
+  overflow: hidden;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.home-research .con-main-wrap .card-list .card-item .text-wrap .btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.home-research .con-main-wrap .card-list .card-item .text-wrap .btn a {
+  color: #007306;
+}
+.home-research .con-main-wrap .card-list .card-item .text-wrap .btn img {
+  height: 15px;
+}

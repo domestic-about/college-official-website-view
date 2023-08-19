@@ -1,0 +1,26 @@
+.left-nav .layui-this a {
+  color: #fff !important;
+}
+
+.right-wrap {
+}
+.right-wrap .cen-text {
+  padding: 20px 0;
+}
+
+.right-wrap .cen-text h5 {
+  font-size: 28px;
+  text-align: center;
+  color: #007306;
+}
+.right-wrap .cen-text .title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.right-wrap .cen-text .info-label {
+  font-size: 16px;
+  text-indent: 0;
+}
