@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../layui//css/layui.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+  <div class="app">
+    <!-- header-nav -->
+    <section class="header-nav">
+      <div class="language">
+        <!-- tabbar -->
+        <div class="nav">
+          <div></div>
+          <ul>
+            <li>
+              <a href="./index.html">Home<img src="../img/global/home.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="">English<img src="../img/global/ch.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://my.hzau.edu.cn/index.htm">中文<img src="../img/global/en.png" alt="" /> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- nav -->
+      <div class="nav-wrap">
+        <a href="./index.html"> <img class="logo" src="../img/global/logo.png" alt="" /></a>
+        <ul class="layui-nav layui-bg-gray">
+          <li class="layui-nav-item layui-this"><a href="./index.html">Home</a></li>
+          <li class="layui-nav-item">
+            <a href="./about/introduction.html">About</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="./about/introduction.html">
+                  <span> Introduction </span>
+                  <img src="../img/global/navigation.png" alt="" />
+                </a>
+              </dd>
+              <dd>
+                <a href="./about/leadership.html">Leadership <img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="">Orgnazational Structure<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./about/contact.html">Contact Us<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">People</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="./people/overview.html">Overview<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="">Academician<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./people/faculty.html">Faculty<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./people/postdoctoral.html">Postdoctor<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="../pages/education/teachingInformation/undergradute.html">Education</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="../pages/education/teachingInformation/undergradute.html">Teaching Information<img
+                    src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./education/programs.html">Programs<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="./research/institutes.html">Research</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="./research/institutes.html">Institutes<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./research/projects.html">Projects<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./research/highlights.html">Highlights<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./research/progress.html">Progress<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="./global/global.html">Global</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="./global/global.html">Overview<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./global/global.html">Partners<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">News</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="./news/events.html">Events<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+              <dd>
+                <a href="./news/events.html">Notices<img src="../img/global/navigation.png" alt="" /></a>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- home-swiper -->
+    <section class="swiper">
+      <div class="layui-carousel" id="ID-carousel-demo-image">
+        <div carousel-item>
+          <div class="swiper-blur">
+            <div class="bg"></div>
+            <div class="swiper-item">
+              <video id="media" src="../img/home/1.mp4" muted autoplay height="630px"></video>
+            </div>
+          </div>
+          <div class="swiper-blur">
+            <div class="bg"></div>
+            <div class="swiper-item">
+              <video id="media" src="../img/home/2.mp4" muted autoplay height="630px"></video>
+            </div>
+          </div>
+          <div class="swiper-blur">
+            <div class="bg"></div>
+            <div class="swiper-item">
+              <video id="media" src="../img/home/3.mp4" muted autoplay height="630px"></video>
+            </div>
+          </div>
+        </div>
+        <!-- <h3>College of Animal Science & Technology</h3> -->
+      </div>
+    </section>
+    <section class="home-events">
+      <div class="con-main-wrap">
+        <h3>Events</h3>
+        <div class="card-list">
+          <div class="top-wrap">
+            <div class="card-item">
+              <img src="../img/news/list2.png" alt="" />
+              <div class="text-wrap">
+                <div class="title">
+                  The School of Animal Science and Technology launched a training session on knowledge graph and AI
+                  course construction The School of Animal Science and Technology launched a training session on
+                  knowledge graph and AI course construction
+                </div>
+                <p class="text-label">
+                  On the morning of July 19, the School of Animal Medicine held a training meeting on knowledge graph
+                  and AI course construction in the D202 conference room of the fourth complex building. Invited Li
+                  Siqi, a gold course consultant of Wisdom Tree Network Hubei Province, to give a report on
+                  "Construction of Knowledge Graphs, AI Empowering First-Class Disciplines and New Forms of Courses".
+                  The event was hosted by Ren Zhuqing. Li Siqi described the importance and necessity of knowledge map
+                  construction from four aspects: digital background, digital teaching reform, innovation trend of
+                  quality courses, and application scope of knowledge map. He introduced the construction model of the
+                  knowledge map, explained the role and interrelationship of "knowledge", "problem" and "ability" in
+                  the construction of the map; introduced the content of the subject knowledge map; An important
+                  application of the construction process, through the use of artificial intelligence, functions such
+                  as the establishment of a single learning space and the optimization of course resources can be
+                  achieved. Finally, through the typical school case of knowledge graph, the application of knowledge
+                  graph is shown to the teacher
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="../img/news/list3.png" alt="" />
+              <div class="text-wrap">
+                <div class="title">
+                  The college launched a training session on laboratory biosafety
+                </div>
+                <p class="text-label">
+                  On the morning of July 14, the college held a laboratory biosafety presentation and training meeting
+                  in the D209 conference room of the fourth complex building. Zhao Xiaodan, director of the
+                  International Division of the Animal Husbandry and Veterinary Bureau of the Ministry of Agriculture
+                  and Rural Affairs, was invited to give a lecture on the theme of "Strengthening the Biosafety
+                  Management of Animal Pathogenic Microbiology Laboratory" to the teachers and students present. The
+                  event was hosted by Professor Guo Aizhen of the college.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="../img/news/list4.png" alt="" />
+            <div class="text-wrap">
+              <div class="title">
+                The expert group of the Animal Husbandry and Veterinary Bureau of the Ministry of Agriculture and
+                Rural Affairs came to our school to carry out special inspections and training on laboratory biosafety
+              </div>
+              <p class="text-label">
+                On July 13-14, the expert group of the Animal Husbandry and Veterinary Bureau of the Ministry of
+                Agriculture and Rural Affairs carried out a special inspection on the biosafety of the highly
+                pathogenic animal pathogenic microorganism laboratory of our school, and conducted a special
+                inspection on the biosafety management regulations and policies of the veterinary laboratory and the
+                main responsibility. Relevant teachers and students carry out special training.
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="../img/news/list7.png" alt="" />
+            <div class="text-wrap">
+              <div class="title">
+                The farewell event for the 2023 graduates of the Key Laboratory of Agricultural Animal Genetics,
+                Breeding and Reproduction of the Ministry of Education was held
+              </div>
+              <p class="text-label">
+                On the afternoon of June 23, the farewell event for the 2023 graduates of the Key Laboratory of
+                Agricultural Animal Genetics, Breeding and Reproduction of the Ministry of Education was held in the
+                F101 Lecture Hall of the Fourth Comprehensive Building. Mentors and graduate students from the Key
+                Laboratory of Agricultural Animal Genetics, Breeding and Reproduction of the Ministry of Education
+                attended the event.
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="../img/news/list5.png" alt="" />
+            <div class="text-wrap">
+              <div class="title">
+                Biosafety training and on-site simulation drills held in our hospital for the "Safety Production
+                Month" series of activities
+              </div>
+              <p class="text-label">
+                June this year is the 22nd national "safety production month", with the theme of "everyone pays
+                attention to safety, everyone knows emergency". In order to firmly establish the safety awareness of
+                teachers and students, build a "biological safety barrier", and create a strong safety atmosphere, at
+                15:00 on June 30, our hospital held a series of activities for the 2023 annual safety production month
+                in the academic lecture hall of the Pig Healthy Breeding Collaborative Innovation Center Biosafety
+                training and on-site simulation drills. Dr. Chen Xi, the safety director of Huazhong Agricultural
+                University's third-level biosafety laboratory, gave a lecture entitled "Those Things in the Pathogenic
+                Microbiology Laboratory" to the teachers and students present. More than 100 teachers and students
+                from the college participated in the training, and the activity was hosted by Mr. Li Jingyu from the
+                college office.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- research -->
+    <section class="home-research">
+      <div class="con-main-wrap">
+        <h3>Research Progress</h3>
+        <p class="info-label">
+          In the past five years (2018-2022), the college has undertaken 711 research projects, including 168 funded
+          by National Natural Science Foundation of China, with newly approved funds of 543 million RMB for science
+          and technology. 1 project has won National Science and Technology Invention Award, 17 have won provincial
+          and ministerial prizes (including cooperation projects), 399 have been granted patents, and 9 new veterinary
+          drug certificates have been approved.
+        </p>
+        <div class="card-list">
+          <div class="card-item">
+            <div class="top-img" style="background: url('../img/home/research/list1.png'); background-size: 100% 100%">
+            </div>
+            <div class="text-wrap">
+              <div class="title">
+                Scholars in our college have achieved great progress in development of multifunctional metal-organic
+                framework materials for degradation of antibiotics in water bodies
+              </div>
+              <p class="label">
+                The multifunctional metal-organic framework (MOF) materials with core-shell structure and
+                sulfur-doping characteristics were designed for highly efficient adsorption and synergistic
+                degradation of antibacterial drugs. This results were published in the Chemical Engineering Journal as
+                “S-doped core-shell heterojunction fenton catalyst (Fe3O4-S@PVP@UIO-66-(SH)2) for enhanced activation
+                of hydroxyl radical: synergistic enrichment and degradation mechanism”. The low-valence S species was
+                innovatively doped into Fe3O4 in the form of MOF, and a S-doped core-shell heterojunction multiphase
+                fenton catalyst was successfully prepared by a simple one-pot method. Based on the theoretical
+                calculation and experimental results, the mechanism of eliminating the deactivation of the active site
+                of iron by the introduction of non-metals was investigated systematically.< </p>
+                  <div class="btn">
+                    <a href="">More<img src="../img/global/nav.png" alt="" /></a>
+                  </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="top-img" style="background: url('../img/home/research/list2.png'); background-size: 100% 100%">
+            </div>
+            <div class="text-wrap">
+              <div class="title">
+                Our college scholars have achieved a new progress in the efficient and precise treatment of
+                methicillin-resistant Staphylococcus aureus biofilms
+              </div>
+              <p class="label">
+                Recently, our college scholars cleverly designed a precision nanosystems with a synergistic effect of
+                cascaded photodynamic therapy and nutritional immunotherapy, which effectively resists biofilm
+                infections via a new antibacterial mechanism. The relevant achievements were published in Science
+                advances under the title of "Targeting and Arginine driven Synergizing Photodynamic Therapy with
+                Nutritional Immunoherapy Nanosystems for Combining MRSA Biofilms". This study design a targeting and
+                synergizing cascade-PDT with nutritional immunotherapy nanosystems (Arg-PCN@Gel) containing core
+                PCN-224 as PDT platform for providing ROS, incorporating arginine (Arg) as NO donor to cascade with
+                ROS to produce more lethal ONOO- and promote immune response, and coating with gelatin as targeting
+                agent and persistent Arg provider. The composite nanosystems showed targeting and synergistic
+                photodynamic and nutritional immunotherapy against methicillin-resistant Staphylococcus aureus (MRSA)
+                biofilm
+              </p>
+              <div class="btn">
+                <a href="">More<img src="../img/global/nav.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="top-img" style="background: url('../img/home/research/list3.png'); background-size: 100% 100%">
+            </div>
+            <div class="text-wrap">
+              <div class="title">
+                mLST8 is essential for coronavirus replication and regulates its replication through the mTORC1
+                pathway
+              </div>
+              <p class="label">
+                Recently, Prof. Peng Guiqing's team, in collaboration with Prof. Xie Shengsong, identified mLST8, as a
+                key host factor required for coronavirus replication. The research results were published in the
+                international microbiology journal mBio entitled “mLST8 is essential for coronavirus replication and
+                regulates its replication through the mTORC1 pathway.”
+              </p>
+              <div class="btn">
+                <a href="">More<img src="../img/global/nav.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="top-img" style="background: url('../img/home/research/list4.png'); background-size: 100% 100%">
+            </div>
+            <div class="text-wrap">
+              <div class="title">Advances in mechanism of the metabolites from gut functional microbes in pigs</div>
+              <p class="label">
+                Recently, a paper entitled “Gut microbiota-derived 3-phenylpropionic acid promotes intestinal
+                epithelial barrier function via AhR signaling” has been published in the journal “Microbiome”. This
+                work was completed by the professor Xianghua Yan research group from the National Key Laboratory of
+                Agricultural Microbiology, Frontiers Science Center for Animal Breeding and Sustainable Production,
+                and Hubei Hongshan Laboratory
+              </p>
+              <div class="btn">
+                <a href="">More<img src="../img/global/nav.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="top-img" style="background: url('../img/home/research/list5.png'); background-size: 100% 100%">
+            </div>
+            <div class="text-wrap">
+              <div class="title">
+                Our college scholars have achieved new progress in the multifunctional nanomaterials of
+                adsorption/degradation
+                of antibacterial drugs in the environment and their mechanisms
+                </p>
+              </div>
+              <p class="label">
+                Recently, our college scholars explored a multifunctional catalyst with high adsorption
+                property and hydrogen peroxide/persulfate activation properties for fluoroquinolones (FQs) prepared by
+                using
+                daidzein as a template based on molecular imprinting technology combined with Fe-MOF, and systematically
+                analyzed the efficient degradation mechanism of the catalyst based on different oxidation systems for
+                FQs in
+                water environment. The relevant results were published as "Imprinting defective Fe-based metal-organic
+                frameworks as an excellent platform for selective Fenton/persulfate. degradation of LEX: removal
+                performance
+                and mechanism, " in Applied Catalysis B: Environmental.
+              </p>
+              <div class="btn">
+                <a href="">More<img src="../img/global/nav.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="top-img" style="background: url('../img/home/research/list6.png'); background-size: 100% 100%">
+            </div>
+            <div class="text-wrap">
+              <div class="title">
+                The animal cloning and stem cell research team of our hospital reveals the rules of chromatin opening
+                remodeling in pig early embryonic development
+                </p>
+              </div>
+              <p class="label">
+                The animal cloning and stem cell research team led by Professor Miao Yiliang of our hospital published
+                the latest research results entitled "KLF4 facilitates chromatin accessibility remodeling in porcine
+                early embryos" in SCIENCE CHINA Life Sciences. This study comprehensively revealed the remodeling rules
+                of chromatin openness during the development of fertilized pig embryos, and confirmed that the
+                transcription factor KLF4 played an important role in regulating the chromatin openness of early pig
+                embryos.
+
+              </p>
+              <div class="btn">
+                <a href="">More<img src="../img/global/nav.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="cen-wrap">
+        <div class="footer-wrap">
+          <div class="bg-filter-wrap"></div>
+        </div>
+        <div class="text-wrap">
+          <img src="../img/global/footer-logo.png" alt="" />
+          <div class="cen-text">
+            <div class="nav-item"><a href="./index.html">Home</a></div>
+            <div class="nav-item">
+              <a href="./education/teachingInformation.html">Education</a>
+              <a href="./education/teachingInformation.html">Teaching Information</a>
+              <a href="./education/programs.html">Programs</a>
+            </div>
+            <div class="nav-item">
+              <a href="./global/overview.html">Global</a>
+              <a href="./global/overview.html">Overview</a>
+              <a href="./global/partners.html">Partners</a>
+            </div>
+            <div class="nav-item">
+              <a href="./news/events.html">News</a>
+              <a href="./news/events.html">Events</a>
+              <a href="./news/notices.html">Notices</a>
+            </div>
+            <div class="nav-item">
+              <a href="./people/overview.html">People</a>
+              <a href="">Overview</a>
+              <a href="">Academician</a>
+              <a href="">Faculty</a>
+              <a href="">postdoctor</a>
+            </div>
+            <div class="nav-item">
+              <a href="./about/introduction.html">About</a>
+              <a href="./about/introduction.html">Introduction</a>
+              <a href="./about/leadership.html">Leadership</a>
+              <a href="./about/orgnazationalStructure.html">orgnazational Structure</a>
+              <a href="./about/contact.html">Contact Us</a>
+            </div>
+            <div class="nav-item">
+              <a href="./research/institutes.html">Research</a>
+              <a href="./research/institutes.html">Key Institutes</a>
+              <a href="./research/projects.html">Research Projects</a>
+              <a href="./research/highlights.html">Research Highlights</a>
+              <a href="./research/pro">Research Progress</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- js -->
+  <script src="../layui/layui.js"></script>
+  <script>
+    layui.use(function () {
+      var element = layui.element;
+      element.render("nav");
+    });
+    layui.use(function () {
+      var carousel = layui.carousel;
+      // 渲染 - 图片轮播
+      carousel.render({
+        elem: "#ID-carousel-demo-image",
+        width: "100%",
+        height: "630px",
+        interval: 3000,
+      });
+    });
+  </script>
+</body>
+<style></style>
+
+</html>
