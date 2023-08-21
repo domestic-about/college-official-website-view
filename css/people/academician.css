@@ -1,0 +1,53 @@
+.global-banner .bg {
+  background: url("../../img/global/footer-bg.png");
+  background-size: 100% 100%;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.left-nav .layui-this a {
+  color: #fff !important;
+}
+.right-wrap .admin-card-item {
+  padding: 30px 130px 20px 130px;
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid #dbdbdb;
+  &:hover {
+    background: #dbdbdb;
+  }
+}
+
+.right-wrap .admin-card-item .left-img-wrap {
+  height: 181px;
+}
+
+.right-wrap .admin-card-item .text-right-wrap .text-name {
+  color: #007306;
+  font-family: times new roman, serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.right-wrap .admin-card-item .text-right-wrap .admin-label {
+  color: #333;
+  font-family: times new roman, serif;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.right-wrap h5 {
+  color: #007306;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.right-wrap .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}

@@ -1,0 +1,50 @@
+.global-banner .bg {
+  background: url("../../img/global/school.png");
+  background-size: 100% 100%;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.left-nav .layui-this a {
+  color: #fff !important;
+}
+
+.right-wrap {
+}
+.right-wrap .text-wrap h3 {
+  font-size: 28px;
+  color: #ff6600;
+  margin-top: 42px;
+}
+.right-wrap p {
+  margin-top: 20px;
+  color: #333;
+  font-family: times new roman, serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+.right-wrap h5 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #007306;
+}
+.right-wrap .icon-label {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-top: 11px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007306;
+  }
+}
