@@ -66,6 +66,10 @@
     background: #007306;
   }
 }
+.home-events .con-main-wrap .card-list .card-item:hover a {
+  color: #fff;
+}
+
 .home-events .con-main-wrap .card-list .card-item img {
   width: 100%;
   height: 256px;
