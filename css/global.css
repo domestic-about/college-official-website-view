@@ -26,7 +26,7 @@ h3 {
 .info-label {
   color: #333;
   font-family: times new roman, serif;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 32px;
   text-indent: 37px;
 }
@@ -150,24 +150,30 @@ h3 {
 .global-center-wrap .left-nav .layui-nav .layui-nav-child {
   padding: 0;
 }
+.global-center-wrap .left-nav .layui-nav-tree {
+  width: 226px;
+}
 .global-center-wrap .left-nav .layui-nav-tree .layui-this a {
   color: #fff !important;
 }
 .global-center-wrap .left-nav .layui-nav-tree .layui-nav-item a {
   color: #000;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #eee;
 }
 .global-center-wrap .left-nav .layui-nav-tree .layui-nav-item a img {
   height: 20px;
 }
-.global-center-wrap .left-nav .layui-nav.layui-nav-tree {
-  width: 226px;
-}
-.global-center-wrap .left-nav .layui-nav .layui-nav-itemed .top-nav {
+.global-center-wrap .left-nav .layui-nav .top-nav {
   background-color: #16baaa;
-  padding: 20px 0;
+  padding: 9px 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  color: #fff !important;
+}
+.global-center-wrap .left-nav .layui-nav .layui-nav-more {
+  top: -13px;
+  font-size: 14px;
+  right: 6px;
 }
 .global-center-wrap .left-nav .layui-nav .layui-nav-itemed .layui-this a {
   color: #007306 !important;
@@ -243,7 +249,7 @@ h3 {
 .footer {
 }
 .footer-wrap {
-  filter: brightness(0.2);
+  filter: brightness(0.15);
 }
 .footer .cen-wrap {
   position: relative;
@@ -252,7 +258,6 @@ h3 {
   padding: 200px 80px 450px;
   background: url("../img/global/footer-bg.png");
   background-size: 100% 100%;
-  filter: blur(5px);
 }
 .footer .cen-wrap .text-wrap {
   width: 100%;
@@ -279,7 +284,8 @@ h3 {
   gap: 30px;
 }
 .footer .cen-wrap .text-wrap .cen-text .nav-item a {
-  color: #999;
+  color: #ccc;
+  font-size: 14px;
   &:nth-child(1) {
     font-size: 20px;
   }

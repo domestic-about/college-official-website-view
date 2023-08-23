@@ -5,7 +5,20 @@
 .right-wrap {
 }
 .right-wrap h5 {
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 28px;
+  margin: 20px 0;
   text-align: center;
+  color: #007306;
+}
+.right-wrap .layui-table th {
+  color: #333;
+  font-size: 18px;
+}
+.right-wrap .layui-table .title {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+.right-wrap .layui-table td {
+  font-size: 16px;
 }

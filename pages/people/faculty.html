@@ -64,15 +64,15 @@
                   <a href="../people/overview.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
                 </dd>
                 <dd>
-                  <a href="">Academician<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="./people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="./people/postdoctoral.html"
-                    >Postdoctor<img src="../../img/global/navigation.png" alt=""
+                  <a href="../people/academician.html"
+                    >Academician<img src="../../img/global/navigation.png" alt=""
                   /></a>
+                </dd>
+                <dd>
+                  <a href="../people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../people/postdoctor.html">Postdoctor<img src="../../img/global/navigation.png" alt="" /></a>
                 </dd>
               </dl>
             </li>
@@ -101,14 +101,12 @@
                   <a href="../research/Projects.html">Projects<img src="../../img/global/navigation.png" alt="" /></a>
                 </dd>
                 <dd>
-                  <a href="../research/researchHighlights.html"
+                  <a href="../research/highlights.html"
                     >Highlights<img src="../../img/global/navigation.png" alt=""
                   /></a>
                 </dd>
                 <dd>
-                  <a href="../research/researchProgress.html"
-                    >Progress<img src="../../img/global/navigation.png" alt=""
-                  /></a>
+                  <a href="../research/progress.html">Progress<img src="../../img/global/navigation.png" alt="" /></a>
                 </dd>
               </dl>
             </li>
@@ -139,19 +137,30 @@
       </section>
       <!-- banner -->
       <section class="global-banner">
+        <div class="bg"></div>
         <h3>Faculty</h3>
       </section>
       <!-- 内容展示区域 -->
       <section class="global-center-wrap">
         <div class="left-nav">
           <ul class="layui-nav layui-nav-tree">
-            <li class="layui-nav-item layui-this"><a href="./overview.html">Overview </a></li>
+            <li class="layui-nav-item"><a href="./overview.html">Overview </a></li>
             <li class="layui-nav-item"><a href="./academician.html">Academician</a></li>
-            <li class="layui-nav-item"><a href="./faculty.html">Faculty</a></li>
+            <li class="layui-nav-item layui-this"><a href="./faculty.html">Faculty</a></li>
             <li class="layui-nav-item"><a href="./postdoctor.html">Postdoctor</a></li>
           </ul>
         </div>
-        <div class="right-text"></div>
+        <div class="right-wrap">
+          <!-- 右边展示内容的区域 -->
+          <div class="nav-wrap">
+            <h5>Faculty</h5>
+            <span class="layui-breadcrumb">
+              <a href="../index.html">Home</a>
+              <a href="./overview.html">People</a>
+              <a href="./faculty.html"><cite>Faculty</cite></a>
+            </span>
+          </div>
+        </div>
       </section>
       <!-- footer -->
       <section class="footer">
@@ -160,9 +169,10 @@
             <div class="bg-filter-wrap"></div>
           </div>
           <div class="text-wrap">
-            <img src="../../img/global/footer-logo.png" alt="" />
+            <a href="../index.html">
+              <img src="../../img/global/footer-logo.png" alt="" />
+            </a>
             <div class="cen-text">
-              <div class="nav-item"><a href="">Home</a></div>
               <div class="nav-item">
                 <a href="">Education</a>
                 <a href="">Teaching Information</a>
@@ -206,8 +216,5 @@
     </div>
     <script src="../../layui/layui.js"></script>
   </body>
-  <style>
-    dfs {
-    }
-  </style>
+  <style></style>
 </html>

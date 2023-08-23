@@ -1,451 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../layui/css/layui.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/people/academician.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../../layui/css/layui.css">
-  <link rel="stylesheet" href="../../css/global.css">
-  <link rel="stylesheet" href="../../css/people/academician.css">
-</head>
-
-<body>
-  <div class="app">
-    <!-- header-nav -->
-    <section class="header-nav">
-      <div class="language">
-        <!-- tabbar -->
-        <div class="nav">
-          <div></div>
-          <ul>
-            <li><a href="../index.html">Home<img src="../../img/global/home.png" alt=""></a></li>
-            <li><a href="">English<img src="../../img/global/ch.png" alt=""></a></li>
-            <li><a href="https://my.hzau.edu.cn/index.htm">中文<img src="../../img/global/en.png" alt=""> </a></li>
+  <body>
+    <div class="app">
+      <!-- header-nav -->
+      <section class="header-nav">
+        <div class="language">
+          <!-- tabbar -->
+          <div class="nav">
+            <div></div>
+            <ul>
+              <li>
+                <a href="../index.html">Home<img src="../../img/global/home.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="">English<img src="../../img/global/ch.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://my.hzau.edu.cn/index.htm">中文<img src="../../img/global/en.png" alt="" /> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- nav -->
+        <div class="nav-wrap">
+          <a href="../index.html"> <img class="logo" src="../../img/global/logo.png" alt="" /></a>
+          <ul class="layui-nav layui-bg-gray">
+            <li class="layui-nav-item"><a href="../index.html">Home</a></li>
+            <li class="layui-nav-item">
+              <a href="../about/introduction.html">About</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../about/introduction.html">
+                    <span> Introduction </span>
+                    <img src="../../img/global/navigation.png" alt="" />
+                  </a>
+                </dd>
+                <dd>
+                  <a href="../about/leadership.html">Leadership <img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../about/orgnazationalStructure.html"
+                    >Orgnazational Structure<img src="../../img/global/navigation.png" alt=""
+                  /></a>
+                </dd>
+                <dd>
+                  <a href="../about/contact.html">Contact Us<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item layui-this">
+              <a href="../people/overview.html">People</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../people/overview.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../people/academician.html"
+                    >Academician<img src="../../img/global/navigation.png" alt=""
+                  /></a>
+                </dd>
+                <dd>
+                  <a href="../people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../people/postdoctor.html">Postdoctor<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="../education/teachingInformation/undergradute.html">Education</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../education/teachingInformation/undergradute.html"
+                    >Teaching Information<img src="../../img/global/navigation.png" alt=""
+                  /></a>
+                </dd>
+                <dd>
+                  <a href="../education/programs.html">Programs<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="../research/institutes.html">Research</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../research/institutes.html"
+                    >Institutes<img src="../../img/global/navigation.png" alt=""
+                  /></a>
+                </dd>
+                <dd>
+                  <a href="../research/Projects.html">Projects<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../research/highlights.html"
+                    >Highlights<img src="../../img/global/navigation.png" alt=""
+                  /></a>
+                </dd>
+                <dd>
+                  <a href="../research/progress.html">Progress<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="../global/global.html">Global</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../global/global.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../global/global.html">Partners<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">News</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../news/events.html">Events<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+                <dd>
+                  <a href="../news/events.html">Notices<img src="../../img/global/navigation.png" alt="" /></a>
+                </dd>
+              </dl>
+            </li>
           </ul>
         </div>
-      </div>
-      <!-- nav -->
-      <div class="nav-wrap">
-        <a href="../index.html"> <img class="logo" src="../../img/global/logo.png" alt=""></a>
-        <ul class="layui-nav layui-bg-gray">
-          <li class="layui-nav-item "><a href="../index.html">Home</a>
-          </li>
-          <li class="layui-nav-item"><a href="../about/introduction.html">About</a>
-            <dl class="layui-nav-child">
-              <dd><a href="../about/introduction.html">
-                  <span>
-                    Introduction
-                  </span>
-                  <img src="../../img/global/navigation.png" alt="">
-                </a></dd>
-              <dd><a href="../about/leadership.html">Leadership <img src="../../img/global/navigation.png" alt=""></a>
-              </dd>
-              <dd><a href="../about/orgnazationalStructure.html">Orgnazational Structure<img
-                    src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="../about/contact.html">Contact Us<img src="../../img/global/navigation.png" alt=""></a></dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item layui-this"><a href="../people/overview.html">People</a>
-            <dl class="layui-nav-child">
-              <dd><a href="../people/overview.html">Overview<img src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="">Academician<img src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="./people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="./people/postdoctoral.html">Postdoctor<img src="../../img/global/navigation.png" alt=""></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item"><a href="../education/teachingInformation/undergradute.html">Education</a>
-            <dl class="layui-nav-child">
-              <dd><a href="../education/teachingInformation/undergradute.html">Teaching Information<img
-                    src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="../education/programs.html">Programs<img src="../../img/global/navigation.png"
-                    alt=""></a></dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item">
-            <a href="../research/institutes.html">Research</a>
-            <dl class="layui-nav-child">
-              <dd><a href="../research/institutes.html">Institutes<img src="../../img/global/navigation.png" alt=""></a>
-              </dd>
-              <dd><a href="../research/Projects.html">Projects<img src="../../img/global/navigation.png" alt=""></a>
-              </dd>
-              <dd><a href="../research/researchHighlights.html">Highlights<img src="../../img/global/navigation.png"
-                    alt=""></a></dd>
-              <dd><a href="../research/researchProgress.html">Progress<img src="../../img/global/navigation.png"
-                    alt=""></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item"><a href="../global/global.html">Global</a>
-            <dl class="layui-nav-child">
-              <dd><a href="../global/global.html">Overview<img src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="../global/global.html">Partners<img src="../../img/global/navigation.png" alt=""></a></dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item ">
-            <a href="javascript:;">News</a>
-            <dl class="layui-nav-child">
-              <dd><a href="../news/events.html">Events<img src="../../img/global/navigation.png" alt=""></a></dd>
-              <dd><a href="../news/events.html">Notices<img src="../../img/global/navigation.png" alt=""></a>
-              </dd>
-            </dl>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- banner -->
-    <section class="global-banner">
-      <div class="bg"></div>
-      <h3>Academician</h3>
-    </section>
-    <!-- 内容展示区域 -->
-    <section class="global-center-wrap">
-      <div class="left-nav">
-        <ul class="layui-nav layui-nav-tree">
-          <li class="layui-nav-item "><a href="./overview.html">Overview </a></li>
-          <li class="layui-nav-item layui-this"><a href="./academician.html">Academician <img src="../../img/global/navigation.png" alt=""></a></li>
-          <li class="layui-nav-item"><a href="./faculty.html">Faculty</a></li>
-          <li class="layui-nav-item"><a href="./postdoctor.html">Postdoctor</a></li>
-        </ul>
-      </div>
-      <div class="right-wrap">
-        <div class="nav-wrap">
-          <h5>Academician</h5>
-          <span class="layui-breadcrumb">
-            <a href="../index.html">Home</a>
-            <a href="./overview.html">People</a>
-            <a href="./academician.html"><cite>Academician</cite></a>
-          </span>
+      </section>
+      <!-- banner -->
+      <section class="global-banner">
+        <div class="bg"></div>
+        <h3>Academician</h3>
+      </section>
+      <!-- 内容展示区域 -->
+      <section class="global-center-wrap">
+        <div class="left-nav">
+          <ul class="layui-nav layui-nav-tree">
+            <li class="layui-nav-item"><a href="./overview.html">Overview </a></li>
+            <li class="layui-nav-item layui-this">
+              <a href="./academician.html">Academician <img src="../../img/global/navigation.png" alt="" /></a>
+            </li>
+            <li class="layui-nav-item"><a href="./faculty.html">Faculty</a></li>
+            <li class="layui-nav-item"><a href="./postdoctor.html">Postdoctor</a></li>
+          </ul>
         </div>
-        <div class="admin-card-item">
-          <img src="../../img/people/list1.png" class="left-img-wrap" />
-          <div class="text-right-wrap">
-            <div class="text-name">CHEN HUANCUN</div>
-            <p class="admin-label">Department: Preventive Veterinary Medicine </p>
-            <p class="admin-label">Position Title: Professor, Academician
-            </p>
-            <p class="admin-label">Office Address:The Cooperative Innovation Center for Sustainable Pig Production
-              Room 401
-            </p>
-            <p class="admin-label">Email :chenhch@mail.hzau.edu.cn
-            </p>
-            <p class="admin-label">
-              Course Teaching: 《Veterinary Infectious Disease》
-            </p>
+        <div class="right-wrap">
+          <div class="nav-wrap">
+            <h5>Academician</h5>
+            <span class="layui-breadcrumb">
+              <a href="../index.html">Home</a>
+              <a href="./overview.html">People</a>
+              <a href="./academician.html"><cite>Academician</cite></a>
+            </span>
           </div>
-        </div>
-        <h5>Personal Profile</h5>
-        <p class="info-label">
-          Chen Huanchun, born in Enshi, Hubei province, is the professor of Huazhong agricultural university, supervisor
-          of Ph.D students, and now the director of the Cooperative Innovation Center for Sustainable Pig Production,
-          Hubei. Prof. Chen has been honored with many awards, including the State Council Special Allowance, Heliang &
-          Heli Foundation for Scientific and Technological Progress Award, China Agricultural Talent Award, Award for
-          the Outstanding Contribution to the National Science and Technology Project during the Eleventh Five-Year Plan
-          Period, and the Award for the outstanding contribution to Science and Technology in Hubei Province, etc.
-        </p>
-        <p class="info-label">
-          Prof. Chen received his Doctor’s degree in Veterinary Medicine from University of Munich, Germany. Currently,
-          he is the President of the Chinese Veterinary Association, while also holds the positions in the Director of
-          Academic Committee of the State Key Laboratory of Agricultural Microbiology; the Director of Academic
-          Committee of the State Key Laboratory of Veterinary Biotechnology of Harbin Veterinary Research Institute,
-          Chinese Academy of Agricultural Sciences; the Chairman of Higher Learning Teaching Guidance Committee in the
-          Majors of Animal Production, Ministry of Education; the expert committee member in State Council Emergency
-          Handling Department; the member of Expert Committee of Ministry of Agriculture Science and Technology
-          Committee; the member of Expert Committee of Science and Technology Commission of Ministry of Education; the
-          member of the New Veterinary Drug Evaluation Committee of Ministry of Agriculture; Vice president of Genetical
-          Modification and Technology of Ministry of Agriculture.
-        </p>
-        <p class="info-label">
-          By 2022, Prof. Chen has held more than 50 important scientific research projects sponsored by National Natural
-          Science Foundation, “973” project, “863” project and national support programs. He has developed more than 30
-          kinds of genetically engineering vaccines and molecular diagnostic kits, and obtained 20 genetically modified
-          certificates, 30 certificates of new veterinary drug registration, 53 invention patents, and 5 national
-          certificates for the new and key products. Prof. Chen has formulated three national standards and the Ministry
-          of Agriculture industry standards. Prof. Chen also won the 2nd prize of National Science and Technology
-          Progress for four times, the 1st prize of Hubei Provincial Science and Technology Progress for six times, and
-          the 2nd prize of national teaching achievement for two times. More than six-hundred research papers have been
-          published by Prof. Chen’s team, within which over two-hundred ones were indexed by SCI. Besides, Prof. Chen
-          has published three monographs as chief editor, and another three ones as the joint editor. Till 2022, there
-          are 102 doctors’ and 120 masters’ students graduated under his education. The research group led by Prof. Chen
-          has been selected into the Innovation Groups of the National Natural Science Foundation of China.
-        </p>
-        <h5>Education Experience</h5>
-        <p class="info-label">
-          1984.10 – 1989.01, Ph.D. Veterinary Medicine, University of Munich, Germany
-        </p>
-        <h5>Working Experience</h5>
-        <p class="info-label">1989.02—1993.09, Lecturer, Associate Professor, Huazhong Agricultural University
-        </p>
-        <p class="info-label"> 1993.10—1994.10, Visiting Research, University of Munich, Germany</p>
-        <p class="info-label">1994.11—2002.12, Professor, Supervisor of PhD students, Dean of College of Animal Science and
-          Technology, and
-          College of Veterinary Medicine, Huazhong Agricultural University</p>
-        <p class="info-label"> 2003.01—2007.12, Professor, Vice President of Huazhong Agricultural University, Academician of
-          Chinese Academy
-          of Engineering, China</p>
-        <p class="info-label"> 2008.01—Till now, Professor, Academician of Chinese Academy of Engineering, Huazhong
-          Agricultural
-          University1989.02—1993.09, Lecturer, Associate Professor, Huazhong Agricultural University</p>
-        <h5>Research Area</h5>
-        <p class="info-label">Veterinary infectious disease</p>
-        <p class="info-label"> Development of novel veterinary vaccines and molecular diagnostic products</p>
-        <h5>Academic Outcomes</h5>
-        <div class="title">
-          A.Books
-        </div>
-        <p class="info-label">
-          a. “Disease Control and Purification in Large-scale Pig Farms”, as chief editor
-        </p>
-        <p class="info-label">
-          b. “Manual of Veterinary Medicine”, as chief editor
-        </p>
-        <p class="info-label">
-          c. “Pseudorabies”, as chief editor
-        </p>
-        <div class="title">
-          B．Publications (Partial)
-        </div>
-        <p class="info-label">
-          1.Yang F, Lei YY, Zhou ML, Yao QL, Han YC, Wu X, Zhong WS, Zhu CH, Xu WZ, Tao R, Chen X, Lin D, Rahman K,
-          Tyagi R, Habib Z, Xiao SB, Wang D, Yu Y, Chen HC, Fu ZF, Cao G. Development and application of a
-          recombination-based library versus library high- throughput yeast two-hybrid (RLL-Y2H) screening system.
-          Nucleic acids research. 2018, 46(3):e17</br>
-          2.Peng Z; Hu ZZ; Li ZG; Zhang XX; Jia CY; Li TZ; Dai MH; Tan C; Xu ZF; Wu B; Chen HC; Wang XR; Antimicrobial
-          resistance and population genomics of multidrug-resistant Escherichia coli in pig farms in mainland China,
-          Nature communications. 2022, 13(1): 1116</br>
-          3.Liu QY; Wang XJ; Xie CH; Ding SF; Yang HN; Guo SB; Li JX; Qin LZ; Ban FG; Wang DF; Wang C; Feng LX; Ma HC;
-          Wu B; Zhang LP; Dong CX; Xing L; Zhang JW; Chen HC; Yan RQ; Wang XR; Li W; A Novel Human Acute Encephalitis
-          Caused by Pseudorabies Virus Variant Strain, Clinical infectious diseases. 2020, 73(11): e3690-e3700</br>
-          4.Zhu YX; Wang RF; Yu LY; Sun HM; Tian S; Li P; Jin ML; Chen HC; Ma WJ; Zhou HB; Human TRA2A determines
-          influenza A virus host adaptation by regulating viral mRNA splicing, Science advances. 2020, 6(25): 5764</br>
-          5.Wang RF; Zhu YX; Ren CW; Yang S; Tian S; Chen HC; Jin ML; Zhou HB; Influenza A virus protein PB1-F2 impairs
-          innate immunity by inducing mitophagy, Autophagy. 2020, 17(2): 496-511</br>
-          6.Peng Z; Lin L; Wang XR; Chen HC; Wu B; The public health concern of Pasteurella multocida should not be
-          ignored, The Lancet. Microbe, 2022, 3(8): e560</br>
-          7.Yang RC; Huang K; Zhang HP; Li L; Zhang YF; Tan C; Chen HC; Jin ML; Wang XR; SARS-CoV-2 productively infects
-          human brain microvascular endothelial cells, Journal of neuroinflammation, 2022, 19(1): 149</br>
-          8.Zou G; Matuszewska M; Jia M; Zhou JW; Ba XL; Duan J; Zhang CS; Zhao J; Tao M; Fan JY; Zhang XM; Jin WP; Cui
-          TP; Zeng XY; Jia M; Qian XJ; Huang C; Zhuo WX; Yao ZM; Zhang LJ; Li SW; Li L; Huang Q; Wu B; Chen HC;
-          Alexander W. Tucker; Andrew J. Grant; Mark A. Holmes; Zhou R; A Survey of Chinese Pig Farms and Human
-          Healthcare Isolates Reveals Separate Human and Animal Methicillin-Resistant Staphylococcus aureus Populations,
-          Advanced science (Weinheim, Baden-Wurttemberg, Germany), 2022, 9(4): e2103388</br>
-          9.Liu F; Peng W; Yan K; Huang J; Yuan FY; He QG; Chen HC; Bei WC; CpxAR of Actinobacillus pleuropneumoniae
-          Contributes to Heat Stress Response by Repressing Expression of Type IV Pilus Gene apfA.Microbiol Spectr,
-          Microbiology spectrum, 2022, 10(6): e0252322</br>
-          10.Yang B; Yang RC; Xu BJ; Fu JY; Qu XY; Li L; Dai MH; Tan C; Chen HC; Wang XR; miR-155 and miR-146a
-          collectively regulate meningitic Escherichia coli infection-mediated neuroinflammatory responses, Journal of
-          neuroinflammation, 2021, 18(1): 114</br>
-          11.Huang K; Zhang YF; Hui XF; Zhao Y; Gong WX; Wang T; Zhang SR; Yang Y; Deng F; Zhang Q; Chen X; Yang Y; Sun
-          XM; Chen HC; Tao YZ J; Zou Z; Jin ML; Q493K and Q498H substitutions in Spike promote adaptation of SARS-CoV-2
-          in mice, EBioMedicine, 2021, 67: 103381-103381</br>
-          12.Li QY; Zhou DY; Jia F; Zhang LP; Ashraf U; Li YC; Duan HY; Song YF; Chen HC; Cao SB; Ye J; Japanese
-          Encephalitis Virus NS1′ Protein Interacts with Host CDK1 Protein to Regulate Antiviral Response, Microbiology
-          spectrum, 2021, 9(3): e0166121</br>
-          13.Shi YJ; Shuai L; Wen ZY; Wang C; Yan YY; Jiao Z; Guo FL; Fu ZF; Chen HC; Bu ZG; Peng GQ; The preclinical
-          inhibitor GS441524 in combination with GC376 efficaciously inhibited the proliferation of SARS-CoV-2 in the
-          mouse respiratory tract, Emerging microbes & infections, 2021, 10(1): 481-492</br>
-          14.Wen W; Li XM; Yin MG; Wang HY; Qin LX; Li H; Liu WQ; Zhao ZK; Zhao QQ; Chen HC; Hu JJ; Qian P; Selective
-          autophagy receptor SQSTM1/ p62 inhibits Seneca Valley virus replication by targeting viral VP1 and VP3,
-          Autophagy, 2021, 17(11): 3763-3775</br>
-          15.Wang RF; Zhu YX; Lin X; Ren CW; Zhao JC; Wang FF; Gao XC; Xiao R; Zhao LZ; Chen HC; Jin ML; Ma WJ; Zhou HB;
-          Influenza M2 protein regulates MAVS-mediated signaling pathway through interacting with MAVS and increasing
-          ROS production, Autophagy, 2019, 15(7): 1163-1181</br>
-          16.Ding Z, An K, Xie LL, Wu W, Zhang RX, Wang D, Fang Y, Chen HC, Xiao SB, Fang LR*. Transmissible
-          gastroenteritis virus infection induces NF-kappa B activation through RLR-mediated signaling. Virology. 2017,
-          507: 170-178</br>
-          17.He W, Zhao ZK, Anees A, Li YC, Ashraf U, Chen Z, Song YF, Chen HC, Cao SB, Ye J*. p21-Activated Kinase 4
-          Signaling Promotes Japanese Encephalitis Virus-Mediated Inflammationin Astrocytes. Frontiers In Cellular And
-          Infection Microbiology. 2017, 7</br>
-          18.Zheng Chengkun, Zhao Xigong, Zeng Ting, Cao Manman, Xu Jiali, Shi Guolin, Li Jinquan, Chen Huanchun, Bei
-          Weicheng*. Identification of four type II toxin-antitoxin systems in Actinobacillus pleuropneumoniae. FEMS
-          microbiology letters.2017, 7</br>
-          19.Sun X, Wang SY, Lin X , Zhao LZ, Zhang D, Yi CY, Sun XM, Chen HC, Jin ML*.Proteome analysis of Duck Tembusu
-          virus (DTMUV)-infected BHK-21 cells.Proteomics.2017, 17:12
-          20.Xu Jiali, Zheng Chengkun, Cao Manman, Zeng Ting, Zhao Xigong, Shi Guolin, Chen Huanchun, Bei Weicheng*.The
-          manganese efflux system MntE contributes to the virulence of Streptococcus suis serotype 2.Microbial
-          pathogenesis.2017, 110:23-30</br>
-          21.Wang X, Wu CX, Song XR, Chen HC, Liu ZF*. Comparison of pseudorabies virus China reference strain with
-          emerging variants reveals independent virus evolution within specific geographic regions.Virology. 2017,
-          (506): 92-98</br>
-          22.Qian Suhong, Fan Wenchun, Liu Tingting, Wu Mengge, Zhang Huawei, Cui Xiaofang, Zhou Yun, Hu Junjie, Wei
-          Shaozhong, Chen Huanchun, Li Xiangmin*, Qian Ping. Seneca Valley Virus suppresses host type I interferon
-          production by targeting adaptor proteins MAVS TRIF and TANK for cleavage. Journal of virology.2017, 4 Journal
-          of virology</br>
-          23.Wang SY, Sun X, Yi CY, Zhang D, Lin X, Sun XM, Chen HC, Jin ML*. AGO2 Negatively Regulates Type I
-          Interferon Signaling Pathway by Competition Binding IRF3 with CBP/p300.Frontiers In Cellular And Infection
-          Microbiology.2017, 7</br>
-          24.Rasheed MA, Qi JJ, Zhu XF, He CF, Menghwar H, Khan FA, Gang Z, Zubair M, Hu CM, Chen YY, Chen HC, Guo AZ*.
-          Comparative Genomics of Mycoplasma bovis Strains Reveals That Decreased Virulence with Increasing Passages
-          Might Correlate with Potential Virulence-Related Factors. Frontiers In Cellular And Infection Microbiology.
-          2017, 7</br>
-          25.Wang Y, Li JT, Zhang AD, Zhu WF, Zhang Q, Xu ZM, Yan SX, Sun XM, Chen HC, Jin ML*. iTRAQ-based quantitative
-          proteomic analysis reveals potential virulence factors of Erysipelothrix rhusiopathiae. Journal Of
-          Proteomics.2017, 160: 28-37</br>
-          26.Zou Z, Huang K, Wei YM, Chen HC, Liu ZD, Jin ML*. Construction of a highly efficient CRISPR/Cas9-mediated
-          duck enteritis virus-based vaccine against H5N1 avian influenza virus and duck Tembusu virus infection.
-          Scientific Reports.2017, 7</br>
-          27.Peng Z, Liang W, Liu WJ, Chen HC, Wu B*.Genome characterization of Pasteurella multocida subspecies septica
-          and comparison with Pasteurella multocida subspecies multocida and gallicida. Archives Of Microbiology.2017,
-          199(4): 635-640</br>
-          28.Ye Jing, Chen Zheng, Li Yunchuan, Zhao Zikai, He Wen, Zohaib Ali, Song Yunfeng, Deng Chenglin, Zhang Bo,
-          Chen Huanchun, Cao Shengbo*.Japanese Encephalitis Virus NS5 Inhibits Type I Interferon (IFN) Production by
-          Blocking the Nuclear Translocation of IFN Regulatory Factor 3 and NF-kappaB. Journal of virology.2017, 91:8
-          29.Zhou YR, Fang LR, Wang D, Cai KM, Chen HC, Xiao SB*. Porcine Reproductive and Respiratory Syndrome Virus
-          Infection Induces Stress Granule Formation Depending on Protein Kinase R-like Endoplasmic Reticulum Kinase
-          (PERK) in MARC-145 Cells. Frontiers In Cellular And Infection Microbiology.2017, 7</br>
-          30.Zhang Shishuo, Wang Ruifang, Su Huijuan, Wang Biaoxiong, Sizhu Suolang, Lei Zhixin, Jin Meilin, Chen
-          Huanchun, Cao Jiyue, Zhou Hongbo*. Sus scrofa miR-204 and miR-4331 Negatively Regulate Swine H1N1/2009
-          Influenza A Virus Replication by Targeting Viral HA and NS Respectively. International journal of molecular
-          sciences.2017, 18:4</br>
-          31.Fan WC, Qian P, Wang DD, Zhi XW, Wei YM, Chen HC, Li XM*. Integrin alpha v beta 3 promotes infection by
-          Japanese encephalitis virus. Research In Veterinary Science. 2017, 111: 67-74</br>
-          32.Li YY, Zhou M, Luo ZC , Zhang YC, Cui M , Chen HC, Fu ZF, Zhao L*. Overexpression of Interleukin-7 Extends
-          the Humoral Immune Response Induced by Rabies Vaccination. Journal Of Virology.2017, 91: 7</br>
-          33.Ye J, Chen Z, Li YC, Zhao ZK, He W, Zohaib A, Song YF, Deng CL, Zhang B, Chen HC, Cao Shengbo. Japanese
-          Encephalitis Virus NS5 Inhibits Type I Interferon (IFN) Production by Blocking the Nuclear Translocation of
-          IFN Regulatory Factor 3 and NF-kappa B. Journal Of Virology.2017, 91: 8</br>
-          34.Liu XK, Yang C, Hu Y, Lei EM, Lin X, Zhao LZ, Zou Z, Zhang AD, Zhou HB, Chen HC, Qian P*, Jin ML*. HIST1H1C
-          Regulates Interferon-beta and Inhibits Influenza Virus Replication by Interacting with IRF3.Frontiers In
-          Immunology. 2017, 8</br>
-          35.Li P, Wang R, Dong WQ, Hu LL, Zong BB, Zhang YY, Wang XG, Guo AZ, Zhang AD, Xiang YZ, Chen HC, Tan
-          C*.Comparative Proteomics Analysis of Human Macrophages Infected with Virulent Mycobacterium bovis. Frontiers
-          In Cellular And Infection Microbiology.2017, 7 : 65</br>
-          36.Yuan FY, Tan C , Liu ZW, Yang K, Zhou D, Liu W, Duan ZY, Guo R, Chen HC, Tian YX* , Bei WC*. The 1910HK/RR
-          two-component system is essential for the virulence of Streptococcus suis serotype 2. Microbial
-          Pathogenesis.2017, 104: 137-145</br>
-          37.Sun YX, Deng ML, Peng Z, Hu RM, Chen HC, Wu B*. Genetic and phylogenetic analysis of feline calicivirus
-          isolates in China. Veterinary Journal. 2017, 220: 24-27</br>
-          38.Jing HY, Fang LR, Ding Z, Wang D, Hao WQ, Gao L, Ke WT, Chen HC, Xiao SB*. Porcine Reproductive and
-          Respiratory Syndrome Virus nsp1 alpha Inhibits NF-kappa B Activation by Targeting the Linear Ubiquitin Chain
-          Assembly Complex. Journal Of Virology.2017, 91: 3</br>
-          39.Wang Z, Li MM, Zhou M, Zhang YJ , Yang J, Cao YD, Wang KL, Cui M, Chen HC, Fu ZF, Zhao L*. A Novel Rabies
-          Vaccine Expressing CXCL13 Enhances Humoral Immunity by Recruiting both T Follicular Helper and Germinal Center
-          B Cells. Journal Of Virology.2017, 91: 3</br>
-          40.Fan WC, Liu TT, Li XM, Zhou Y, Wu MG, Cui XF, Chen HC, Qian P*. TRIM52: A nuclear TRIM protein that
-          positively regulates the nuclear factor-kappa B signaling pathway. Molecular Immunology. 2017, 82: 114-122
-          41.Jing Huiyuan, Fang Liurong, Ding Zhen, Wang Dang, Hao Wenqi, Gao Li, Ke Wenting, Chen Huanchun, Xiao
-          Shaobo. Porcine Reproductive and Respiratory Syndrome Virus nsp1alpha Inhibits NF-kappaB Activation by
-          Targeting the Linear Ubiquitin Chain Assembly Complex. Journal of virology.2017, 91:3</br>
-          42.Li YT, Ming F, Huang HM, Guo KL , Chen HC, Jin ML, Zhou HB*. Proteome Response of Chicken Embryo Fibroblast
-          Cells to Recombinant H5N1 Avian Influenza Viruses with Different Neuraminidase Stalk Lengths. Scientific
-          Reports.2017, 7</br>
-          43.Liu F, Fu JY, Liu CY, Chen J, Sun MH, Chen HC, Tan C*, Wang XR*. Characterization and distinction of two
-          flagellar systems in extraintestinal pathogenic Escherichia coli PCN033. Microbiological.Research.2017, 196:
-          69-79</br>
-          44.Zheng CK, Ren SJ, Xu JL, Zhao XG, Shi GL, Wu JP, Li JQ, Chen HC, Bei WC*. Contribution of NADH oxidase to
-          oxidative stress tolerance and virulence of Streptococcus suis serotype. Virulence.2017, 8(1): 53-65</br>
-          45.Chen YY, Wang JR, Ge P, Cao DJ, Miao BP, Robertson I, Zhou X, Zhang L, Chen HC, Guo AZ*. Tissue inhibitor
-          of metalloproteinases 1 a novel biomarker of tuberculosis. Molecular Medicine Reports. 2017, 15(1): 483-487
-          46.Farhan, Chen Yingyu, Hu Changmin, Chen Huanchun, Guo Aizhen*. Mycoplasma bovis NADH oxidase functions as
-          both a NADH oxidizing and O2 reducing enzyme and an adhesin. Scientific reports. 2017, 7(1):44</br>
-          47.Peng Z, Liang W, Wang YG, Liu WJ, Zhang HF, Yu T, Zhang AD, Chen HC, Wu B*. Experimental pathogenicity and
-          complete genome characterization of a pig origin Pasteurella multocida serogroup F isolate HN07. Veterinary
-          Microbiology.2017, 198: 23-33
-        </p>
-        <h5>Scientific Project</h5>
-        <p class="info-label">
-          1. Special Project of National Natural Science Foundation of China, “Mechanisms of natural and acquired
-          immunity in African swine fever virus evading hosts”, 2019-2022</br>
-          2. Key R&D Program Project of Department of Science and Technology of Hubei Province, “Breeding of major
-          animal breeds and research and development of biological products”, 2022-2023</br>
-          3. Strategic Research and Consulting Project of Chinese Academy of Engineering, “Research on the prevention
-          and control strategy of zoonotic diseases under the new situation”,2022-2023</br>
-          4. Innovation Research Group Project of National Natural Science Foundation of China, “Molecular biology and
-          Pathogenesis of the key veterinary pathogens”, 2015-2017</br>
-          5. Public Welfare Industry Project of Ministry of Agriculture, “Integration and Demonstration for Prevention
-          and Control of Glasser’s disease and porcine contagious pleuropneumonia”, 2013-2017</br>
-          6. Thirteenth 5-Year Plan Project for newly added Scientists in Modern Agricultural Industry Technology System
-          2017-2020</br>
-        </p>
-        <h5>Major Awards</h5>
-        <p class="info-label">
-          1. The second prize of National Science and Technology Progress for “Isolation and identification of
-          Pseudorabies Virus-EA strain and its molecular biology and comprehensive prevention and control study”,
-          10.12.2001.</br>
-          2. National Teaching Achievement Award for “Revolution and practice of professional talent-education plan of
-          veterinary medicine”, 01.09.2005.</br>
-          3. The second prize of National Science and Technology Progress for innovative research and development of
-          bacon hogs breed and its matched supporting technologies, 11. 02.2007.</br>
-          4. The first prize of Hubei Provincial Science and Technology Progress for the research of rapid detection
-          technologies of avian influenza, 01.12.2007.</br>
-          5. The first prize of Hubei Provincial Science and Technology Progress for the research of diagnostic
-          technology, novel vaccine and comprehensive prevention and control methods for Porcine parvovirus disease,
-          01.12.2008.</br>
-          6. The second prize of National Science and Technology Progress for the establishment and application of rapid
-          detection technologies for animal influenza, 23.12.2011.</br>
-          7. The first prize of Hubei Provincial Science and Technology Progress for research and application of key
-          technologies in prevention and control of swine streptococosis, 01.12.2013.</br>
-          8. The first prize of Hubei Provincial Science and Technology Progress for research and application of key
-          technologies in prevention and control of porcine contagious pleuropneumonia, 01.12.2014.</br>
-          9. The first prize of Hubei Provincial Science and Technology Progress for pathogenesis and prevention
-          technologies of swine influenza virus, 01.12.2015.</br>
-          10. The first prize of Hubei Provincial Science and Technology Progress for research and application of key
-          technology in prevention and control of swine epidemic encephalitis B, 01.12.2016.</br>
-          11. The second prize of National Science and Technology Progress for integration and application of prevention
-          technology for the major swine disease in China, 01.12.2016.</br>
-          12. National Teaching Achievement Award for “Construction and practice of “three innovations" ability training
-          system for college students majoring in animal science and veterinary medicine”, 12.2018.</br>
-        </p>
-
-      </div>
-    </section>
-    <!-- footer -->
-    <section class="footer">
-      <div class="cen-wrap">
-        <div class="footer-wrap">
-          <div class="bg-filter-wrap">
-          </div>
-        </div>
-        <div class="text-wrap">
-          <img src="../img/global/footer-logo.png" alt="">
-          <div class="cen-text">
-            <div class="nav-item"><a href="../index.html">Home</a></div>
-            <div class="nav-item">
-              <a href="../education/teachingInformation.html">Education</a>
-              <a href="../education/teachingInformation.html">Teaching Information</a>
-              <a href="../education/programs.html">Programs</a>
-            </div>
-            <div class="nav-item">
-              <a href="../global/overview.html">Global</a>
-              <a href="../global/overview.html">Overview</a>
-              <a href="../global/partners.html">Partners</a>
-            </div>
-            <div class="nav-item">
-              <a href="../news/events.html">News</a>
-              <a href="../news/events.html">Events</a>
-              <a href="../news/notices.html">Notices</a>
-            </div>
-            <div class="nav-item">
-              <a href="../people/overview.html">People</a>
-              <a href="">Overview</a>
-              <a href="">Academician</a>
-              <a href="">Faculty</a>
-              <a href="">postdoctor</a>
-            </div>
-            <div class="nav-item">
-              <a href="../about/introduction.html">About</a>
-              <a href="../about/introduction.html">Introduction</a>
-              <a href="../about/leadership.html">Leadership</a>
-              <a href="../about/orgnazationalStructure.html">orgnazational Structure</a>
-              <a href="../about/contact.html">Contact Us</a>
-            </div>
-            <div class="nav-item">
-              <a href="../research/institutes.html">Research</a>
-              <a href="../research/institutes.html">Key Institutes</a>
-              <a href="../research/projects.html">Research Projects</a>
-              <a href="../research/highlights.html">Research Highlights</a>
-              <a href="../research/progress.html">Research Progress</a>
+          <div class="admin-card-item">
+            <img src="../../img/people/list1.png" class="left-img-wrap" />
+            <div class="text-right-wrap">
+              <div class="text-name">CHEN HUANCUN</div>
+              <p class="admin-label">Preventive Veterinary Medicine</p>
+              <p class="admin-label">Position Title: Professor, Academician</p>
+              <p class="admin-label">
+                Office Address:The Cooperative Innovation Center for Sustainable Pig Production Room 401
+              </p>
+              <p class="admin-label">Email :chenhch@mail.hzau.edu.cn</p>
+              <p class="admin-label">Course Teaching: 《Veterinary Infectious Disease》</p>
             </div>
           </div>
+          <h5>Personal Profile</h5>
+          <p class="info-label">
+            Chen Huanchun, born in Enshi, Hubei province, is the professor of Huazhong agricultural university,
+            supervisor of Ph.D students, and now the director of the Cooperative Innovation Center for Sustainable Pig
+            Production, Hubei. Prof. Chen has been honored with many awards, including the State Council Special
+            Allowance, Heliang & Heli Foundation for Scientific and Technological Progress Award, China Agricultural
+            Talent Award, Award for the Outstanding Contribution to the National Science and Technology Project during
+            the Eleventh Five-Year Plan Period, and the Award for the outstanding contribution to Science and Technology
+            in Hubei Province, etc.
+          </p>
+          <p class="info-label">
+            Prof. Chen received his Doctor’s degree in Veterinary Medicine from University of Munich, Germany.
+            Currently, he is the President of the Chinese Veterinary Association, while also holds the positions in the
+            Director of Academic Committee of the State Key Laboratory of Agricultural Microbiology; the Director of
+            Academic Committee of the State Key Laboratory of Veterinary Biotechnology of Harbin Veterinary Research
+            Institute, Chinese Academy of Agricultural Sciences; the Chairman of Higher Learning Teaching Guidance
+            Committee in the Majors of Animal Production, Ministry of Education; the expert committee member in State
+            Council Emergency Handling Department; the member of Expert Committee of Ministry of Agriculture Science and
+            Technology Committee; the member of Expert Committee of Science and Technology Commission of Ministry of
+            Education; the member of the New Veterinary Drug Evaluation Committee of Ministry of Agriculture; Vice
+            president of Genetical Modification and Technology of Ministry of Agriculture.
+          </p>
+          <p class="info-label">
+            By 2022, Prof. Chen has held more than 50 important scientific research projects sponsored by National
+            Natural Science Foundation, “973” project, “863” project and national support programs. He has developed
+            more than 30 kinds of genetically engineering vaccines and molecular diagnostic kits, and obtained 20
+            genetically modified certificates, 30 certificates of new veterinary drug registration, 53 invention
+            patents, and 5 national certificates for the new and key products. Prof. Chen has formulated three national
+            standards and the Ministry of Agriculture industry standards. Prof. Chen also won the 2nd prize of National
+            Science and Technology Progress for four times, the 1st prize of Hubei Provincial Science and Technology
+            Progress for six times, and the 2nd prize of national teaching achievement for two times. More than
+            six-hundred research papers have been published by Prof. Chen’s team, within which over two-hundred ones
+            were indexed by SCI. Besides, Prof. Chen has published three monographs as chief editor, and another three
+            ones as the joint editor. Till 2022, there are 102 doctors’ and 120 masters’ students graduated under his
+            education. The research group led by Prof. Chen has been selected into the Innovation Groups of the National
+            Natural Science Foundation of China.
+          </p>
+          <h5>Education Experience</h5>
+          <p class="info-label">1984.10 – 1989.01, Ph.D. Veterinary Medicine, University of Munich, Germany</p>
+          <h5>Working Experience</h5>
+          <p class="info-label">1989.02—1993.09, Lecturer, Associate Professor, Huazhong Agricultural University</p>
+          <p class="info-label">1993.10—1994.10, Visiting Research, University of Munich, Germany</p>
+          <p class="info-label">
+            1994.11—2002.12, Professor, Supervisor of PhD students, Dean of College of Animal Science and Technology,
+            and College of Veterinary Medicine, Huazhong Agricultural University
+          </p>
+          <p class="info-label">
+            2003.01—2007.12, Professor, Vice President of Huazhong Agricultural University, Academician of Chinese
+            Academy of Engineering, China
+          </p>
+          <p class="info-label">
+            2008.01—Till now, Professor, Academician of Chinese Academy of Engineering, Huazhong Agricultural
+            University1989.02—1993.09, Lecturer, Associate Professor, Huazhong Agricultural University
+          </p>
+          <h5>Research Area</h5>
+          <p class="info-label">Veterinary infectious disease</p>
+          <p class="info-label">Development of novel veterinary vaccines and molecular diagnostic products</p>
+          <h5>Academic Outcomes</h5>
+          <div class="title">A.Books</div>
+          <p class="info-label">a. “Disease Control and Purification in Large-scale Pig Farms”, as chief editor</p>
+          <p class="info-label">b. “Manual of Veterinary Medicine”, as chief editor</p>
+          <p class="info-label">c. “Pseudorabies”, as chief editor</p>
+          <div class="title">B．Publications (Partial)</div>
+          <p class="info-label">
+            1.Yang F, Lei YY, Zhou ML, Yao QL, Han YC, Wu X, Zhong WS, Zhu CH, Xu WZ, Tao R, Chen X, Lin D, Rahman K,
+            Tyagi R, Habib Z, Xiao SB, Wang D, Yu Y, Chen HC, Fu ZF, Cao G. Development and application of a
+            recombination-based library versus library high- throughput yeast two-hybrid (RLL-Y2H) screening system.
+            Nucleic acids research. 2018, 46(3):e17
+          </p>
+          <p class="info-label">
+            2.Peng Z; Hu ZZ; Li ZG; Zhang XX; Jia CY; Li TZ; Dai MH; Tan C; Xu ZF; Wu B; Chen HC; Wang XR; Antimicrobial
+            resistance and population genomics of multidrug-resistant Escherichia coli in pig farms in mainland China,
+            Nature communications. 2022, 13(1): 1116
+          </p>
+          <p class="info-label">
+            3.Liu QY; Wang XJ; Xie CH; Ding SF; Yang HN; Guo SB; Li JX; Qin LZ; Ban FG; Wang DF; Wang C; Feng LX; Ma HC;
+            Wu B; Zhang LP; Dong CX; Xing L; Zhang JW; Chen HC; Yan RQ; Wang XR; Li W; A Novel Human Acute Encephalitis
+            Caused by Pseudorabies Virus Variant Strain, Clinical infectious diseases. 2020, 73(11): e3690-e3700
+          </p>
+          <p class="info-label">
+            4.Zhu YX; Wang RF; Yu LY; Sun HM; Tian S; Li P; Jin ML; Chen HC; Ma WJ; Zhou HB; Human TRA2A determines
+            influenza A virus host adaptation by regulating viral mRNA splicing, Science advances. 2020, 6(25): 5764
+          </p>
+          <p class="info-label">
+            5.Wang RF; Zhu YX; Ren CW; Yang S; Tian S; Chen HC; Jin ML; Zhou HB; Influenza A virus protein PB1-F2
+            impairs innate immunity by inducing mitophagy, Autophagy. 2020, 17(2): 496-511
+          </p>
+          <p class="info-label">
+            6.Peng Z; Lin L; Wang XR; Chen HC; Wu B; The public health concern of Pasteurella multocida should not be
+            ignored, The Lancet. Microbe, 2022, 3(8): e560
+          </p>
+          <p class="info-label">
+            7.Yang RC; Huang K; Zhang HP; Li L; Zhang YF; Tan C; Chen HC; Jin ML; Wang XR; SARS-CoV-2 productively
+            infects human brain microvascular endothelial cells, Journal of neuroinflammation, 2022, 19(1): 149
+          </p>
+          <p class="info-label">
+            8.Zou G; Matuszewska M; Jia M; Zhou JW; Ba XL; Duan J; Zhang CS; Zhao J; Tao M; Fan JY; Zhang XM; Jin WP;
+            Cui TP; Zeng XY; Jia M; Qian XJ; Huang C; Zhuo WX; Yao ZM; Zhang LJ; Li SW; Li L; Huang Q; Wu B; Chen HC;
+            Alexander W. Tucker; Andrew J. Grant; Mark A. Holmes; Zhou R; A Survey of Chinese Pig Farms and Human
+            Healthcare Isolates Reveals Separate Human and Animal Methicillin-Resistant Staphylococcus aureus
+            Populations, Advanced science (Weinheim, Baden-Wurttemberg, Germany), 2022, 9(4): e2103388
+          </p>
+          <p class="info-label">
+            9.Liu F; Peng W; Yan K; Huang J; Yuan FY; He QG; Chen HC; Bei WC; CpxAR of Actinobacillus pleuropneumoniae
+            Contributes to Heat Stress Response by Repressing Expression of Type IV Pilus Gene apfA.Microbiol Spectr,
+            Microbiology spectrum, 2022, 10(6): e0252322
+          </p>
+          <p class="info-label">
+            10.Yang B; Yang RC; Xu BJ; Fu JY; Qu XY; Li L; Dai MH; Tan C; Chen HC; Wang XR; miR-155 and miR-146a
+            collectively regulate meningitic Escherichia coli infection-mediated neuroinflammatory responses, Journal of
+            neuroinflammation, 2021, 18(1): 114
+          </p>
+          <p class="info-label">
+            11.Huang K; Zhang YF; Hui XF; Zhao Y; Gong WX; Wang T; Zhang SR; Yang Y; Deng F; Zhang Q; Chen X; Yang Y;
+            Sun XM; Chen HC; Tao YZ J; Zou Z; Jin ML; Q493K and Q498H substitutions in Spike promote adaptation of
+            SARS-CoV-2 in mice, EBioMedicine, 2021, 67: 103381-103381
+          </p>
+          <p class="info-label">
+            12.Li QY; Zhou DY; Jia F; Zhang LP; Ashraf U; Li YC; Duan HY; Song YF; Chen HC; Cao SB; Ye J; Japanese
+            Encephalitis Virus NS1′ Protein Interacts with Host CDK1 Protein to Regulate Antiviral Response,
+            Microbiology spectrum, 2021, 9(3): e0166121
+          </p>
+          <p class="info-label">
+            13.Shi YJ; Shuai L; Wen ZY; Wang C; Yan YY; Jiao Z; Guo FL; Fu ZF; Chen HC; Bu ZG; Peng GQ; The preclinical
+            inhibitor GS441524 in combination with GC376 efficaciously inhibited the proliferation of SARS-CoV-2 in the
+            mouse respiratory tract, Emerging microbes & infections, 2021, 10(1): 481-492
+          </p>
+          <p class="info-label">
+            14.Wen W; Li XM; Yin MG; Wang HY; Qin LX; Li H; Liu WQ; Zhao ZK; Zhao QQ; Chen HC; Hu JJ; Qian P; Selective
+            autophagy receptor SQSTM1/ p62 inhibits Seneca Valley virus replication by targeting viral VP1 and VP3,
+            Autophagy, 2021, 17(11): 3763-3775
+          </p>
+          <p class="info-label">
+            15.Wang RF; Zhu YX; Lin X; Ren CW; Zhao JC; Wang FF; Gao XC; Xiao R; Zhao LZ; Chen HC; Jin ML; Ma WJ; Zhou
+            HB; Influenza M2 protein regulates MAVS-mediated signaling pathway through interacting with MAVS and
+            increasing ROS production, Autophagy, 2019, 15(7): 1163-1181
+          </p>
+          <p class="info-label">
+            16.Ding Z, An K, Xie LL, Wu W, Zhang RX, Wang D, Fang Y, Chen HC, Xiao SB, Fang LR*. Transmissible
+            gastroenteritis virus infection induces NF-kappa B activation through RLR-mediated signaling. Virology.
+            2017, 507: 170-178
+          </p>
+          <p class="info-label">
+            17.He W, Zhao ZK, Anees A, Li YC, Ashraf U, Chen Z, Song YF, Chen HC, Cao SB, Ye J*. p21-Activated Kinase 4
+            Signaling Promotes Japanese Encephalitis Virus-Mediated Inflammationin Astrocytes. Frontiers In Cellular And
+            Infection Microbiology. 2017, 7
+          </p>
+          <p class="info-label">
+            18.Zheng Chengkun, Zhao Xigong, Zeng Ting, Cao Manman, Xu Jiali, Shi Guolin, Li Jinquan, Chen Huanchun, Bei
+            Weicheng*. Identification of four type II toxin-antitoxin systems in Actinobacillus pleuropneumoniae. FEMS
+            microbiology letters.2017, 7
+          </p>
+          <p class="info-label">
+            19.Sun X, Wang SY, Lin X , Zhao LZ, Zhang D, Yi CY, Sun XM, Chen HC, Jin ML*.Proteome analysis of Duck
+            Tembusu virus (DTMUV)-infected BHK-21 cells.Proteomics.2017, 17:12
+          </p>
+          <p class="info-label">
+            20.Xu Jiali, Zheng Chengkun, Cao Manman, Zeng Ting, Zhao Xigong, Shi Guolin, Chen Huanchun, Bei
+            Weicheng*.The manganese efflux system MntE contributes to the virulence of Streptococcus suis serotype
+            2.Microbial pathogenesis.2017, 110:23-30
+          </p>
+          <p class="info-label">
+            21.Wang X, Wu CX, Song XR, Chen HC, Liu ZF*. Comparison of pseudorabies virus China reference strain with
+            emerging variants reveals independent virus evolution within specific geographic regions.Virology. 2017,
+            (506): 92-98
+          </p>
+          <p class="info-label">
+            22.Qian Suhong, Fan Wenchun, Liu Tingting, Wu Mengge, Zhang Huawei, Cui Xiaofang, Zhou Yun, Hu Junjie, Wei
+            Shaozhong, Chen Huanchun, Li Xiangmin*, Qian Ping. Seneca Valley Virus suppresses host type I interferon
+            production by targeting adaptor proteins MAVS TRIF and TANK for cleavage. Journal of virology.2017, 4
+            Journal of virology
+          </p>
+          <p class="info-label">
+            23.Wang SY, Sun X, Yi CY, Zhang D, Lin X, Sun XM, Chen HC, Jin ML*. AGO2 Negatively Regulates Type I
+            Interferon Signaling Pathway by Competition Binding IRF3 with CBP/p300.Frontiers In Cellular And Infection
+            Microbiology.2017, 7
+          </p>
+          <p class="info-label">
+            24.Rasheed MA, Qi JJ, Zhu XF, He CF, Menghwar H, Khan FA, Gang Z, Zubair M, Hu CM, Chen YY, Chen HC, Guo
+            AZ*. Comparative Genomics of Mycoplasma bovis Strains Reveals That Decreased Virulence with Increasing
+            Passages Might Correlate with Potential Virulence-Related Factors. Frontiers In Cellular And Infection
+            Microbiology. 2017, 7
+          </p>
+          <p class="info-label">
+            25.Wang Y, Li JT, Zhang AD, Zhu WF, Zhang Q, Xu ZM, Yan SX, Sun XM, Chen HC, Jin ML*. iTRAQ-based
+            quantitative proteomic analysis reveals potential virulence factors of Erysipelothrix rhusiopathiae. Journal
+            Of Proteomics.2017, 160: 28-37
+          </p>
+          <p class="info-label">
+            26.Zou Z, Huang K, Wei YM, Chen HC, Liu ZD, Jin ML*. Construction of a highly efficient CRISPR/Cas9-mediated
+            duck enteritis virus-based vaccine against H5N1 avian influenza virus and duck Tembusu virus infection.
+            Scientific Reports.2017, 7
+          </p>
+          <p class="info-label">
+            27.Peng Z, Liang W, Liu WJ, Chen HC, Wu B*.Genome characterization of Pasteurella multocida subspecies
+            septica and comparison with Pasteurella multocida subspecies multocida and gallicida. Archives Of
+            Microbiology.2017, 199(4): 635-640
+          </p>
+          <p class="info-label">
+            28.Ye Jing, Chen Zheng, Li Yunchuan, Zhao Zikai, He Wen, Zohaib Ali, Song Yunfeng, Deng Chenglin, Zhang Bo,
+            Chen Huanchun, Cao Shengbo*.Japanese Encephalitis Virus NS5 Inhibits Type I Interferon (IFN) Production by
+            Blocking the Nuclear Translocation of IFN Regulatory Factor 3 and NF-kappaB. Journal of virology.2017, 91:8
+          </p>
+          <p class="info-label">
+            29.Zhou YR, Fang LR, Wang D, Cai KM, Chen HC, Xiao SB*. Porcine Reproductive and Respiratory Syndrome Virus
+            Infection Induces Stress Granule Formation Depending on Protein Kinase R-like Endoplasmic Reticulum Kinase
+            (PERK) in MARC-145 Cells. Frontiers In Cellular And Infection Microbiology.2017, 7
+          </p>
+          <p class="info-label">
+            30.Zhang Shishuo, Wang Ruifang, Su Huijuan, Wang Biaoxiong, Sizhu Suolang, Lei Zhixin, Jin Meilin, Chen
+            Huanchun, Cao Jiyue, Zhou Hongbo*. Sus scrofa miR-204 and miR-4331 Negatively Regulate Swine H1N1/2009
+            Influenza A Virus Replication by Targeting Viral HA and NS Respectively. International journal of molecular
+            sciences.2017, 18:4
+          </p>
+          <p class="info-label">
+            31.Fan WC, Qian P, Wang DD, Zhi XW, Wei YM, Chen HC, Li XM*. Integrin alpha v beta 3 promotes infection by
+            Japanese encephalitis virus. Research In Veterinary Science. 2017, 111: 67-74
+          </p>
+          <p class="info-label">
+            32.Li YY, Zhou M, Luo ZC , Zhang YC, Cui M , Chen HC, Fu ZF, Zhao L*. Overexpression of Interleukin-7
+            Extends the Humoral Immune Response Induced by Rabies Vaccination. Journal Of Virology.2017, 91: 7
+          </p>
+          <p class="info-label">
+            33.Ye J, Chen Z, Li YC, Zhao ZK, He W, Zohaib A, Song YF, Deng CL, Zhang B, Chen HC, Cao Shengbo. Japanese
+            Encephalitis Virus NS5 Inhibits Type I Interferon (IFN) Production by Blocking the Nuclear Translocation of
+            IFN Regulatory Factor 3 and NF-kappa B. Journal Of Virology.2017, 91: 8
+          </p>
+          <p class="info-label">
+            34.Liu XK, Yang C, Hu Y, Lei EM, Lin X, Zhao LZ, Zou Z, Zhang AD, Zhou HB, Chen HC, Qian P*, Jin ML*.
+            HIST1H1C Regulates Interferon-beta and Inhibits Influenza Virus Replication by Interacting with
+            IRF3.Frontiers In Immunology. 2017, 8
+          </p>
+          <p class="info-label">
+            35.Li P, Wang R, Dong WQ, Hu LL, Zong BB, Zhang YY, Wang XG, Guo AZ, Zhang AD, Xiang YZ, Chen HC, Tan
+            C*.Comparative Proteomics Analysis of Human Macrophages Infected with Virulent Mycobacterium bovis.
+            Frontiers In Cellular And Infection Microbiology.2017, 7 : 65
+          </p>
+          <p class="info-label">
+            36.Yuan FY, Tan C , Liu ZW, Yang K, Zhou D, Liu W, Duan ZY, Guo R, Chen HC, Tian YX* , Bei WC*. The
+            1910HK/RR two-component system is essential for the virulence of Streptococcus suis serotype 2. Microbial
+            Pathogenesis.2017, 104: 137-145
+          </p>
+          <p class="info-label">
+            37.Sun YX, Deng ML, Peng Z, Hu RM, Chen HC, Wu B*. Genetic and phylogenetic analysis of feline calicivirus
+            isolates in China. Veterinary Journal. 2017, 220: 24-27
+          </p>
+          <p class="info-label">
+            38.Jing HY, Fang LR, Ding Z, Wang D, Hao WQ, Gao L, Ke WT, Chen HC, Xiao SB*. Porcine Reproductive and
+            Respiratory Syndrome Virus nsp1 alpha Inhibits NF-kappa B Activation by Targeting the Linear Ubiquitin Chain
+            Assembly Complex. Journal Of Virology.2017, 91: 3
+          </p>
+          <p class="info-label">
+            39.Wang Z, Li MM, Zhou M, Zhang YJ , Yang J, Cao YD, Wang KL, Cui M, Chen HC, Fu ZF, Zhao L*. A Novel Rabies
+            Vaccine Expressing CXCL13 Enhances Humoral Immunity by Recruiting both T Follicular Helper and Germinal
+            Center B Cells. Journal Of Virology.2017, 91: 3
+          </p>
+          <p class="info-label">
+            40.Fan WC, Liu TT, Li XM, Zhou Y, Wu MG, Cui XF, Chen HC, Qian P*. TRIM52: A nuclear TRIM protein that
+            positively regulates the nuclear factor-kappa B signaling pathway. Molecular Immunology. 2017, 82: 114-122
+          </p>
+          <p class="info-label">
+            41.Jing Huiyuan, Fang Liurong, Ding Zhen, Wang Dang, Hao Wenqi, Gao Li, Ke Wenting, Chen Huanchun, Xiao
+            Shaobo. Porcine Reproductive and Respiratory Syndrome Virus nsp1alpha Inhibits NF-kappaB Activation by
+            Targeting the Linear Ubiquitin Chain Assembly Complex. Journal of virology.2017, 91:3
+          </p>
+          <p class="info-label">
+            42.Li YT, Ming F, Huang HM, Guo KL , Chen HC, Jin ML, Zhou HB*. Proteome Response of Chicken Embryo
+            Fibroblast Cells to Recombinant H5N1 Avian Influenza Viruses with Different Neuraminidase Stalk Lengths.
+            Scientific Reports.2017, 7
+          </p>
+          <p class="info-label">
+            43.Liu F, Fu JY, Liu CY, Chen J, Sun MH, Chen HC, Tan C*, Wang XR*. Characterization and distinction of two
+            flagellar systems in extraintestinal pathogenic Escherichia coli PCN033. Microbiological.Research.2017, 196:
+            69-79
+          </p>
+          <p class="info-label">
+            44.Zheng CK, Ren SJ, Xu JL, Zhao XG, Shi GL, Wu JP, Li JQ, Chen HC, Bei WC*. Contribution of NADH oxidase to
+            oxidative stress tolerance and virulence of Streptococcus suis serotype. Virulence.2017, 8(1): 53-65
+          </p>
+          <p class="info-label">
+            45.Chen YY, Wang JR, Ge P, Cao DJ, Miao BP, Robertson I, Zhou X, Zhang L, Chen HC, Guo AZ*. Tissue inhibitor
+            of metalloproteinases 1 a novel biomarker of tuberculosis. Molecular Medicine Reports. 2017, 15(1): 483-487
+          </p>
+          <p class="info-label">
+            46.Farhan, Chen Yingyu, Hu Changmin, Chen Huanchun, Guo Aizhen*. Mycoplasma bovis NADH oxidase functions as
+            both a NADH oxidizing and O2 reducing enzyme and an adhesin. Scientific reports. 2017, 7(1):44
+          </p>
+          <p class="info-label">
+            47.Peng Z, Liang W, Wang YG, Liu WJ, Zhang HF, Yu T, Zhang AD, Chen HC, Wu B*. Experimental pathogenicity
+            and complete genome characterization of a pig origin Pasteurella multocida serogroup F isolate HN07.
+            Veterinary Microbiology.2017, 198: 23-33
+          </p>
+          <h5>Scientific Project</h5>
+          <p class="info-label">
+            1. Special Project of National Natural Science Foundation of China, “Mechanisms of natural and acquired
+            immunity in African swine fever virus evading hosts”, 2019-2022
+          </p>
+          <p class="info-label">
+            2. Key R&D Program Project of Department of Science and Technology of Hubei Province, “Breeding of major
+            animal breeds and research and development of biological products”, 2022-2023
+          </p>
+
+          <p class="info-label">
+            3. Strategic Research and Consulting Project of Chinese Academy of Engineering, “Research on the prevention
+            and control strategy of zoonotic diseases under the new situation”,2022-2023
+          </p>
+
+          <p class="info-label">
+            4. Innovation Research Group Project of National Natural Science Foundation of China, “Molecular biology and
+            Pathogenesis of the key veterinary pathogens”, 2015-2017
+          </p>
+          <p class="info-label">
+            5. Public Welfare Industry Project of Ministry of Agriculture, “Integration and Demonstration for Prevention
+            and Control of Glasser’s disease and porcine contagious pleuropneumonia”, 2013-2017
+          </p>
+          <p class="info-label">
+            6. Thirteenth 5-Year Plan Project for newly added Scientists in Modern Agricultural Industry Technology
+            System 2017-2020
+          </p>
+          <h5>Major Awards</h5>
+          <p class="info-label">
+            1. The second prize of National Science and Technology Progress for “Isolation and identification of
+            Pseudorabies Virus-EA strain and its molecular biology and comprehensive prevention and control study”,
+            10.12.2001.
+          </p>
+          <p class="info-label">
+            2. National Teaching Achievement Award for “Revolution and practice of professional talent-education plan of
+            veterinary medicine”, 01.09.2005.
+          </p>
+          <p class="info-label">
+            3. The second prize of National Science and Technology Progress for innovative research and development of
+            bacon hogs breed and its matched supporting technologies, 11. 02.2007
+          </p>
+          <p class="info-label">
+            4. The first prize of Hubei Provincial Science and Technology Progress for the research of rapid detection
+            technologies of avian influenza, 01.12.2007
+          </p>
+          <p class="info-label">
+            5. The first prize of Hubei Provincial Science and Technology Progress for the research of diagnostic
+            technology, novel vaccine and comprehensive prevention and control methods for Porcine parvovirus disease,
+            01.12.2008
+          </p>
+          <p class="info-label">
+            6. The second prize of National Science and Technology Progress for the establishment and application of
+            rapid detection technologies for animal influenza, 23.12.2011
+          </p>
+          <p class="info-label">
+            7. The first prize of Hubei Provincial Science and Technology Progress for research and application of key
+            technologies in prevention and control of swine streptococosis, 01.12.2013
+          </p>
+          <p class="info-label">
+            8. The first prize of Hubei Provincial Science and Technology Progress for research and application of key
+            technologies in prevention and control of porcine contagious pleuropneumonia, 01.12.2014
+          </p>
+          <p class="info-label">
+            9. The first prize of Hubei Provincial Science and Technology Progress for pathogenesis and prevention
+            technologies of swine influenza virus, 01.12.2015
+          </p>
+          <p class="info-label">
+            10. The first prize of Hubei Provincial Science and Technology Progress for research and application of key
+            technology in prevention and control of swine epidemic encephalitis B, 01.12.2016
+          </p>
+          <p class="info-label">
+            11. The second prize of National Science and Technology Progress for integration and application of
+            prevention technology for the major swine disease in China, 01.12.2016.
+          </p>
+          <p class="info-label">
+            12. National Teaching Achievement Award for “Construction and practice of “three innovations" ability
+            training system for college students majoring in animal science and veterinary medicine”, 12.2018
+          </p>
         </div>
-      </div>
-    </section>
-  </div>
-  <script src="../../layui/layui.js"></script>
-</body>
-<style>
-
-</style>
-
+      </section>
+      <!-- footer -->
+      <section class="footer">
+        <div class="cen-wrap">
+          <div class="footer-wrap">
+            <div class="bg-filter-wrap"></div>
+          </div>
+          <div class="text-wrap">
+            <a href="../index.html">
+              <img src="../../img/global/footer-logo.png" alt="" />
+            </a>
+            <div class="cen-text">
+              <div class="nav-item">
+                <a href="">Education</a>
+                <a href="">Teaching Information</a>
+                <a href="">Programs</a>
+              </div>
+              <div class="nav-item">
+                <a href="">Global</a>
+                <a href="">Overview</a>
+                <a href="">Partners</a>
+              </div>
+              <div class="nav-item">
+                <a href="">News</a>
+                <a href="">Events</a>
+                <a href="">Notices</a>
+              </div>
+              <div class="nav-item">
+                <a href="">People</a>
+                <a href="">Overview</a>
+                <a href="">Academician</a>
+                <a href="">Faculty</a>
+                <a href="">postdoctor</a>
+              </div>
+              <div class="nav-item">
+                <a href="">About</a>
+                <a href="">Introduction</a>
+                <a href="">Leadership</a>
+                <a href="">Qrgnazational Structure</a>
+                <a href="">Contact Us</a>
+              </div>
+              <div class="nav-item">
+                <a href="">Research</a>
+                <a href="">Key Institutes</a>
+                <a href="">Research Projects</a>
+                <a href="">Research Highlights</a>
+                <a href="">Research Progress</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../../layui/layui.js"></script>
+  </body>
+  <style></style>
 </html>
