@@ -34,14 +34,6 @@
   align-items: center;
 }
 
-.swiper h3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 37px;
-  color: #fff;
-}
 /* 科研进展 */
 .home-research {
   margin-top: 60px;
