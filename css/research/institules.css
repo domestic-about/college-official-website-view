@@ -1,13 +1,13 @@
-.left-nav .layui-this a {
-  color: #fff !important;
-}
-
 .right-wrap {
 }
 .right-wrap .text-wrap h3 {
   font-size: 28px;
-  color: #ff6600;
+  color: #007306;
   margin-top: 42px;
+  @media ((max-width: 1200px)) {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 }
 .right-wrap p {
   margin-top: 20px;
@@ -15,18 +15,24 @@
   font-family: times new roman, serif;
   font-size: 16px;
   line-height: 32px;
+  @media ((max-width: 1200px)) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }
 .right-wrap h5 {
   margin-top: 30px;
   font-weight: 700;
   font-size: 20px;
   color: #007306;
+  @media ((max-width: 1200px)) {
+    font-size: 16px;
+  }
 }
 .right-wrap .icon-label {
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
-
   &::before {
     content: "";
     display: block;

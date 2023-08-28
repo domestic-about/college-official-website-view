@@ -5,6 +5,11 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 30px;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    padding: 0 20px 40px;
+    box-sizing: border-box;
+  }
 }
 .details-progress .center-wrap .nav-wrap {
   padding: 15px 0;
@@ -18,6 +23,19 @@
   order: 0;
   margin: 0;
   color: #007306;
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
+}
+.details-progress .center-wrap .nav-wrap .layui-breadcrumb {
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.details-progress .center-wrap .title {
+  text-align: center;
 }
 .details-progress .center-wrap .title h3 {
   margin: 20px 0;
@@ -39,12 +57,22 @@
 }
 .details-progress .center-wrap .cen-img img {
   height: 400px;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
 }
 .details-progress .center-wrap a {
   color: #007306;
-}
-
-.details-progress .center-wrap .label {
-  text-align: center;
-  color: #999;
+  @media ((max-width: 1200px)) {
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-family: times new roman, serif;
+  }
 }

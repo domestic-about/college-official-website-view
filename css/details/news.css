@@ -1,9 +1,30 @@
 .right-wrap {
+  text-align: center;
 }
-
+.right-wrap .title {
+}
 .right-wrap .title h3 {
+  font-size: 28px;
+  margin: 20px;
 }
-.right-wrap {
+.right-wrap .title .info-label {
+  font-size: 18px;
+  font-weight: 700;
 }
-.right-wrap {
+.right-wrap .info-label-list .info-label {
+  font-size: 16px;
+  text-align: left;
+}
+.right-wrap .info-label-list .cen-img {
+  text-align: center;
+}
+.right-wrap .info-label-list .cen-img img {
+  width: 500px;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+.right-wrap .info-label-list .label {
+  margin: 20px;
 }

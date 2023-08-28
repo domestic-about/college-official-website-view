@@ -14,24 +14,22 @@ h3 {
   font-weight: 700;
   color: #007306;
 }
-/* 通用的样式 */
 .con-main-wrap {
   width: 1200px;
   margin: 0 auto;
-  @media (max-width: 1300px) {
+  @media ((max-width: 1200px)) {
     width: 100%;
   }
 }
-
 .info-label {
   color: #333;
   font-family: times new roman, serif;
   font-size: 20px;
   line-height: 32px;
-  text-indent: 37px;
+  @media ((max-width: 1200px)) {
+    font-size: 14px;
+  }
 }
-
-/* 全局头部导航 */
 .header-nav {
   width: 100%;
   position: fixed;
@@ -43,8 +41,11 @@ h3 {
 .header-nav .language .nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 83px;
   background: #007306;
+  @media ((max-width: 1300px)) {
+    padding: 10px 20px;
+  }
 }
 .header-nav .language .nav ul {
   display: flex;
@@ -52,52 +53,69 @@ h3 {
 }
 .header-nav .language .nav ul li a {
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
 }
 .header-nav .language .nav ul li a img {
   width: 15px;
   margin-left: 5px;
   margin-bottom: 3px;
+  @media ((max-width: 1200px)) {
+    margin-bottom: 0px;
+  }
 }
-/* 全局头部导航区域 页面nav导航 */
 .header-nav .nav-wrap {
   background: #fafafa;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media ((max-width: 1400px)) {
+    justify-content: space-around;
+    align-items: flex-start;
+    align-items: center;
+  }
 }
 .header-nav .nav-wrap .logo {
   margin-left: 83px;
   height: 70px;
+  @media ((max-width: 1300px)) {
+    margin: 0;
+    width: 90%;
+    height: auto;
+    max-height: 70px;
+  }
 }
-.header-nav .nav-wrap .layui-nav {
-}
-.header-nav ul {
+.header-nav .nav-wrap .layui-bg-gray {
   padding-right: 83px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media ((max-width: 1400px)) {
+    padding-right: 0;
+  }
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
 }
-.header-nav .nav-wrap ul li {
+.header-nav .nav-wrap .layui-nav li {
   cursor: pointer;
 }
-.header-nav .nav-wrap ul li a {
+.header-nav .nav-wrap .layui-nav li a {
   font-size: 14px;
   font-weight: bold;
 }
-.header-nav .nav-wrap ul li a img {
+.header-nav .nav-wrap .layui-nav li a img {
   width: 20px;
 }
-.header-nav .nav-wrap .layui-nav-child {
+.header-nav .nav-wrap .layui-nav li .layui-nav-child {
   padding: 0;
 }
-.header-nav .nav-wrap .layui-nav-child dd {
+.header-nav .nav-wrap .layui-nav li .layui-nav-child dd {
   min-width: 150px;
   margin: 0;
   border-bottom: 1px solid #dbdbdb;
 }
-.header-nav .nav-wrap .layui-nav-child dd a {
+.header-nav .nav-wrap .layui-nav li .layui-nav-child dd a {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -108,11 +126,49 @@ h3 {
     color: #fff;
   }
 }
-/* 通用组件的的页面样式 banner 导航 data */
+//响应式头部导航
+.header-nav .nav-wrap .phone-nav-wrap {
+}
+.header-nav .nav-wrap .phone-nav-wrap {
+  display: none;
+  @media ((max-width: 1200px)) {
+    display: block;
+  }
+}
+.header-nav .nav-wrap .phone-nav-wrap .layui-btn {
+  background: #fff;
+}
+.header-nav .nav-wrap .phone-nav-wrap .layui-btn img {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+// 页面移动端二级菜单
+.phone-children-nav-wrap {
+}
+.phone-children-nav-wrap {
+  display: none;
+  @media ((max-width: 1200px)) {
+    display: block;
+  }
+}
+.phone-children-nav-wrap .layui-tab .layui-tab-title {
+  display: flex;
+  justify-content: space-around;
+}
+.phone-children-nav-wrap .layui-tab .layui-tab-title li {
+  padding: 0;
+}
+.phone-children-nav-wrap .layui-tab .layui-tab-title li a {
+  padding: 0;
+  margin: 0;
+}
 .global-banner {
   margin: 130px 0 35px;
-  height: 300px;
   position: relative;
+  @media ((max-width: 1200px)) {
+    margin: 130px 0 0;
+  }
 }
 .global-banner .bg {
   background: url("../img/global/banner.png");
@@ -131,19 +187,27 @@ h3 {
   text-align: center;
   font-size: 50px;
   color: #fff;
+  @media ((max-width: 1200px)) {
+    font-size: 20px;
+    line-height: 150px;
+  }
 }
-/* 中间展示内容的样式 */
 .global-center-wrap {
   display: flex;
   gap: 30px;
   width: 1288px;
   margin: 0 auto 50px;
   min-height: 600px;
+  @media ((max-width: 1300px)) {
+    width: 100%;
+  }
 }
-/* 组件左边的二级菜单 */
 .global-center-wrap .left-nav {
   border: 1px solid #dbdbdb;
   border-bottom: 0;
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
 }
 .global-center-wrap .left-nav .layui-nav {
   background: #fff;
@@ -181,12 +245,14 @@ h3 {
   background: #fff;
   font-weight: 500;
 }
-
-/* 右边展示的内容 */
 .global-center-wrap .right-wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
+  @media ((max-width: 1200px)) {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 }
 .global-center-wrap .right-wrap .layui-breadcrumb a cite {
   color: #007306;
@@ -198,18 +264,13 @@ h3 {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #007306;
-}
-.global-center-wrap .right-wrap .nav-wrap h5 {
   font-size: 22px;
-  order: 0;
-  margin: 0;
   color: #007306;
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
 }
-//包含折叠的导航
-.top-nav {
-  background: #16baaa;
-}
-/* 全局通用新闻表格样式 左边圆圈符号 中间文字 右边时间 */
+
 .global-news-info-time {
   display: flex;
   align-items: center;
@@ -219,17 +280,33 @@ h3 {
   &:hover {
     background: #f3f3f3;
   }
+  @media ((max-width: 1200px)) {
+    padding: 20px 0;
+  }
 }
 .global-news-info-time .label {
   display: flex;
   align-items: center;
   width: 80%;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+  }
 }
 .global-news-info-time .label p {
   line-height: 30px;
   font-size: 14px;
   color: #333;
   width: 90%;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
 }
 .global-news-info-time .one-span {
   display: block;
@@ -238,56 +315,88 @@ h3 {
   margin-right: 20px;
   border-radius: 50%;
   background: #007e37;
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
 }
 .global-news-info-time .two-span {
   color: #999999;
   width: 100px;
   text-align: left;
   font-size: 14px;
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
 }
 
-/* 全局底部的样式 */
 .footer {
+  position: relative;
+  @media ((max-width: 1200px)) {
+  }
 }
 .footer-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   filter: brightness(0.15);
-}
-.footer .cen-wrap {
-  position: relative;
-}
-.footer .cen-wrap .bg-filter-wrap {
-  padding: 200px 80px 450px;
   background: url("../img/global/footer-bg.png");
   background-size: 100% 100%;
+  z-index: -1;
 }
-.footer .cen-wrap .text-wrap {
-  width: 100%;
-  position: absolute;
-  top: 100px;
+.footer .text-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 50px;
-  padding: 0 100px;
   box-sizing: border-box;
-}
-.footer .cen-wrap .text-wrap img {
-  height: 100px;
+  padding: 100px 0;
 }
 
-.footer .cen-wrap .text-wrap .cen-text {
+.footer .text-wrap a {
+  @media ((max-width: 1200px)) {
+    width: 80%;
+  }
+}
+
+.footer .text-wrap a img {
+  height: 100px;
+  @media ((max-width: 1200px)) {
+    height: auto;
+    width: 100%;
+  }
+}
+.footer .text-wrap .cen-text {
   display: flex;
   gap: 50px;
+  padding: 0 20px;
+  @media ((max-width: 1200px)) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
-.footer .cen-wrap .text-wrap .cen-text .nav-item {
+.footer .text-wrap .cen-text .nav-item {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @media ((max-width: 1200px)) {
+    width: 80px;
+    margin-bottom: 20px;
+  }
 }
-.footer .cen-wrap .text-wrap .cen-text .nav-item a {
+.footer .text-wrap .cen-text .nav-item a {
   color: #ccc;
   font-size: 14px;
+  @media ((max-width: 1200px)) {
+    font-size: 12px;
+  }
   &:nth-child(1) {
     font-size: 20px;
+    color: #fff;
+    @media ((max-width: 1200px)) {
+      font-size: 16px;
+    }
   }
 }

@@ -1,18 +1,15 @@
-/* home-swiper */
 .swiper {
   position: relative;
   padding-top: 130px;
 }
-.layui-carousel {
+.swiper .layui-carousel {
   background: transparent;
 }
-
-.swiper .swiper-blur {
-  /* filter: brightness(0.2); */
+.swiper .layui-carousel .swiper-blur {
   position: relative;
   background: transparent;
 }
-.swiper .swiper-blur .bg {
+.swiper .layui-carousel .swiper-blur .bg {
   background: url("../img/home/swiper/location.png");
   background-size: 100% 100%;
   position: absolute;
@@ -23,20 +20,20 @@
   z-index: -1;
   filter: brightness(0.5);
 }
-.swiper .swiper-item {
+.swiper .layui-carousel .swiper-blur .swiper-item {
   width: 100%;
   height: 100%;
-
   background-size: 100% 100%;
-  /* filter: blur(5px); */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* 科研进展 */
 .home-research {
   margin-top: 60px;
+  @media ((max-width: 1200px)) {
+    padding: 20px 16px;
+    margin: 0;
+  }
 }
 .home-research .con-main-wrap {
 }
@@ -46,7 +43,6 @@
 .home-research .con-main-wrap .info-label {
   padding: 20px 0 10px;
   border-bottom: 1px solid #000;
-  text-indent: 0;
 }
 .home-research .con-main-wrap .card-list {
   padding: 60px 0 80px;
@@ -54,6 +50,9 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
+  @media ((max-width: 1200px)) {
+    padding: 20px 0;
+  }
 }
 .home-research .con-main-wrap .card-list .card-item {
   position: relative;
@@ -66,12 +65,22 @@
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
 }
 .home-research .con-main-wrap .card-list .card-item .top-img {
   width: 100%;
   height: 248px;
   border-radius: 12px 12px 0 0;
   filter: brightness(0.6);
+  background-size: 100% 100%;
+  @media ((max-width: 1200px)) {
+    height: 300px;
+  }
 }
 .home-research .con-main-wrap .card-list .card-item .text-wrap {
   border-top: 1px solid #d6d6d6;
@@ -110,19 +119,27 @@
 .home-research .con-main-wrap .card-list .card-item .text-wrap .btn img {
   height: 15px;
 }
-
-/* 新闻和通知 */
 .home-events {
   margin: 30px 0 50px;
+  @media ((max-width: 1200px)) {
+    margin: 0;
+  }
 }
 .home-events .con-main-wrap h3 {
   font-size: 40px;
+  @media ((max-width: 1200px)) {
+    text-align: center;
+  }
 }
 .home-events .con-main-wrap .card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   margin-top: 30px;
+  @media ((max-width: 1200px)) {
+    flex-direction: column;
+    padding: 0 20px 20px;
+  }
 }
 .home-events .con-main-wrap .card-list .card-item {
   position: relative;
@@ -134,11 +151,16 @@
     color: #fff;
     background: #007306;
   }
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
 }
 .home-events .con-main-wrap .card-list .card-item:hover a {
   color: #fff;
 }
-
 .home-events .con-main-wrap .card-list .card-item img {
   width: 100%;
   height: 256px;
@@ -147,18 +169,24 @@
   width: 100%;
   display: flex;
   gap: 24px;
+  @media ((max-width: 1200px)) {
+    flex-direction: column;
+  }
 }
 .home-events .con-main-wrap .card-list .top-wrap .card-item {
-  width: 100%;
-  display: flex;
 }
 .home-events .con-main-wrap .card-list .top-wrap .card-item img {
   height: 388px;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    height: 256px;
+  }
 }
 .home-events .con-main-wrap .card-list .card-item .text-wrap {
   padding: 20px 16px 50px;
 }
 .home-events .con-main-wrap .card-list .card-item .text-wrap .title {
+  font-size: 20px;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;
@@ -166,9 +194,10 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 20px;
 }
 .home-events .con-main-wrap .card-list .card-item .text-wrap .text-label {
+  margin-top: 10px;
+  font-size: 16px;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;
@@ -176,9 +205,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 16px;
   font-family: times new roman, serif;
-  margin-top: 10px;
 }
 .home-events .con-main-wrap .card-list .card-item .text-wrap .events-nav {
   position: absolute;

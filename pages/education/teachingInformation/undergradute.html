@@ -150,12 +150,31 @@
               </dl>
             </li>
           </ul>
+          <!-- 移动端 -->
+          <div class="phone-nav-wrap">
+            <button class="layui-btn" id="ID-dropdown-demo-complex">
+              <img src="../../../img/global/menu.svg" alt="" />
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="global-banner">
         <div class="bg"></div>
         <h3>Undergradute Majors</h3>
+      </section>
+
+      <section class="phone-children-nav-wrap">
+        <div class="layui-tab layui-tab-brief">
+          <ul class="layui-tab-title">
+            <li class="layui-this">
+              <a href="../teachingInformation/undergradute.html">Undergradute</a>
+            </li>
+            <li><a href="../teachingInformation/postgradute.html">Postgradute</a></li>
+            <li><a href="../teachingInformation/doctoral.html">Doctoral</a></li>
+            <li><a href="../programs.html">Programs</a></li>
+          </ul>
+        </div>
       </section>
 
       <section class="global-center-wrap">
@@ -228,55 +247,202 @@
       </section>
 
       <section class="footer">
-        <div class="cen-wrap">
-          <div class="footer-wrap">
-            <div class="bg-filter-wrap"></div>
-          </div>
-          <div class="text-wrap">
-            <a href="../../index.html"><img src="../../../img/global/footer-logo.svg" alt="" /></a>
-            <div class="cen-text">
-              <div class="nav-item">
-                <a href="../../education/teachingInformation/undergradute.html">Education</a>
-                <a href="../../education/teachingInformation/undergradute.html">Teaching Information</a>
-                <a href="../../education/programs.html">Programs</a>
-              </div>
-              <div class="nav-item">
-                <a href="../../global/global.html">Global</a>
-                <a href="../../global/global.html">Overview</a>
-                <a href="../../global/global.html">Partners</a>
-              </div>
-              <div class="nav-item">
-                <a href="../../news/events.html">News</a>
-                <a href="../../news/events.html">Events</a>
-                <a href="../../news/events.html">Notices</a>
-              </div>
-              <div class="nav-item">
-                <a href="../../people/overview.html">People</a>
-                <a href="../../people/overview.html">Overview</a>
-                <a href="../../people/academician.html">Academician</a>
-                <a href="../../people/faculty.html">Faculty</a>
-                <a href="../../people/postdoctor.html">postdoctor</a>
-              </div>
-              <div class="nav-item">
-                <a href="../../about/introduction.html">About</a>
-                <a href="../../about/introduction.html">Introduction</a>
-                <a href="../../about/leadership.html">Leadership</a>
-                <a href="../../about/orgnazationalStructure.html">Orgnazational Structure</a>
-                <a href="../../about/contact.html">Contact Us</a>
-              </div>
-              <div class="nav-item">
-                <a href="../../research/institutes.html">Research</a>
-                <a href="../../research/institutes.html">Key Institutes</a>
-                <a href="../../research/projects.html">Research Projects</a>
-                <a href="../../research/highlights.html">Research Highlights</a>
-                <a href="../../research/progress.html">Research Progress</a>
-              </div>
+        <div class="footer-wrap"></div>
+        <div class="text-wrap">
+          <a href="../../index.html"><img src="../../../img/global/footer-logo.svg" alt="" /></a>
+          <div class="cen-text">
+            <div class="nav-item">
+              <a href="../../education/teachingInformation/undergradute.html">Education</a>
+              <a href="../../education/teachingInformation/undergradute.html">Teaching Information</a>
+              <a href="../../education/programs.html">Programs</a>
+            </div>
+            <div class="nav-item">
+              <a href="../../global/global.html">Global</a>
+              <a href="../../global/global.html">Overview</a>
+              <a href="../../global/global.html">Partners</a>
+            </div>
+            <div class="nav-item">
+              <a href="../../news/events.html">News</a>
+              <a href="../../news/events.html">Events</a>
+              <a href="../../news/events.html">Notices</a>
+            </div>
+            <div class="nav-item">
+              <a href="../../people/overview.html">People</a>
+              <a href="../../people/overview.html">Overview</a>
+              <a href="../../people/academician.html">Academician</a>
+              <a href="../../people/faculty.html">Faculty</a>
+              <a href="../../people/postdoctor.html">postdoctor</a>
+            </div>
+            <div class="nav-item">
+              <a href="../../about/introduction.html">About</a>
+              <a href="../../about/introduction.html">Introduction</a>
+              <a href="../../about/leadership.html">Leadership</a>
+              <a href="../../about/orgnazationalStructure.html">Orgnazational Structure</a>
+              <a href="../../about/contact.html">Contact Us</a>
+            </div>
+            <div class="nav-item">
+              <a href="../../research/institutes.html">Research</a>
+              <a href="../../research/institutes.html">Key Institutes</a>
+              <a href="../../research/projects.html">Research Projects</a>
+              <a href="../../research/highlights.html">Research Highlights</a>
+              <a href="../../research/progress.html">Research Progress</a>
             </div>
           </div>
         </div>
       </section>
     </div>
     <script src="../../../layui/layui.js"></script>
+    <script>
+      layui.use(function () {
+        var dropdown = layui.dropdown;
+        var util = layui.util;
+        // 高级演示 - 复杂结构
+        dropdown.render({
+          elem: "#ID-dropdown-demo-complex",
+          data: [
+            {
+              title: "Home",
+              href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/index.html",
+            },
+            { type: "-" },
+            {
+              title: "About",
+              id: 66,
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Introduction",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/about/introduction.html",
+                },
+                { type: "-" },
+                {
+                  title: "Leadership",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/about/leadership.html",
+                },
+                { type: "-" },
+                {
+                  title: "OrgnazationalStructure",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/about/orgnazationalStructure.html",
+                },
+                { type: "-" },
+                {
+                  title: "Contact",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/about/contact.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "People",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Overview",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/people/overview.html",
+                },
+                { type: "-" },
+                {
+                  title: "Academician",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/people/academician.html",
+                },
+                { type: "-" },
+                {
+                  title: "Faculty",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/people/faculty.html",
+                },
+                { type: "-" },
+                {
+                  title: "Postdoctor",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/people/postdoctor.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Education",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Undergradute Majors",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/education/teachingInformation/undergradute.html",
+                },
+                { type: "-" },
+                {
+                  title: "Postgradute Majors",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/education/teachingInformation/postgradute.html",
+                },
+                { type: "-" },
+                {
+                  title: "Doctoral Majors",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/education/teachingInformation/doctoral.html",
+                },
+                { type: "-" },
+                {
+                  title: "Programs",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/education/programs.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Research",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Institutes",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/research/institutes.html",
+                },
+                { type: "-" },
+                {
+                  title: "Projects",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/research/projects.html",
+                },
+                { type: "-" },
+                {
+                  title: "Highlights",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/research/highlights.html",
+                },
+                {
+                  title: "Progress",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/research/progress.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Employment",
+              href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/employment/employment.html",
+            },
+            { type: "-" },
+            {
+              title: "News",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Events",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/news/events.html",
+                },
+                { type: "-" },
+                {
+                  title: "Notices",
+                  href: "file:///Users/apple/project/shu/work/college-official-website-view/pages/news/events.html",
+                },
+              ],
+            },
+          ],
+        });
+      });
+    </script>
   </body>
   <style></style>
 </html>

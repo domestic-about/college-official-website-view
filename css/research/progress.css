@@ -1,7 +1,3 @@
-.left-nav .layui-this a {
-  color: #fff !important;
-}
-
 .right-wrap {
 }
 
@@ -10,8 +6,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
   margin: 20px 0 0;
+  @media ((max-width: 1200px)) {
+    margin: 10px 0 0;
+  }
 }
 
 .right-wrap .card-list a {
@@ -22,6 +20,9 @@
   &:hover {
     color: #007306;
     transform: scale(1.1);
+  }
+  @media ((max-width: 1200px)) {
+    width: 100%;
   }
 }
 
@@ -35,6 +36,9 @@
 .right-wrap .card-list a .card-item img {
   height: 120px;
   width: 148px;
+  @media ((max-width: 1200px)) {
+    height: 100px;
+  }
 }
 
 .right-wrap .card-list a .card-item .title {

@@ -1,14 +1,17 @@
-.left-nav .layui-this a {
-  color: #fff !important;
-}
-
-.right-wrap {
-}
 .right-wrap h5 {
   font-size: 28px;
   margin: 20px 0;
   text-align: center;
   color: #007306;
+  @media ((max-width: 1200px)) {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+}
+.right-wrap .layui-table {
+  @media ((max-width: 1200px)) {
+    display: none;
+  }
 }
 .right-wrap .layui-table th {
   color: #333;
@@ -21,4 +24,36 @@
 }
 .right-wrap .layui-table td {
   font-size: 16px;
+}
+.right-phone-wrap {
+  display: none;
+  @media ((max-width: 1200px)) {
+    display: block;
+  }
+}
+.right-phone-wrap {
+  display: none;
+  @media ((max-width: 1200px)) {
+    display: block;
+  }
+}
+.right-phone-wrap .school-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+.right-phone-wrap .school-item .school-name {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+}
+.right-phone-wrap .school-item .school-contact {
+  font-weight: 500;
+}
+.right-phone-wrap .school-item .school-email {
+  font-weight: 500;
 }

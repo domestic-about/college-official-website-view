@@ -1,9 +1,15 @@
 .right-wrap .text-wrap {
   padding: 30px 0 100px;
+  @media ((max-width: 1200px)) {
+    padding: 10px 0;
+  }
 }
 .right-wrap h5 {
   color: #007306;
   font-size: 28px;
+  @media ((max-width: 1200px)) {
+    font-size: 18px;
+  }
 }
 .right-wrap .title-label {
   font-size: 18px;
@@ -24,6 +30,9 @@
   font-weight: 500;
   color: #007306;
   margin-bottom: 20px;
+  @media ((max-width: 1200px)) {
+    font-size: 18px;
+  }
 }
 .right-wrap .text-wrap .info-label {
   line-height: 40px;

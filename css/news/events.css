@@ -2,6 +2,11 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 50px 0;
+  @media ((max-width: 1200px)) {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 }
 .new-body-news h5 {
   font-size: 26px;
@@ -15,6 +20,10 @@
 
 .events-wrap .con-main-wrap {
   padding: 0 0 100px;
+  @media ((max-width: 1200px)) {
+    padding: 10px;
+    box-sizing: border-box;
+  }
 }
 
 .events-wrap .con-main-wrap h3 {
@@ -40,6 +49,9 @@
     color: #007306;
     transform: scale(1.1);
   }
+  @media ((max-width: 1200px)) {
+    width: 100%;
+  }
 }
 
 .events-wrap .con-main-wrap .card-list a .card-item {
@@ -51,11 +63,17 @@
   &:hover {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
   }
+  @media ((max-width: 1200px)) {
+    gap: 5px;
+  }
 }
 
 .events-wrap .con-main-wrap .card-list a .card-item img {
   height: 120px;
   width: 190px;
+  @media ((max-width: 1200px)) {
+    height: 100px;
+  }
 }
 
 .events-wrap .con-main-wrap .card-list a .card-item .title {
@@ -83,5 +101,5 @@
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
 }

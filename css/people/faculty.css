@@ -6,6 +6,9 @@
   border-radius: 32px;
   margin-top: 20px;
   background-color: #16baaa;
+  @media ((max-width: 1200px)) {
+    padding: 20px;
+  }
 }
 .right-wrap .szdwul span a {
   color: #fff;

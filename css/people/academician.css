@@ -1,20 +1,36 @@
-.left-nav .layui-this a {
-  color: #fff !important;
-}
 .right-wrap .admin-card-item {
   padding: 30px 0 20px 130px;
   display: flex;
   gap: 30px;
-  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   &:hover {
     background: #dbdbdb;
+  }
+  @media ((max-width: 1200px)) {
+    gap: 10px;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
 
 .right-wrap .admin-card-item .left-img-wrap {
   height: 181px;
+  @media ((max-width: 1200px)) {
+    height: 100px;
+    display: none;
+  }
 }
-
+.right-wrap .admin-card-item .text-right-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.right-wrap .admin-card-item .text-right-wrap .right-img-wrap {
+  display: none;
+  @media ((max-width: 1200px)) {
+    display: block;
+    margin: 10px auto;
+  }
+}
 .right-wrap .admin-card-item .text-right-wrap .text-name {
   color: #007306;
   font-size: 20px;
