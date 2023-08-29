@@ -3,13 +3,13 @@
   margin: 20px 0;
   text-align: center;
   color: #007306;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     font-size: 20px;
     margin: 10px 0;
   }
 }
 .right-wrap .layui-table {
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -27,13 +27,13 @@
 }
 .right-phone-wrap {
   display: none;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     display: block;
   }
 }
 .right-phone-wrap {
   display: none;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     display: block;
   }
 }

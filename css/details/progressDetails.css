@@ -5,7 +5,7 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 30px;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     width: 100%;
     padding: 0 20px 40px;
     box-sizing: border-box;
@@ -23,12 +23,12 @@
   order: 0;
   margin: 0;
   color: #007306;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
 .details-progress .center-wrap .nav-wrap .layui-breadcrumb {
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
 }
 .details-progress .center-wrap .cen-img img {
   height: 400px;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     width: 100%;
     height: auto;
     max-width: 500px;
@@ -65,7 +65,7 @@
 }
 .details-progress .center-wrap a {
   color: #007306;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     overflow: hidden;
     word-break: break-all;
     -o-text-overflow: ellipsis;

@@ -1,35 +1,28 @@
 .right-wrap .admin-card-item {
-  padding: 30px 0 20px 130px;
+  padding: 30px 0 20px;
   display: flex;
   gap: 30px;
   border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
   &:hover {
     background: #dbdbdb;
   }
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     gap: 10px;
     padding: 0;
-    box-sizing: border-box;
+    flex-direction: column;
   }
 }
 
 .right-wrap .admin-card-item .left-img-wrap {
   height: 181px;
-  @media ((max-width: 1200px)) {
-    height: 100px;
-    display: none;
+  @media (max-width: 1200px) {
+    width: 200px;
   }
 }
 .right-wrap .admin-card-item .text-right-wrap {
   display: flex;
   flex-direction: column;
-}
-.right-wrap .admin-card-item .text-right-wrap .right-img-wrap {
-  display: none;
-  @media ((max-width: 1200px)) {
-    display: block;
-    margin: 10px auto;
-  }
 }
 .right-wrap .admin-card-item .text-right-wrap .text-name {
   color: #007306;

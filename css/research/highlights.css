@@ -1,12 +1,10 @@
-.right-wrap {
-}
 .right-wrap .highlights .title {
   text-align: center;
   font-size: 20px;
   margin: 20px;
   color: #007306;
   font-weight: 700;
-  @media ((max-width: 1200px)) {
+  @media (max-width: 1200px) {
     margin: 10px 0;
     text-align: left;
   }
