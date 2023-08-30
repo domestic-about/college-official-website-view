@@ -3,8 +3,8 @@
   color: #007306;
   font-size: 28px;
   @media (max-width: 1200px) {
-    font-size: 20px;
-    margin: 0;
+    font-size: 18px;
+    margin: 10px 0;
   }
 }
 
@@ -12,9 +12,15 @@
   font-size: 18px;
   margin: 20px 0;
   font-weight: 500;
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .right-wrap .cen-wrap .info-label {
   text-align: left;
   text-indent: 0;
   font-size: 16px;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
 }

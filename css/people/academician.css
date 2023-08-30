@@ -16,8 +16,11 @@
 
 .right-wrap .admin-card-item .left-img-wrap {
   height: 181px;
+  padding-left: 30px;
   @media (max-width: 1200px) {
-    width: 200px;
+    padding-left: 0px;
+    width: 181px;
+    height: 190px;
   }
 }
 .right-wrap .admin-card-item .text-right-wrap {
