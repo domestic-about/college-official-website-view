@@ -360,11 +360,17 @@ h3 {
   justify-content: space-between;
   padding: 0 15px;
   gap: 50px;
+  @media (max-width: 1200px) {
+    gap: 50px 0;
+  }
 }
 .footer-wrap .cen-wrap .nav-list .nav-item {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @media (max-width: 1200px) {
+    width: 30%;
+  }
 }
 .footer-wrap .cen-wrap .nav-list .nav-item:last-child {
   margin-right: auto;
