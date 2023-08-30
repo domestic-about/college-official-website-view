@@ -314,6 +314,176 @@
       </section>
     </div>
     <script src="../../layui/layui.js"></script>
+    <script>
+      layui.use(function () {
+        var dropdown = layui.dropdown;
+        var util = layui.util;
+        // 移动端跳转地址
+        dropdown.render({
+          elem: "#ID-dropdown-demo-complex",
+          data: [
+            {
+              title: "Home",
+              href: "../index.html",
+            },
+            { type: "-" },
+            {
+              title: "About",
+              id: 66,
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Introduction",
+                  href: "../about/introduction.html",
+                },
+                { type: "-" },
+                {
+                  title: "Leadership",
+                  href: "../about/leadership.html",
+                },
+                { type: "-" },
+                {
+                  title: "OrgnazationalStructure",
+                  href: "../about/orgnazationalStructure.html",
+                },
+                { type: "-" },
+                {
+                  title: "Contact",
+                  href: "../about/contact.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "People",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Overview",
+                  href: "../people/overview.html",
+                },
+                { type: "-" },
+                {
+                  title: "Academician",
+                  href: "../people/academician.html",
+                },
+                { type: "-" },
+                {
+                  title: "Faculty",
+                  href: "../people/faculty.html",
+                },
+                { type: "-" },
+                {
+                  title: "Postdoctor",
+                  href: "../people/postdoctor.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Education",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Undergradute Majors",
+                  href: "../education/teachingInformation/undergradute.html",
+                },
+                { type: "-" },
+                {
+                  title: "Postgradute Majors",
+                  href: "../education/teachingInformation/postgradute.html",
+                },
+                { type: "-" },
+                {
+                  title: "Doctoral Majors",
+                  href: "../education/teachingInformation/doctoral.html",
+                },
+                { type: "-" },
+                {
+                  title: "Programs",
+                  href: "../education/programs.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Research",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Institutes",
+                  href: "../research/institutes.html",
+                },
+                { type: "-" },
+                {
+                  title: "Projects",
+                  href: "../research/projects.html",
+                },
+                { type: "-" },
+                {
+                  title: "Highlights",
+                  href: "../research/highlights.html",
+                },
+                { type: "-" },
+                {
+                  title: "Progress",
+                  href: "../research/progress.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Global",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Overview",
+                  href: "../global/global.html",
+                },
+                { type: "-" },
+                {
+                  title: "Partners",
+                  href: "../global/global.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Employment",
+              href: "../employment/employment.html",
+            },
+            { type: "-" },
+            {
+              title: "News",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Events",
+                  href: "../news/events.html",
+                },
+                { type: "-" },
+                {
+                  title: "Notices",
+                  href: "../news/events.html",
+                },
+              ],
+            },
+          ],
+        });
+      });
+    </script>
   </body>
   <style></style>
 </html>
