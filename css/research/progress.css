@@ -38,6 +38,11 @@
   }
 }
 
+.right-wrap .card-list a .card-item .cen-wrap {
+  @media (max-width: 1200px) {
+    flex: 1;
+  }
+}
 .right-wrap .card-list a .card-item .title {
   font-size: 16px;
   font-weight: 500;

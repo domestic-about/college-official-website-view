@@ -9,7 +9,7 @@
   }
 }
 .right-wrap .layui-table {
-  @media (max-width: 1200px) {
+  @media (max-width: 600px) {
     display: none;
   }
 }
@@ -27,16 +27,11 @@
 }
 .right-phone-wrap {
   display: none;
-  @media (max-width: 1200px) {
+  @media (max-width: 600px) {
     display: block;
   }
 }
-.right-phone-wrap {
-  display: none;
-  @media (max-width: 1200px) {
-    display: block;
-  }
-}
+
 .right-phone-wrap .school-item {
   display: flex;
   flex-direction: column;

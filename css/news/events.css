@@ -75,8 +75,13 @@
     height: 100px;
   }
 }
+.events-wrap .con-main-wrap .card-list a .card-item .cen-wrap {
+  @media (max-width: 1200px) {
+    flex: 1;
+  }
+}
 
-.events-wrap .con-main-wrap .card-list a .card-item .title {
+.events-wrap .con-main-wrap .card-list a .card-item .cen-wrap .title {
   font-size: 20px;
   font-weight: 500;
   overflow: hidden;
@@ -89,7 +94,7 @@
   -webkit-line-clamp: 2;
 }
 
-.events-wrap .con-main-wrap .card-list a .card-item .label {
+.events-wrap .con-main-wrap .card-list a .card-item .cen-wrap .label {
   font-size: 16px;
   font-weight: 400;
   margin-top: 16px;
