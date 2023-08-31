@@ -77,9 +77,7 @@
   }
 }
 .events-wrap .con-main-wrap .card-list a .card-item .cen-wrap {
-  @media (max-width: 1200px) {
-    flex: 1;
-  }
+  flex: 1;
 }
 
 .events-wrap .con-main-wrap .card-list a .card-item .cen-wrap .title {
