@@ -1,6 +1,7 @@
 .right-wrap .admin-card-item {
   padding: 30px 0 20px 30px;
   display: flex;
+  align-items: flex-start;
   gap: 30px;
   border-bottom: 1px solid #dbdbdb;
   &:hover {
@@ -13,7 +14,6 @@
 }
 .right-wrap .admin-card-item .left-img-wrap {
   width: 81px;
-  height: 113px;
 }
 .right-wrap .admin-card-item .text-right-wrap {
   display: flex;
