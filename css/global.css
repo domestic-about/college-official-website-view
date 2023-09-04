@@ -85,7 +85,7 @@ h3 {
   @media (max-width: 1400px) {
     padding-right: 0;
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     display: none;
   }
 }
@@ -124,7 +124,7 @@ h3 {
 }
 .header-wrap .pages-nav-wrap .phone-nav-wrap {
   display: none;
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     display: block;
   }
 }

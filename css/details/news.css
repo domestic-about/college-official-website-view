@@ -14,6 +14,8 @@
 .right-wrap .info-label-list .info-label {
   font-size: 16px;
   text-align: left;
+  text-indent: 2em;
+  margin-top: 20px;
 }
 .right-wrap .info-label-list .cen-img {
   text-align: center;
