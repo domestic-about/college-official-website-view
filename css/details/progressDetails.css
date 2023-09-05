@@ -43,6 +43,10 @@
   font-size: 24px;
   font-weight: 700;
   margin: 10px 0;
+  @media (max-width: 600px) {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 .details-progress .center-wrap .info-label {
   margin: 20px 0;
@@ -59,6 +63,11 @@
     height: auto;
     max-width: 500px;
   }
+}
+.details-progress .center-wrap .label {
+  margin: 10px 0;
+  text-align: center;
+  color: #999;
 }
 .details-progress .center-wrap a {
   color: #007306;
