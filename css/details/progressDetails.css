@@ -2,11 +2,6 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 0 30px;
-  @media (max-width: 1200px) {
-    width: 100%;
-    padding: 0 20px 40px;
-    box-sizing: border-box;
-  }
 }
 .details-progress .center-wrap .nav-wrap {
   padding: 15px 0;
@@ -20,16 +15,6 @@
   order: 0;
   margin: 0;
   color: #007306;
-  @media (max-width: 1200px) {
-    display: none;
-  }
-}
-.details-progress .center-wrap .nav-wrap .layui-breadcrumb {
-  @media (max-width: 1200px) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
 }
 
 .details-progress .center-wrap .title {
@@ -43,10 +28,6 @@
   font-size: 24px;
   font-weight: 700;
   margin: 10px 0;
-  @media (max-width: 600px) {
-    font-size: 16px;
-    text-align: left;
-  }
 }
 .details-progress .center-wrap .info-label {
   margin: 20px 0;
@@ -58,11 +39,6 @@
 }
 .details-progress .center-wrap .cen-img img {
   height: 400px;
-  @media (max-width: 1200px) {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-  }
 }
 .details-progress .center-wrap .label {
   margin: 10px 0;
@@ -71,7 +47,32 @@
 }
 .details-progress .center-wrap a {
   color: #007306;
-  @media (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1400px) {
+  .details-progress .center-wrap {
+    width: 100%;
+    padding: 0 20px 40px;
+    box-sizing: border-box;
+  }
+  .details-progress .center-wrap .nav-wrap h5 {
+    display: none;
+  }
+  .details-progress .center-wrap .nav-wrap .layui-breadcrumb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .details-progress .center-wrap .title .info-label {
+    font-size: 16px;
+    text-align: left;
+  }
+  .details-progress .center-wrap .cen-img img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+  .details-progress .center-wrap a {
     overflow: hidden;
     word-break: break-all;
     -o-text-overflow: ellipsis;

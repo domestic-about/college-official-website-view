@@ -3,10 +3,6 @@
   font-weight: 500;
   color: #007306;
   margin-top: 10px;
-  @media (max-width: 1200px) {
-    font-size: 18px;
-    margin-top: 0px;
-  }
 }
 .right-wrap .cen-wrap .info-label {
   line-height: 40px;
@@ -16,4 +12,13 @@
   font-size: 18px;
   margin: 20px 0;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-wrap .cen-wrap .title {
+    font-size: 25px;
+  }
+  .right-wrap .cen-wrap .info-label {
+    text-indent: 0;
+  }
 }

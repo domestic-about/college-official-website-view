@@ -4,13 +4,9 @@
   align-items: flex-start;
   gap: 30px;
   border-bottom: 1px solid #dbdbdb;
-  &:hover {
-    background: #dbdbdb;
-  }
-  @media (max-width: 1200px) {
-    padding: 20px 0 0;
-    flex-direction: column;
-  }
+}
+.right-wrap .admin-card-item:hover {
+  background: #dbdbdb;
 }
 .right-wrap .admin-card-item .left-img-wrap {
   width: 81px;
@@ -21,9 +17,6 @@
 }
 .right-wrap .admin-card-item .text-right-wrap .right-img-wrap {
   display: none;
-  @media (max-width: 1200px) {
-    display: block;
-  }
 }
 .right-wrap .admin-card-item .text-right-wrap .text-name {
   color: #007306;
@@ -36,4 +29,15 @@
   font-family: times new roman, serif;
   font-size: 16px;
   line-height: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+  .right-wrap .admin-card-item {
+    padding: 20px 0 0;
+    flex-direction: column;
+  }
+
+  .right-wrap .admin-card-item .text-right-wrap .right-img-wrap {
+    display: block;
+  }
 }

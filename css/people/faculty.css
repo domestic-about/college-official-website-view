@@ -6,9 +6,6 @@
   border-radius: 32px;
   margin-top: 20px;
   background-color: #16baaa;
-  @media (max-width: 1200px) {
-    padding: 20px;
-  }
 }
 .right-wrap .szdwul span a {
   color: #fff;
@@ -39,8 +36,12 @@
 .right-wrap .name-list .name-item .item span {
   width: 150px;
 }
-.right-wrap .name-list .name-item .item span a {
-  &:hover {
-    color: #007306;
+
+.right-wrap .name-list .name-item .item span a:hover {
+  color: #007306;
+}
+@media screen and (max-width: 1200px) {
+  .right-wrap .szdwul {
+    padding: 20px;
   }
 }

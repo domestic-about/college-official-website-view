@@ -55,10 +55,11 @@
   border-radius: 12px;
   transition: transform 2s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  &:hover {
-    transform: scale(1.1);
-  }
 }
+.home-research .con-main-wrap .card-list .card-item:hover {
+  transform: scale(1.1);
+}
+
 .home-research .con-main-wrap .card-list .card-item .top-img {
   height: 248px;
   filter: brightness(0.6);

@@ -22,11 +22,14 @@
 }
 .right-wrap .info-label-list .cen-img img {
   width: 500px;
-  @media (max-width: 1200px) {
-    width: 100%;
-    max-width: 500px;
-  }
 }
 .right-wrap .info-label-list .label {
   margin: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .right-wrap .info-label-list .cen-img img {
+    width: 100%;
+    max-width: 500px;
+  }
 }

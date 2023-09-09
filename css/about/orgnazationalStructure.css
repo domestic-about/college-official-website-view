@@ -3,15 +3,8 @@
   margin: 20px 0;
   text-align: center;
   color: #007306;
-  @media (max-width: 1200px) {
-    font-size: 20px;
-    margin: 10px 0;
-  }
 }
 .right-wrap .layui-table {
-  @media (max-width: 600px) {
-    display: none;
-  }
 }
 .right-wrap .layui-table th {
   color: #333;
@@ -27,9 +20,6 @@
 }
 .right-phone-wrap {
   display: none;
-  @media (max-width: 600px) {
-    display: block;
-  }
 }
 
 .right-phone-wrap .school-item {
@@ -51,4 +41,20 @@
 }
 .right-phone-wrap .school-item .school-email {
   font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-wrap h5 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right-wrap .layui-table {
+    display: none;
+  }
+  .right-phone-wrap {
+    display: block;
+  }
 }

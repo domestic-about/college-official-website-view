@@ -17,22 +17,15 @@ h3 {
 .con-main-wrap {
   width: 1200px;
   margin: 0 auto;
-  @media (max-width: 1200px) {
-    width: 100%;
-  }
 }
 .info-label {
   color: #333;
   font-family: times new roman, serif;
   font-size: 20px;
   line-height: 32px;
-  @media (max-width: 1200px) {
-    font-size: 14px;
-  }
 }
 /* 头部导航 */
 .header-wrap {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,9 +38,6 @@ h3 {
   background: #007306;
   padding: 10px 83px;
   gap: 40px;
-  @media (max-width: 1200px) {
-    padding: 10px;
-  }
 }
 .header-wrap .tabbar li a {
   color: #fff;
@@ -57,9 +47,6 @@ h3 {
   width: 15px;
   margin-left: 5px;
   margin-bottom: 3px;
-  @media (max-width: 1200px) {
-    margin-bottom: 0px;
-  }
 }
 
 .header-wrap .pages-nav-wrap {
@@ -68,26 +55,14 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 1300px) {
-    padding: 0 10px 0 20px;
-  }
 }
 .header-wrap .pages-nav-wrap .logo {
   height: 70px;
-  @media (max-width: 1300px) {
-    width: 90%;
-  }
 }
 .header-wrap .pages-nav-wrap .layui-bg-gray {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 1400px) {
-    padding-right: 0;
-  }
-  @media (max-width: 1400px) {
-    display: none;
-  }
 }
 .header-wrap .pages-nav-wrap .layui-nav li {
   cursor: pointer;
@@ -113,21 +88,16 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &:hover {
-    background: #007e37;
-    color: #fff;
-  }
+}
+.header-wrap .pages-nav-wrap .layui-nav li .layui-nav-child dd a:hover {
+  background: #007e37;
+  color: #fff;
 }
 /* 头部导航移动端 */
 .header-wrap .pages-nav-wrap .phone-nav-wrap {
   display: none;
 }
-.header-wrap .pages-nav-wrap .phone-nav-wrap {
-  display: none;
-  @media (max-width: 1400px) {
-    display: block;
-  }
-}
+
 .header-wrap .pages-nav-wrap .phone-nav-wrap .layui-btn {
   background: #fff;
 }
@@ -141,9 +111,6 @@ h3 {
 }
 .phone-children-nav-wrap {
   display: none;
-  @media (max-width: 1200px) {
-    display: block;
-  }
 }
 .phone-children-nav-wrap .layui-tab .layui-tab-title {
   display: flex;
@@ -159,9 +126,6 @@ h3 {
 .global-banner {
   margin: 130px 0 35px;
   position: relative;
-  @media (max-width: 1200px) {
-    margin: 110px 0 0;
-  }
 }
 .global-banner .bg {
   /* background: url("../img/global/banner.png");
@@ -177,21 +141,12 @@ h3 {
   right: 0;
   bottom: 0;
   z-index: -1;
-  @media (max-width: 1200px) {
-    background: url("../img/global/banner.png");
-    background-size: cover;
-    background-position: center;
-  }
 }
 .global-banner h3 {
   line-height: 300px;
   text-align: center;
   font-size: 50px;
   color: #fff;
-  @media (max-width: 1200px) {
-    font-size: 20px;
-    line-height: 150px;
-  }
 }
 .global-center-wrap {
   display: flex;
@@ -199,16 +154,10 @@ h3 {
   width: 1288px;
   margin: 0 auto 50px;
   min-height: 600px;
-  @media (max-width: 1300px) {
-    width: 100%;
-  }
 }
 .global-center-wrap .left-nav {
   border: 1px solid #dbdbdb;
   border-bottom: 0;
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 .global-center-wrap .left-nav .layui-nav {
   background: #fff;
@@ -250,10 +199,6 @@ h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  @media (max-width: 1200px) {
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
 }
 .global-center-wrap .right-wrap .layui-breadcrumb a cite {
   color: #007306;
@@ -267,9 +212,6 @@ h3 {
   border-bottom: 2px solid #007306;
   font-size: 22px;
   color: #007306;
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 
 .global-news-info-time {
@@ -278,36 +220,20 @@ h3 {
   justify-content: space-between;
   padding: 20px 0 20px 20px;
   border-bottom: 1px solid #dbdbdb;
-  &:hover {
-    background: #f3f3f3;
-  }
-  @media ((max-width: 1200px)) {
-    padding: 20px 0;
-  }
+}
+.global-news-info-time:hover {
+  background: #f3f3f3;
 }
 .global-news-info-time .label {
   display: flex;
   align-items: center;
   width: 80%;
-  @media ((max-width: 1200px)) {
-    width: 100%;
-  }
 }
 .global-news-info-time .label p {
   line-height: 30px;
   font-size: 14px;
   color: #333;
   width: 90%;
-  @media (max-width: 1200px) {
-    width: 100%;
-    overflow: hidden;
-    word-break: break-all;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-  }
 }
 .global-news-info-time .one-span {
   display: block;
@@ -316,18 +242,12 @@ h3 {
   margin-right: 20px;
   border-radius: 50%;
   background: #007e37;
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 .global-news-info-time .two-span {
   color: #999999;
   width: 100px;
   text-align: left;
   font-size: 14px;
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 
 .footer-wrap {
@@ -353,16 +273,7 @@ h3 {
   justify-content: center;
   gap: 50px;
 }
-.footer-wrap .cen-wrap .logo {
-  @media (max-width: 1200px) {
-    width: 80%;
-  }
-}
-.footer-wrap .cen-wrap .logo img {
-  @media (max-width: 1200px) {
-    width: 100%;
-  }
-}
+
 .footer-wrap .cen-wrap .nav-list {
   display: flex;
   flex-direction: row;
@@ -370,17 +281,11 @@ h3 {
   justify-content: space-between;
   padding: 0 15px;
   gap: 50px;
-  @media (max-width: 1200px) {
-    gap: 50px 0;
-  }
 }
 .footer-wrap .cen-wrap .nav-list .nav-item {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @media (max-width: 1200px) {
-    width: 30%;
-  }
 }
 .footer-wrap .cen-wrap .nav-list .nav-item:last-child {
   margin-right: auto;
@@ -389,7 +294,104 @@ h3 {
 .footer-wrap .cen-wrap .nav-list .nav-item a {
   color: #eee;
   font-size: 14px;
-  &:nth-child(1) {
+}
+.footer-wrap .cen-wrap .nav-list .nav-item a:nth-child(1) {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .con-main-wrap {
+    width: 100%;
+  }
+  .info-label {
+    font-size: 14px;
+  }
+  .header-wrap .tabbar {
+    padding: 10px;
+  }
+  .header-wrap .tabbar li a img {
+    margin-bottom: 0px;
+  }
+  .header-wrap .pages-nav-wrap {
+    padding: 0 10px 0 20px;
+  }
+  .header-wrap .pages-nav-wrap .logo {
+    width: 90%;
+  }
+  .header-wrap .pages-nav-wrap .layui-bg-gray {
+    padding-right: 0;
+    display: none;
+  }
+  //头部导航移动端
+  .header-wrap .pages-nav-wrap .phone-nav-wrap {
+    display: block;
+  }
+  .header-wrap .pages-nav-wrap .phone-nav-wrap {
+    display: block;
+  }
+
+  //页面移动端
+  .phone-children-nav-wrap {
+    display: block;
+  }
+  .global-banner {
+    margin: 110px 0 0;
+  }
+  .global-banner .bg {
+    background: url("../img/global/banner.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .global-banner h3 {
     font-size: 20px;
+    line-height: 150px;
+  }
+  .global-center-wrap {
+    width: 100%;
+  }
+  .global-center-wrap .left-nav {
+    display: none;
+  }
+  .global-center-wrap .right-wrap {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .global-center-wrap .right-wrap .nav-wrap {
+    display: none;
+  }
+  .global-news-info-time {
+    padding: 20px 0;
+  }
+  .global-news-info-time .label {
+    width: 100%;
+  }
+  .global-news-info-time .label p {
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .global-news-info-time .one-span {
+    display: none;
+  }
+  .global-news-info-time .two-span {
+    display: none;
+  }
+  .footer-wrap .cen-wrap .logo {
+    width: 80%;
+  }
+  .footer-wrap .cen-wrap .logo img {
+    width: 100%;
+  }
+
+  .footer-wrap .cen-wrap .nav-list {
+    gap: 50px 0;
+  }
+  .footer-wrap .cen-wrap .nav-list .nav-item {
+    width: 30%;
   }
 }

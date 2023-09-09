@@ -5,22 +5,14 @@
   gap: 30px;
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
-  &:hover {
-    background: #dbdbdb;
-  }
-  @media (max-width: 1200px) {
-    gap: 10px;
-    padding: 0;
-    flex-direction: column;
-  }
+}
+.right-wrap .admin-card-item:hover {
+  background: #dbdbdb;
 }
 
 .right-wrap .admin-card-item .left-img-wrap {
   height: 181px;
   padding-left: 30px;
-  @media (max-width: 1200px) {
-    padding-left: 0px;
-  }
 }
 .right-wrap .admin-card-item .text-right-wrap {
   display: flex;
@@ -55,4 +47,15 @@
   font-size: 16px;
   margin: 15px 0;
   text-indent: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-wrap .admin-card-item {
+    gap: 10px;
+    padding: 0;
+    flex-direction: column;
+  }
+  .right-wrap .admin-card-item .left-img-wrap {
+    padding-left: 0px;
+  }
 }
