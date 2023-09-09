@@ -107,8 +107,7 @@ h3 {
 }
 
 // 页面移动端二级菜单
-.phone-children-nav-wrap {
-}
+
 .phone-children-nav-wrap {
   display: none;
 }
@@ -128,8 +127,6 @@ h3 {
   position: relative;
 }
 .global-banner .bg {
-  /* background: url("../img/global/banner.png");
-  background-size: contain; */
   background-image: url("../img/global/banner.png"), url("../img/global/footer-bg.png"), url("../img/global/school.png");
   background-position: 0 0, 42% 0, 100% 0;
   background-repeat: no-repeat;
@@ -322,15 +319,11 @@ h3 {
     padding-right: 0;
     display: none;
   }
-  //头部导航移动端
-  .header-wrap .pages-nav-wrap .phone-nav-wrap {
-    display: block;
-  }
+
   .header-wrap .pages-nav-wrap .phone-nav-wrap {
     display: block;
   }
 
-  //页面移动端
   .phone-children-nav-wrap {
     display: block;
   }
