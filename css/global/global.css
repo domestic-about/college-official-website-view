@@ -11,6 +11,7 @@
   text-indent: 0;
   margin: 10px 0;
   font-size: 16px;
+  text-indent: 2em;
 }
 .right-wrap .overview {
   display: flex;
