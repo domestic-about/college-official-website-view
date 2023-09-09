@@ -319,7 +319,6 @@ h3 {
     padding-right: 0;
     display: none;
   }
-
   .header-wrap .pages-nav-wrap .phone-nav-wrap {
     display: block;
   }
@@ -373,6 +372,9 @@ h3 {
   }
   .global-news-info-time .two-span {
     display: none;
+  }
+  .footer-wrap .bg {
+    background-size: cover;
   }
   .footer-wrap .cen-wrap .logo {
     width: 80%;
