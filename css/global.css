@@ -322,15 +322,10 @@ h3 {
     padding-right: 0;
     display: none;
   }
-  //头部导航移动端
-  .header-wrap .pages-nav-wrap .phone-nav-wrap {
-    display: block;
-  }
   .header-wrap .pages-nav-wrap .phone-nav-wrap {
     display: block;
   }
 
-  //页面移动端
   .phone-children-nav-wrap {
     display: block;
   }
@@ -380,6 +375,9 @@ h3 {
   }
   .global-news-info-time .two-span {
     display: none;
+  }
+  .footer-wrap .bg {
+    background-size: cover;
   }
   .footer-wrap .cen-wrap .logo {
     width: 80%;

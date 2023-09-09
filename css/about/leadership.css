@@ -5,9 +5,7 @@
   gap: 30px;
   border-bottom: 1px solid #dbdbdb;
 }
-.right-wrap .admin-card-item:hover {
-  background: #dbdbdb;
-}
+
 .right-wrap .admin-card-item .left-img-wrap {
   width: 81px;
 }
