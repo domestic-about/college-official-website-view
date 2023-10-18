@@ -28,7 +28,25 @@
   justify-content: center;
   align-items: center;
 }
-
+.home-video {
+  margin-top: 60px;
+}
+.home-video .con-main-wrap h3{
+  font-size: 28px;
+}
+.home-video .con-main-wrap .video-list{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.home-video .con-main-wrap .video-list .video-item{
+  width: 32%;
+}
+.home-video .con-main-wrap .video-list .video-item video{
+  width: 100%;
+}
 .home-research {
   margin-top: 60px;
 }
@@ -100,7 +118,7 @@
   margin: 30px 0 50px;
 }
 .home-events .con-main-wrap h3 {
-  font-size: 40px;
+  font-size: 28px;
 }
 .home-events .con-main-wrap .card-list {
   display: flex;
@@ -164,9 +182,26 @@
   .swiper .layui-carousel {
     height: 300px !important;
   }
+  .home-video {
+    padding: 20px 16px;
+    margin: 0;
+  }
+  .home-video .con-main-wrap h3{
+    text-align: center;
+  }
+  .home-video .con-main-wrap .video-list {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .home-video .con-main-wrap .video-list .video-item{
+    width: 100%;
+  }
   .home-research {
     padding: 20px 16px;
     margin: 0;
+  }
+  .home-research .con-main-wrap h3 {
+    text-align: center;
   }
   .home-research .con-main-wrap .card-list {
     padding: 20px 0;
