@@ -74,7 +74,7 @@
   padding: 20px 20px 40px;
 }
 .home-research .con-main-wrap .card-list .card-item .text-wrap .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   overflow: hidden;
   font-family: times new roman, serif;
@@ -84,16 +84,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-.home-research .con-main-wrap .card-list .card-item .text-wrap .label {
-  padding: 10px 0 0;
-  overflow: hidden;
-  word-break: break-all;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 .home-research .con-main-wrap .card-list .card-item:hover a {
   color: #007306;
@@ -141,8 +131,6 @@
   display: flex;
   gap: 24px;
 }
-.home-events .con-main-wrap .card-list .top-wrap .card-item {
-}
 .home-events .con-main-wrap .card-list .top-wrap .card-item img {
   height: 388px;
 }
@@ -150,7 +138,7 @@
   padding: 20px 16px 50px;
 }
 .home-events .con-main-wrap .card-list .card-item .text-wrap .title {
-  font-size: 20px;
+  font-size: 24px;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;
@@ -158,18 +146,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-.home-events .con-main-wrap .card-list .card-item .text-wrap .text-label {
-  margin-top: 10px;
-  font-size: 16px;
-  overflow: hidden;
-  word-break: break-all;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  font-family: times new roman, serif;
 }
 .home-events .con-main-wrap .card-list .card-item .text-wrap .events-nav {
   position: absolute;
