@@ -64,7 +64,6 @@
   font-size: 20px;
   font-weight: 500;
   overflow: hidden;
-  font-family: times new roman, serif;
   word-break: break-all;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -78,7 +77,6 @@
   font-weight: 400;
   margin-top: 16px;
   color: #999;
-  font-family: times new roman, serif;
   overflow: hidden;
   word-break: break-all;
   -o-text-overflow: ellipsis;
