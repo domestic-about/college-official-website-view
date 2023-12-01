@@ -1,3 +1,6 @@
+.right-wrap .layui-colla-title {
+  height: auto;
+}
 .right-wrap .admin-card-item {
   padding: 30px 0 20px;
   display: flex;
