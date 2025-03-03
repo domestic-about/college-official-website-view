@@ -5,138 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College of Animal Science & Technology and College of Veterinary Medicine</title>
-    <link rel="stylesheet" href="../../layui/css/layui.css" />
-    <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css//news/events.css" />
+    <link rel="stylesheet" href="/js/layui/css/layui.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css//news/events.css" />
   </head>
 
   <body>
     <div class="app">
       <section class="header-wrap">
-        <div class="tabbar">
-          <li>
-            <a href="../index.html">Home<img src="../../img/global/home.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="">English<img src="../../img/global/ch.png" alt="" /></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://my.hzau.edu.cn/index.htm"
-              >Chinese<img src="../../img/global/en.png" alt="" />
-            </a>
-          </li>
-        </div>
-
         <div class="pages-nav-wrap">
-          <a href="../index.html"> <img class="logo" src="../../img/global/logo.svg" alt="" /></a>
-          <ul class="layui-nav layui-bg-gray">
-            <li class="layui-nav-item"><a href="../index.html">Home</a></li>
-            <li class="layui-nav-item">
-              <a href="../about/introduction.html">About</a>
-              <dl class="layui-nav-child">
-                <dd>
-                  <a href="../about/introduction.html">
-                    <span> Introduction </span>
-                    <img src="../../img/global/navigation.png" alt="" />
-                  </a>
-                </dd>
-                <dd>
-                  <a href="../about/leadership.html">Leadership <img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="../about/orgnazationalStructure.html"
-                    >Orgnazational Structure<img src="../../img/global/navigation.png" alt=""
-                  /></a>
-                </dd>
-                <dd>
-                  <a href="../about/contact.html">Contact Us<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-              <a href="../people/overview.html">People</a>
-              <dl class="layui-nav-child">
-                <dd>
-                  <a href="../people/overview.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="../people/academician.html"
-                    >Academician<img src="../../img/global/navigation.png" alt=""
-                  /></a>
-                </dd>
-                <dd>
-                  <a href="../people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="../people/postdoctor.html">Postdoctor<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-              <a href="../education/teachingInformation/undergradute.html">Education</a>
-              <dl class="layui-nav-child">
-                <dd>
-                  <a href="../education/teachingInformation/undergradute.html"
-                    >Teaching Information<img src="../../img/global/navigation.png" alt=""
-                  /></a>
-                </dd>
-                <dd>
-                  <a href="../education/programs.html">Programs<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-              <a href="../research/institutes.html">Research</a>
-              <dl class="layui-nav-child">
-                <dd>
-                  <a href="../research/institutes.html"
-                    >Institutes<img src="../../img/global/navigation.png" alt=""
-                  /></a>
-                </dd>
-                <dd>
-                  <a href="../research/Projects.html">Projects<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="../research/highlights.html"
-                    >Highlights<img src="../../img/global/navigation.png" alt=""
-                  /></a>
-                </dd>
-                <dd>
-                  <a href="../research/progress.html">Progress<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-              <a href="../global/global.html">Global</a>
-              <dl class="layui-nav-child">
-                <dd>
-                  <a href="../global/global.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="../global/global.html">Partners<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-              <a href="../employment/employment.html">Job Openings</a>
-            </li>
-            <li class="layui-nav-item layui-this">
-              <a href="javascript:;">News</a>
-              <dl class="layui-nav-child">
-                <dd>
-                  <a href="../news/events.html">Events<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-                <dd>
-                  <a href="../news/events.html">Notices<img src="../../img/global/navigation.png" alt="" /></a>
-                </dd>
-              </dl>
-            </li>
-          </ul>
-          <!-- 移动端 -->
+          <div class="logo-container">
+            <a href="/pages/index.html"> <img class="logo" src="/img/global/logo.svg" alt="" /></a>
+            <div class="tabbar">
+              <li>
+                <a href="/pages/index.html">Home<img src="/img/global/home.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="">English<img src="/img/global/ch.png" alt="" /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://my.hzau.edu.cn/index.htm"
+                  >Chinese<img src="/img/global/en.png" alt=""
+                /></a>
+              </li>
+            </div>
+          </div>
+          <div class="main-nav">
+            <!-- pc端导航 -->
+            <ul class="layui-nav">
+              <li class="layui-nav-item layui-this"><a href="/pages/index.html">Home</a></li>
+              <li class="layui-nav-item">
+                <a href="/pages/about/introduction.html">About</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/about/introduction.html">
+                      <span> Introduction </span>
+                      <img src="/img/global/navigation.png" alt="" />
+                    </a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/about/leadership.html"
+                      >Leadership <img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/about/orgnazationalStructure.html"
+                      >Orgnazational Structure<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/about/contact.html">Contact Us<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="javascript:;">People</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/people/overview.html">Overview<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/people/academician.html"
+                      >Academician<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/people/faculty.html">Faculty<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/people/postdoctor.html"
+                      >Postdoctor<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/education/teachingInformation/undergradute.html">Education</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/education/teachingInformation/undergradute.html"
+                      >Teaching Information<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/education/programs.html">Programs<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/research/institutes.html">Research</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/research/institutes.html"
+                      >Institutes<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/research/projects.html">Projects<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/research/highlights.html"
+                      >Highlights<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/research/progress.html">Progress<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/global/global.html">Global</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/global/global.html">Overview<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/global/global.html">Partners<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/employment/employment.html">Job Openings</a>
+              </li>
+              <li class="layui-nav-item">
+                <a href="javascript:;">News</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/news/events.html">Events<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/news/events.html#notice">Notices<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!-- 移动端导航-->
           <div class="phone-nav-wrap">
-            <button class="layui-btn" id="ID-dropdown-demo-complex">
-              <img src="../../img/global/menu.svg" alt="" />
-            </button>
+            <button class="layui-btn" id="ID-dropdown-demo-complex"><img src="/img/global/menu.svg" alt="" /></button>
           </div>
         </div>
       </section>
@@ -150,7 +156,7 @@
           <div class="card-list">
             <a href="../details/news/list1.html">
               <div class="card-item">
-                <img src="../../img/news/list2.png" alt="" />
+                <img src="/img/news/list2.png" alt="" />
                 <div class="cen-wrap">
                   <div class="title">
                     The School of Animal Science and Technology launched a training session on knowledge graph and AI
@@ -176,7 +182,7 @@
             </a>
             <a href="../details/news/list1.html">
               <div class="card-item">
-                <img src="../../img/news/list3.png" alt="" />
+                <img src="/img/news/list3.png" alt="" />
                 <div class="cen-wrap">
                   <div class="title">The college launched a training session on laboratory biosafety</div>
                   <p class="label">
@@ -192,7 +198,7 @@
             </a>
             <a href="../details/news/list1.html">
               <div class="card-item">
-                <img src="../../img/news/list4.png" alt="" />
+                <img src="/img/news/list4.png" alt="" />
                 <div class="cen-wrap">
                   <div class="title">
                     The expert group of the Animal Husbandry and Veterinary Bureau of the Ministry of Agriculture and
@@ -211,7 +217,7 @@
             </a>
             <a href="../details/news/list1.html">
               <div class="card-item">
-                <img src="../../img/news/list7.png" alt="" />
+                <img src="/img/news/list7.png" alt="" />
                 <div class="cen-wrap">
                   <div class="title">
                     The farewell event for the 2023 graduates of the Key Laboratory of Agricultural Animal Genetics,
@@ -229,7 +235,7 @@
             </a>
             <a href="../details/news/list1.html">
               <div class="card-item">
-                <img src="../../img/news/list5.png" alt="" />
+                <img src="/img/news/list5.png" alt="" />
                 <div class="cen-wrap">
                   <div class="title">
                     Biosafety training and on-site simulation drills held in our hospital for the "Safety Production
@@ -252,7 +258,7 @@
             </a>
             <a id="notice" href="../details/news/list2.html">
               <div class="card-item">
-                <img src="../../img/news/list6.png" alt="" />
+                <img src="/img/news/list6.png" alt="" />
                 <div class="cen-wrap">
                   <div class="title">
                     The college held the award ceremony of the Safety Production Month Safety Knowledge Competition
@@ -418,59 +424,78 @@
         </a>
       </section>
 
+      <!-- 页面底部 -->
       <section class="footer-wrap">
-        <div class="bg"></div>
-        <div class="cen-wrap">
-          <a class="logo" href="../index.html">
-            <img src="../../img/global/footer-logo.svg" alt="" />
-          </a>
-          <div class="nav-list">
-            <div class="nav-item">
-              <a href="../about/introduction.html">About</a>
-              <a href="../about/introduction.html">Introduction</a>
-              <a href="../about/leadership.html">Leadership</a>
-              <a href="../about/orgnazationalStructure.html">Orgnazational Structure</a>
-              <a href="../about/contact.html">Contact Us</a>
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="/pages/index.html">
+                <img src="/img/global/footer-logo.svg" alt="Logo" />
+              </a>
             </div>
-            <div class="nav-item">
-              <a href="../people/overview.html">People</a>
-              <a href="../people/overview.html">Overview</a>
-              <a href="../people/academician.html">Academician</a>
-              <a href="../people/faculty.html">Faculty</a>
-              <a href="../people/postdoctor.html">postdoctor</a>
-            </div>
-            <div class="nav-item">
-              <a href="../education/teachingInformation/undergradute.html">Education</a>
-              <a href="../education/teachingInformation/undergradute.html">Teaching Information</a>
-              <a href="../education/programs.html">Programs</a>
-            </div>
-            <div class="nav-item">
-              <a href="../research/institutes.html">Research</a>
-              <a href="../research/institutes.html">Key Institutes</a>
-              <a href="../research/Projects.html">Research Projects</a>
-              <a href="../research/highlights.html">Research Highlights</a>
-              <a href="../research/progress.html">Research Progress</a>
-            </div>
-            <div class="nav-item">
-              <a href="../global/global.html">Global</a>
-              <a href="../global/global.html">Overview</a>
-              <a href="../global/global.html">Partners</a>
-            </div>
-            <div class="nav-item">
-              <a href="../employment/employment.html">Job Openings</a>
-              <a href="../employment/employment.html">Admissions</a>
-              <a href="../employment/employment.html">Job Openings</a>
-            </div>
-            <div class="nav-item">
-              <a href="../news/events.html">News</a>
-              <a href="../news/events.html">Events</a>
-              <a href="../news/events.html">Notices</a>
+            <div class="footer-columns">
+              <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                  <li><a href="/pages/about/introduction.html">Introduction</a></li>
+                  <li><a href="/pages/about/leadership.html">Leadership</a></li>
+                  <li><a href="/pages/about/orgnazationalStructure.html">Organizational Structure</a></li>
+                  <li><a href="/pages/about/contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>People</h4>
+                <ul>
+                  <li><a href="/pages/people/overview.html">Overview</a></li>
+                  <li><a href="/pages/people/academician.html">Academician</a></li>
+                  <li><a href="/pages/people/faculty.html">Faculty</a></li>
+                  <li><a href="/pages/people/postdoctor.html">Postdoctor</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Education</h4>
+                <ul>
+                  <li><a href="/pages/education/teachingInformation/undergradute.html">Teaching Information</a></li>
+                  <li><a href="/pages/education/programs.html">Programs</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Research</h4>
+                <ul>
+                  <li><a href="/pages/research/institutes.html">Institutes</a></li>
+                  <li><a href="/pages/research/projects.html">Projects</a></li>
+                  <li><a href="/pages/research/highlights.html">Highlights</a></li>
+                  <li><a href="/pages/research/progress.html">Progress</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Global</h4>
+                <ul>
+                  <li><a href="/pages/global/global.html">Overview</a></li>
+                  <li><a href="/pages/global/global.html">Partners</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>News</h4>
+                <ul>
+                  <li><a href="/pages/news/events.html">Events</a></li>
+                  <li><a href="/pages/news/events.html#notice">Notices</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <div class="footer-copyright">
+          <p>© 2025 College of Animal Science & Technology. All rights reserved.</p>
+        </div>
       </section>
     </div>
-    <script src="../../layui//layui.js"></script>
+    <script src="/layui//layui.js"></script>
     <script>
       layui.use(function () {
         var dropdown = layui.dropdown;

@@ -5,17 +5,12 @@
   color: #007306;
   font-weight: 700;
 }
-.right-wrap .highlights .info-label {
-  font-size: 16px;
-  text-indent: 2em;
-}
+
 
 @media screen and (max-width: 1200px) {
   .right-wrap .highlights .title {
     margin: 10px 0;
     text-align: left;
   }
-  .right-wrap .highlights .info-label {
-    text-indent: 0;
-  }
+
 }

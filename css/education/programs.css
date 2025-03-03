@@ -4,10 +4,7 @@
   color: #007306;
   margin-top: 10px;
 }
-.right-wrap .cen-wrap .info-label {
-  line-height: 40px;
-  text-indent: 2em;
-}
+
 .right-wrap .cen-wrap .title-label {
   font-size: 18px;
   margin: 20px 0;
@@ -18,7 +15,5 @@
   .right-wrap .cen-wrap .title {
     font-size: 25px;
   }
-  .right-wrap .cen-wrap .info-label {
-    text-indent: 0;
-  }
+
 }

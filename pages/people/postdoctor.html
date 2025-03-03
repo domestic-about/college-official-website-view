@@ -1,446 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College of Animal Science & Technology and College of Veterinary Medicine</title>
+    <link rel="stylesheet" href="/js/layui/css/layui.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/people/postdoctor.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>College of Animal Science & Technology and College of Veterinary Medicine</title>
-  <link rel="stylesheet" href="../../layui/css/layui.css" />
-  <link rel="stylesheet" href="../../css/global.css" />
-  <link rel="stylesheet" href="../../css/people/postdoctor.css" />
-</head>
-
-<body>
-  <div class="app">
-    <section class="header-wrap">
-      <div class="tabbar">
-        <li>
-          <a href="../index.html">Home<img src="../../img/global/home.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="">English<img src="../../img/global/ch.png" alt="" /></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://my.hzau.edu.cn/index.htm">Chinese<img src="../../img/global/en.png" alt="" />
-          </a>
-        </li>
-      </div>
-
-      <div class="pages-nav-wrap">
-        <a href="../index.html"> <img class="logo" src="../../img/global/logo.svg" alt="" /></a>
-        <ul class="layui-nav layui-bg-gray">
-          <li class="layui-nav-item"><a href="../index.html">Home</a></li>
-          <li class="layui-nav-item">
-            <a href="../about/introduction.html">About</a>
-            <dl class="layui-nav-child">
-              <dd>
-                <a href="../about/introduction.html">
-                  <span> Introduction </span>
-                  <img src="../../img/global/navigation.png" alt="" />
-                </a>
-              </dd>
-              <dd>
-                <a href="../about/leadership.html">Leadership <img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../about/orgnazationalStructure.html">Orgnazational Structure<img
-                    src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../about/contact.html">Contact Us<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item layui-this">
-            <a href="../people/overview.html">People</a>
-            <dl class="layui-nav-child">
-              <dd>
-                <a href="../people/overview.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../people/academician.html">Academician<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../people/faculty.html">Faculty<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../people/postdoctor.html">Postdoctor<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item">
-            <a href="../education/teachingInformation/undergradute.html">Education</a>
-            <dl class="layui-nav-child">
-              <dd>
-                <a href="../education/teachingInformation/undergradute.html">Teaching Information<img
-                    src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../education/programs.html">Programs<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item">
-            <a href="../research/institutes.html">Research</a>
-            <dl class="layui-nav-child">
-              <dd>
-                <a href="../research/institutes.html">Institutes<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../research/Projects.html">Projects<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../research/highlights.html">Highlights<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../research/progress.html">Progress<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item">
-            <a href="../global/global.html">Global</a>
-            <dl class="layui-nav-child">
-              <dd>
-                <a href="../global/global.html">Overview<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../global/global.html">Partners<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-            </dl>
-          </li>
-          <li class="layui-nav-item">
-            <a href="../employment/employment.html">Job Openings</a>
-          </li>
-          <li class="layui-nav-item">
-            <a href="javascript:;">News</a>
-            <dl class="layui-nav-child">
-              <dd>
-                <a href="../news/events.html">Events<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-              <dd>
-                <a href="../news/events.html">Notices<img src="../../img/global/navigation.png" alt="" /></a>
-              </dd>
-            </dl>
-          </li>
-        </ul>
-        <!-- 移动端 -->
-        <div class="phone-nav-wrap">
-          <button class="layui-btn" id="ID-dropdown-demo-complex">
-            <img src="../../img/global/menu.svg" alt="" />
-          </button>
+  <body>
+    <div class="app">
+      <section class="header-wrap">
+        <div class="pages-nav-wrap">
+          <div class="logo-container">
+            <a href="/pages/index.html"> <img class="logo" src="/img/global/logo.svg" alt="" /></a>
+            <div class="tabbar">
+              <li>
+                <a href="/pages/index.html">Home<img src="/img/global/home.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="">English<img src="/img/global/ch.png" alt="" /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://my.hzau.edu.cn/index.htm"
+                  >Chinese<img src="/img/global/en.png" alt=""
+                /></a>
+              </li>
+            </div>
+          </div>
+          <div class="main-nav">
+            <!-- pc端导航 -->
+            <ul class="layui-nav">
+              <li class="layui-nav-item layui-this"><a href="/pages/index.html">Home</a></li>
+              <li class="layui-nav-item">
+                <a href="/pages/about/introduction.html">About</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/about/introduction.html">
+                      <span> Introduction </span>
+                      <img src="/img/global/navigation.png" alt="" />
+                    </a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/about/leadership.html"
+                      >Leadership <img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/about/orgnazationalStructure.html"
+                      >Orgnazational Structure<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/about/contact.html">Contact Us<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="javascript:;">People</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/people/overview.html">Overview<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/people/academician.html"
+                      >Academician<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/people/faculty.html">Faculty<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/people/postdoctor.html"
+                      >Postdoctor<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/education/teachingInformation/undergradute.html">Education</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/education/teachingInformation/undergradute.html"
+                      >Teaching Information<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/education/programs.html">Programs<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/research/institutes.html">Research</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/research/institutes.html"
+                      >Institutes<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/research/projects.html">Projects<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/research/highlights.html"
+                      >Highlights<img src="/img/global/navigation.png" alt=""
+                    /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/research/progress.html">Progress<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/global/global.html">Global</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/global/global.html">Overview<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/global/global.html">Partners<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="layui-nav-item">
+                <a href="/pages/employment/employment.html">Job Openings</a>
+              </li>
+              <li class="layui-nav-item">
+                <a href="javascript:;">News</a>
+                <dl class="layui-nav-child">
+                  <dd>
+                    <a href="/pages/news/events.html">Events<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                  <dd>
+                    <a href="/pages/news/events.html#notice">Notices<img src="/img/global/navigation.png" alt="" /></a>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!-- 移动端导航-->
+          <div class="phone-nav-wrap">
+            <button class="layui-btn" id="ID-dropdown-demo-complex"><img src="/img/global/menu.svg" alt="" /></button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="global-banner">
-      <div class="bg"></div>
-    </section>
+      <section class="global-banner">
+        <div class="bg"></div>
+      </section>
 
-    <section class="phone-children-nav-wrap">
-      <div class="layui-tab layui-tab-brief">
-        <ul class="layui-tab-title">
-          <li>
-            <a href="./overview.html">Overview</a>
-          </li>
-          <li><a href="./academician.html">Academician</a></li>
-          <li><a href="./faculty.html">Faculty</a></li>
-          <li class="layui-this"><a href="./postdoctor.html">Postdoctor</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="global-center-wrap">
-      <div class="left-nav">
-        <ul class="layui-nav layui-nav-tree">
-          <li class="layui-nav-item"><a href="./overview.html">Overview </a></li>
-          <li class="layui-nav-item"><a href="./academician.html">Academician</a></li>
-          <li class="layui-nav-item"><a href="./faculty.html">Faculty</a></li>
-          <li class="layui-nav-item layui-this"><a href="./postdoctor.html">Postdoctor</a></li>
-        </ul>
-      </div>
-      <div class="right-wrap">
-        <div class="nav-wrap">
-          <h5>Postdoctor</h5>
-          <span class="layui-breadcrumb">
-            <a href="../index.html">Home</a>
-            <a href="./overview.html">People</a>
-            <a href="./postdoctor.html"><cite>Postdoctor</cite></a>
-          </span>
+      <section class="phone-children-nav-wrap">
+        <div class="layui-tab layui-tab-brief">
+          <ul class="layui-tab-title">
+            <li>
+              <a href="./overview.html">Overview</a>
+            </li>
+            <li><a href="./academician.html">Academician</a></li>
+            <li><a href="./faculty.html">Faculty</a></li>
+            <li class="layui-this"><a href="./postdoctor.html">Postdoctor</a></li>
+          </ul>
         </div>
-        <div class="cate-list">
-          <div class="cate-item">
-            <h5>Animal Husbandry Station</h5>
-            <div class="name-list">
-              <span><a href="" target="_blank">Chen Qichao</a></span>
-              <span><a href="" target="_blank">Li Liang</a></span>
-              <span><a href="" target="_blank">Liu Yuepeng</a></span>
-              <span><a href="" target="_blank">Lei Yingying</a></span>
-              <span><a href="" target="_blank">Sun Leqiang</a></span>
-              <span><a href="" target="_blank">Zhang Mengjia</a></span>
-              <span><a href="" target="_blank">MUHAMMAD AKHTAR</a></span>
-              <span><a href="" target="_blank">Liu Lu</a></span>
-              <span><a href="" target="_blank">Li Dongfang</a></span>
-              <span><a href="" target="_blank">Wu Xiaofeng</a></span>
-              <span><a href="" target="_blank">Yang Bing</a></span>
-              <span><a href="" target="_blank">Zhao Ya</a></span>
-              <span><a href="" target="_blank">Li Qiuyan</a></span>
-              <span><a href="" target="_blank">Zou Jiahui</a></span>
-              <span><a href="" target="_blank">Zhang Chengguang</a></span>
-              <span><a href="" target="_blank">Yu Xuexiang</a></span>
-              <span><a href="" target="_blank">Huang Kun</a></span>
-              <span><a href="" target="_blank">Dong Wenqi</a></span>
-              <span><a href="" target="_blank">Peng Yongchong</a></span>
-              <span><a href="" target="_blank">Li Mengling</a></span>
-              <span><a href="" target="_blank">Shen Zhou</a></span>
-              <span><a href="" target="_blank">Tan Yubei</a></span>
-              <span><a href="" target="_blank">Sun Limeng</a></span>
-              <span><a href="" target="_blank">Zhao Zikai</a></span>
-              <span><a href="" target="_blank">Zhou Wei</a></span>
-              <span><a href="" target="_blank">Wang Zongmei</a></span>
-              <span><a href="" target="_blank">Zhou Peng</a></span>
-              <span><a href="" target="_blank">MUHAMMAD FAKHAR E ALAM KULYAR</a></span>
-              <span><a href="" target="_blank">Li Long</a></span>
-              <span><a href="" target="_blank">Mo Quan</a></span>
-              <span><a href="" target="_blank">Zhao Jianqing</a></span>
-              <span><a href="" target="_blank">Fang Puxian</a></span>
-              <span><a href="" target="_blank">Ye Qianhong</a></span>
-              <span><a href="" target="_blank">Sui Baokun</a></span>
-              <span><a href="" target="_blank">Hua Kexin</a></span>
-              <span><a href="" target="_blank">Yang Ruicheng</a></span>
-              <span><a href="" target="_blank">Qin Dan</a></span>
-              <span><a href="" target="_blank">Yi Chenyang</a></span>
-              <span><a href="" target="_blank">Wang Chunqun</a></span>
+      </section>
 
+      <section class="global-center-wrap">
+        <div class="left-nav">
+          <ul class="layui-nav layui-nav-tree">
+            <li class="layui-nav-item"><a href="./overview.html">Overview </a></li>
+            <li class="layui-nav-item"><a href="./academician.html">Academician</a></li>
+            <li class="layui-nav-item"><a href="./faculty.html">Faculty</a></li>
+            <li class="layui-nav-item layui-this"><a href="./postdoctor.html">Postdoctor</a></li>
+          </ul>
+        </div>
+        <div class="right-wrap">
+          <div class="nav-wrap">
+            <h5>Postdoctor</h5>
+            <span class="layui-breadcrumb">
+              <a href="../index.html">Home</a>
+              <a href="./overview.html">People</a>
+              <a href="./postdoctor.html"><cite>Postdoctor</cite></a>
+            </span>
+          </div>
+          <div class="cate-list">
+            <div class="cate-item">
+              <h5>Animal Husbandry Station</h5>
+              <div class="name-list">
+                <span><a href="" target="_blank">Chen Qichao</a></span>
+                <span><a href="" target="_blank">Li Liang</a></span>
+                <span><a href="" target="_blank">Liu Yuepeng</a></span>
+                <span><a href="" target="_blank">Lei Yingying</a></span>
+                <span><a href="" target="_blank">Sun Leqiang</a></span>
+                <span><a href="" target="_blank">Zhang Mengjia</a></span>
+                <span><a href="" target="_blank">MUHAMMAD AKHTAR</a></span>
+                <span><a href="" target="_blank">Liu Lu</a></span>
+                <span><a href="" target="_blank">Li Dongfang</a></span>
+                <span><a href="" target="_blank">Wu Xiaofeng</a></span>
+                <span><a href="" target="_blank">Yang Bing</a></span>
+                <span><a href="" target="_blank">Zhao Ya</a></span>
+                <span><a href="" target="_blank">Li Qiuyan</a></span>
+                <span><a href="" target="_blank">Zou Jiahui</a></span>
+                <span><a href="" target="_blank">Zhang Chengguang</a></span>
+                <span><a href="" target="_blank">Yu Xuexiang</a></span>
+                <span><a href="" target="_blank">Huang Kun</a></span>
+                <span><a href="" target="_blank">Dong Wenqi</a></span>
+                <span><a href="" target="_blank">Peng Yongchong</a></span>
+                <span><a href="" target="_blank">Li Mengling</a></span>
+                <span><a href="" target="_blank">Shen Zhou</a></span>
+                <span><a href="" target="_blank">Tan Yubei</a></span>
+                <span><a href="" target="_blank">Sun Limeng</a></span>
+                <span><a href="" target="_blank">Zhao Zikai</a></span>
+                <span><a href="" target="_blank">Zhou Wei</a></span>
+                <span><a href="" target="_blank">Wang Zongmei</a></span>
+                <span><a href="" target="_blank">Zhou Peng</a></span>
+                <span><a href="" target="_blank">MUHAMMAD FAKHAR E ALAM KULYAR</a></span>
+                <span><a href="" target="_blank">Li Long</a></span>
+                <span><a href="" target="_blank">Mo Quan</a></span>
+                <span><a href="" target="_blank">Zhao Jianqing</a></span>
+                <span><a href="" target="_blank">Fang Puxian</a></span>
+                <span><a href="" target="_blank">Ye Qianhong</a></span>
+                <span><a href="" target="_blank">Sui Baokun</a></span>
+                <span><a href="" target="_blank">Hua Kexin</a></span>
+                <span><a href="" target="_blank">Yang Ruicheng</a></span>
+                <span><a href="" target="_blank">Qin Dan</a></span>
+                <span><a href="" target="_blank">Yi Chenyang</a></span>
+                <span><a href="" target="_blank">Wang Chunqun</a></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="footer-wrap">
-      <div class="bg"></div>
-      <div class="cen-wrap">
-        <a class="logo" href="../index.html">
-          <img src="../../img/global/footer-logo.svg" alt="" />
-        </a>
-        <div class="nav-list">
-          <div class="nav-item">
-            <a href="../about/introduction.html">About</a>
-            <a href="../about/introduction.html">Introduction</a>
-            <a href="../about/leadership.html">Leadership</a>
-            <a href="../about/orgnazationalStructure.html">Orgnazational Structure</a>
-            <a href="../about/contact.html">Contact Us</a>
-          </div>
-          <div class="nav-item">
-            <a href="../people/overview.html">People</a>
-            <a href="../people/overview.html">Overview</a>
-            <a href="../people/academician.html">Academician</a>
-            <a href="../people/faculty.html">Faculty</a>
-            <a href="../people/postdoctor.html">postdoctor</a>
-          </div>
-          <div class="nav-item">
-            <a href="../education/teachingInformation/undergradute.html">Education</a>
-            <a href="../education/teachingInformation/undergradute.html">Teaching Information</a>
-            <a href="../education/programs.html">Programs</a>
-          </div>
-          <div class="nav-item">
-            <a href="../research/institutes.html">Research</a>
-            <a href="../research/institutes.html">Key Institutes</a>
-            <a href="../research/Projects.html">Research Projects</a>
-            <a href="../research/highlights.html">Research Highlights</a>
-            <a href="../research/progress.html">Research Progress</a>
-          </div>
-          <div class="nav-item">
-            <a href="../global/global.html">Global</a>
-            <a href="../global/global.html">Overview</a>
-            <a href="../global/global.html">Partners</a>
-          </div>
-          <div class="nav-item">
-            <a href="../employment/employment.html">Job Openings</a>
-            <a href="../employment/employment.html">Admissions</a>
-            <a href="../employment/employment.html">Job Openings</a>
-          </div>
-          <div class="nav-item">
-            <a href="../news/events.html">News</a>
-            <a href="../news/events.html">Events</a>
-            <a href="../news/events.html">Notices</a>
+      <!-- 页面底部 -->
+      <section class="footer-wrap">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="/pages/index.html">
+                <img src="/img/global/footer-logo.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="footer-columns">
+              <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                  <li><a href="/pages/about/introduction.html">Introduction</a></li>
+                  <li><a href="/pages/about/leadership.html">Leadership</a></li>
+                  <li><a href="/pages/about/orgnazationalStructure.html">Organizational Structure</a></li>
+                  <li><a href="/pages/about/contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>People</h4>
+                <ul>
+                  <li><a href="/pages/people/overview.html">Overview</a></li>
+                  <li><a href="/pages/people/academician.html">Academician</a></li>
+                  <li><a href="/pages/people/faculty.html">Faculty</a></li>
+                  <li><a href="/pages/people/postdoctor.html">Postdoctor</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Education</h4>
+                <ul>
+                  <li><a href="/pages/education/teachingInformation/undergradute.html">Teaching Information</a></li>
+                  <li><a href="/pages/education/programs.html">Programs</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Research</h4>
+                <ul>
+                  <li><a href="/pages/research/institutes.html">Institutes</a></li>
+                  <li><a href="/pages/research/projects.html">Projects</a></li>
+                  <li><a href="/pages/research/highlights.html">Highlights</a></li>
+                  <li><a href="/pages/research/progress.html">Progress</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Global</h4>
+                <ul>
+                  <li><a href="/pages/global/global.html">Overview</a></li>
+                  <li><a href="/pages/global/global.html">Partners</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>News</h4>
+                <ul>
+                  <li><a href="/pages/news/events.html">Events</a></li>
+                  <li><a href="/pages/news/events.html#notice">Notices</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <script src="../../layui/layui.js"></script>
-  <script>
-    layui.use(function () {
-      var dropdown = layui.dropdown;
-      var util = layui.util;
-      // 移动端跳转地址
-      dropdown.render({
-        elem: "#ID-dropdown-demo-complex",
-        data: [
-          {
-            title: "Home",
-            href: "../index.html",
-          },
-          { type: "-" },
-          {
-            title: "About",
-            id: 66,
-            type: "group",
-            isSpreadItem: false,
-            child: [
-              { type: "-" },
-              {
-                title: "Introduction",
-                href: "../about/introduction.html",
-              },
-              { type: "-" },
-              {
-                title: "Leadership",
-                href: "../about/leadership.html",
-              },
-              { type: "-" },
-              {
-                title: "OrgnazationalStructure",
-                href: "../about/orgnazationalStructure.html",
-              },
-              { type: "-" },
-              {
-                title: "Contact",
-                href: "../about/contact.html",
-              },
-            ],
-          },
-          { type: "-" },
-          {
-            title: "People",
-            type: "group",
-            isSpreadItem: false,
-            child: [
-              { type: "-" },
-              {
-                title: "Overview",
-                href: "../people/overview.html",
-              },
-              { type: "-" },
-              {
-                title: "Academician",
-                href: "../people/academician.html",
-              },
-              { type: "-" },
-              {
-                title: "Faculty",
-                href: "../people/faculty.html",
-              },
-              { type: "-" },
-              {
-                title: "Postdoctor",
-                href: "../people/postdoctor.html",
-              },
-            ],
-          },
-          { type: "-" },
-          {
-            title: "Education",
-            type: "group",
-            isSpreadItem: false,
-            child: [
-              { type: "-" },
-              {
-                title: "Undergradute Majors",
-                href: "../education/teachingInformation/undergradute.html",
-              },
-              { type: "-" },
-              {
-                title: "Postgradute Majors",
-                href: "../education/teachingInformation/postgradute.html",
-              },
-              { type: "-" },
-              {
-                title: "Doctoral Majors",
-                href: "../education/teachingInformation/doctoral.html",
-              },
-              { type: "-" },
-              {
-                title: "Programs",
-                href: "../education/programs.html",
-              },
-            ],
-          },
-          { type: "-" },
-          {
-            title: "Research",
-            type: "group",
-            isSpreadItem: false,
-            child: [
-              { type: "-" },
-              {
-                title: "Institutes",
-                href: "../research/institutes.html",
-              },
-              { type: "-" },
-              {
-                title: "Projects",
-                href: "../research/projects.html",
-              },
-              { type: "-" },
-              {
-                title: "Highlights",
-                href: "../research/highlights.html",
-              },
-              { type: "-" },
-              {
-                title: "Progress",
-                href: "../research/progress.html",
-              },
-            ],
-          },
-          { type: "-" },
-          {
-            title: "Global",
-            type: "group",
-            isSpreadItem: false,
-            child: [
-              { type: "-" },
-              {
-                title: "Overview",
-                href: "../global/global.html",
-              },
-              { type: "-" },
-              {
-                title: "Partners",
-                href: "../global/global.html#partners",
-              },
-            ],
-          },
-          { type: "-" },
-          {
-            title: "Employment",
-            href: "../employment/employment.html",
-          },
-          { type: "-" },
-          {
-            title: "News",
-            type: "group",
-            isSpreadItem: false,
-            child: [
-              { type: "-" },
-              {
-                title: "Events",
-                href: "../news/events.html",
-              },
-              { type: "-" },
-              {
-                title: "Notices",
-                href: "../news/events.html#notice",
-              },
-            ],
-          },
-        ],
+        <div class="footer-copyright">
+          <p>© 2025 College of Animal Science & Technology. All rights reserved.</p>
+        </div>
+      </section>
+    </div>
+    <script src="/js/layui/layui.js"></script>
+    <script>
+      layui.use(function () {
+        var dropdown = layui.dropdown;
+        var util = layui.util;
+        // 移动端跳转地址
+        dropdown.render({
+          elem: "#ID-dropdown-demo-complex",
+          data: [
+            {
+              title: "Home",
+              href: "../index.html",
+            },
+            { type: "-" },
+            {
+              title: "About",
+              id: 66,
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Introduction",
+                  href: "../about/introduction.html",
+                },
+                { type: "-" },
+                {
+                  title: "Leadership",
+                  href: "../about/leadership.html",
+                },
+                { type: "-" },
+                {
+                  title: "OrgnazationalStructure",
+                  href: "../about/orgnazationalStructure.html",
+                },
+                { type: "-" },
+                {
+                  title: "Contact",
+                  href: "../about/contact.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "People",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Overview",
+                  href: "../people/overview.html",
+                },
+                { type: "-" },
+                {
+                  title: "Academician",
+                  href: "../people/academician.html",
+                },
+                { type: "-" },
+                {
+                  title: "Faculty",
+                  href: "../people/faculty.html",
+                },
+                { type: "-" },
+                {
+                  title: "Postdoctor",
+                  href: "../people/postdoctor.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Education",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Undergradute Majors",
+                  href: "../education/teachingInformation/undergradute.html",
+                },
+                { type: "-" },
+                {
+                  title: "Postgradute Majors",
+                  href: "../education/teachingInformation/postgradute.html",
+                },
+                { type: "-" },
+                {
+                  title: "Doctoral Majors",
+                  href: "../education/teachingInformation/doctoral.html",
+                },
+                { type: "-" },
+                {
+                  title: "Programs",
+                  href: "../education/programs.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Research",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Institutes",
+                  href: "../research/institutes.html",
+                },
+                { type: "-" },
+                {
+                  title: "Projects",
+                  href: "../research/projects.html",
+                },
+                { type: "-" },
+                {
+                  title: "Highlights",
+                  href: "../research/highlights.html",
+                },
+                { type: "-" },
+                {
+                  title: "Progress",
+                  href: "../research/progress.html",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Global",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Overview",
+                  href: "../global/global.html",
+                },
+                { type: "-" },
+                {
+                  title: "Partners",
+                  href: "../global/global.html#partners",
+                },
+              ],
+            },
+            { type: "-" },
+            {
+              title: "Employment",
+              href: "../employment/employment.html",
+            },
+            { type: "-" },
+            {
+              title: "News",
+              type: "group",
+              isSpreadItem: false,
+              child: [
+                { type: "-" },
+                {
+                  title: "Events",
+                  href: "../news/events.html",
+                },
+                { type: "-" },
+                {
+                  title: "Notices",
+                  href: "../news/events.html#notice",
+                },
+              ],
+            },
+          ],
+        });
       });
-    });
-  </script>
-</body>
-<style></style>
-
+    </script>
+  </body>
+  <style></style>
 </html>

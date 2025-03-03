@@ -24,16 +24,7 @@
   margin: 20px 0;
   font-size: 28px;
 }
-.details-progress .center-wrap .title .info-label {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 10px 0;
-}
-.details-progress .center-wrap .info-label {
-  margin: 20px 0;
-  font-size: 16px;
-  text-indent: 2em;
-}
+
 .details-progress .center-wrap .cen-img {
   text-align: center;
 }
@@ -63,10 +54,7 @@
     display: flex;
     align-items: center;
   }
-  .details-progress .center-wrap .title .info-label {
-    font-size: 16px;
-    text-align: left;
-  }
+
   .details-progress .center-wrap .cen-img img {
     width: 100%;
     height: auto;
