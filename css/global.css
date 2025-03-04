@@ -15,6 +15,7 @@ h3 {
   font-weight: 700;
   color: #007306;
 }
+
 .con-main-wrap {
   width: 1200px;
   margin: 0 auto;
@@ -168,7 +169,7 @@ h3 {
   overflow: hidden;
   box-shadow: 0 1px 6px rgba(0,0,0,0.05);
   margin-top: 20px;
-  width: 260px;
+  min-width: 220px;
 }
 
 /* 导航标题样式 */
@@ -277,6 +278,7 @@ h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex:1
 }
 .global-center-wrap .right-wrap .layui-breadcrumb a cite {
   color: #007306;
@@ -455,6 +457,7 @@ h3 {
   .global-center-wrap .right-wrap {
     padding: 0 20px;
     box-sizing: border-box;
+    flex:1;
   }
   .global-center-wrap .right-wrap .nav-wrap {
     display: none;
