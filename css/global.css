@@ -4,6 +4,13 @@
   /* font-family: Verdana, Arial; */
   font-family:Roboto, Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+.title1 {
+  color: #007306;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 20px 0;
+}
 li {
   list-style: none;
 }
@@ -170,6 +177,7 @@ h3 {
   box-shadow: 0 1px 6px rgba(0,0,0,0.05);
   margin-top: 20px;
   min-width: 220px;
+  max-width:300px;
 }
 
 /* 导航标题样式 */
@@ -215,6 +223,7 @@ h3 {
   padding-left: 16px; /* 补偿边框宽度 */
 }
 
+
 /* 确保选中状态下文字可见 */
 .left-nav .layui-nav-tree .layui-this > a span,
 .left-nav .layui-nav-tree .layui-this > a:hover span {
@@ -224,7 +233,7 @@ h3 {
 /* 导航项悬停效果 */
 .left-nav .layui-nav-tree .layui-nav-item a:hover {
   background-color: #f8fff8;
-  color: #007306 !important;
+ 
 }
 
 /* 移除默认的箭头图标 */
@@ -410,18 +419,20 @@ h3 {
   .con-main-wrap {
     width: 100%;
   }
+  .title1{
+    font-size: 18px;
+  }
   .info-label {
     font-size: 14px;
   }
   .header-wrap .tabbar {
     padding: 10px;
+    display:none;
   }
   .header-wrap .tabbar li a img {
     margin-bottom: 0px;
   }
-  .header-wrap .pages-nav-wrap {
-    padding: 0 10px 0 20px;
-  }
+
   .header-wrap .pages-nav-wrap .logo {
     width: 90%;
   }
