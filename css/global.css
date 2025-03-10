@@ -135,10 +135,7 @@ h3 {
   background-color: #f8f8f8;
   color: #007306;
 }
-/* Adjust spacing for the carousel */
-.swiper {
-  padding-top: 116px;
-}
+
 
 .global-banner {
   margin: 130px 0 35px;
@@ -434,7 +431,7 @@ h3 {
   }
 
   .header-wrap .pages-nav-wrap .logo {
-    width: 90%;
+    width: 60%;
   }
   .header-wrap .pages-nav-wrap .layui-bg-gray {
     padding-right: 0;
@@ -529,7 +526,7 @@ h3 {
   .header-wrap .pages-nav-wrap .phone-nav-wrap {
     display: block;
     position: absolute;
-    right: 20px;
+    right: 0;
     top: 25px;
   }
   
@@ -541,9 +538,6 @@ h3 {
     height: 30px;
   }
   
-  .swiper {
-    padding-top: 90px;
-  }
 }
 
 @media screen and (max-width: 992px) {

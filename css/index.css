@@ -1,10 +1,18 @@
+.home-wrap {
+  padding-top: 910px;
+  overflow: hidden;
+}
 .swiper {
   position: relative;
-  padding-top: 130px;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .swiper .layui-carousel {
   background: transparent;
-  position:relative;
+  position: relative;
 }
 .swiper .layui-carousel .swiper-blur {
   position: relative;
@@ -12,7 +20,7 @@
   height: 100%;
 }
 .swiper .layui-carousel .bg {
-  background: url("../img/global/banner.png");
+  background: url("../img/home/swiper/location.png");
   background-size: 100% auto;
   background-position: center;
   position: absolute;
@@ -21,14 +29,14 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-  filter: brightness(0.2);
+  filter: brightness(0.3);
 }
 
-.swiper .layui-carousel .swiper-blur .con-main-wrap{
-  height:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.swiper .layui-carousel .swiper-blur .con-main-wrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .swiper .layui-carousel .swiper-blur .con-main-wrap .video-item {
   width: 80%;
@@ -38,8 +46,6 @@
   width: 100%;
   border-radius: 8px;
 }
-
-
 
 /* Second slide - Text content */
 .swiper .layui-carousel .swiper-blur .con-main-wrap .text-content {
@@ -77,11 +83,17 @@
 }
 
 .swiper .layui-carousel > [carousel-item]:before {
-  display:none;
+  display: none;
+}
+
+.home-main {
+  position: relative;
+  z-index: 1;
 }
 
 .home-research {
-  padding:60px 0 100px;
+  padding: 60px 0 100px;
+  background-color: white;
 }
 
 .home-research .con-main-wrap h3 {
@@ -93,7 +105,7 @@
 }
 
 .home-research .con-main-wrap .card-list {
-  padding-top: 40px ;
+  padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
@@ -105,6 +117,9 @@
 .home-research .con-main-wrap .card-list .card-item:nth-child(1) {
   grid-column: 1 / span 2;
   grid-row: 1;
+}
+.home-research .con-main-wrap .card-list .card-item:nth-child(1) a .text-wrap .title-type {
+  color: #cdcdcd;
 }
 
 .home-research .con-main-wrap .card-list .card-item:nth-child(2) {
@@ -124,15 +139,38 @@
 }
 
 .home-research .con-main-wrap .card-list .card-item:nth-child(5) {
-  grid-column: 2;
+  grid-column: 2 / span 2;
   grid-row: 2;
 }
 
 .home-research .con-main-wrap .card-list .card-item:nth-child(6) {
-  grid-column: 3 / span 2;
+  grid-column: 4;
   grid-row: 2;
 }
-
+.home-research .con-main-wrap .card-list .card-item.more {
+  background-color: #193c8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.home-research .con-main-wrap .card-list .card-item.more a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size:28px;
+}
+.home-research .con-main-wrap .card-list .card-item.more a:hover {
+  transform: translateX(10px) scale(1.05);
+  transition: transform 0.5s ease;
+  color:#fff;
+}
+.home-research .con-main-wrap .card-list .card-item.more a svg {
+  color:#FF6F00;
+  width:16px;
+}
 /* Adjust image heights to be consistent */
 .home-research .con-main-wrap .card-list .card-item .top-img {
   height: 220px;
@@ -152,7 +190,7 @@
 
 .home-research .con-main-wrap .card-list .card-item .top-img {
   height: 248px;
-  filter: brightness(0.6);
+  filter: brightness(0.8);
   overflow: hidden;
 }
 .home-research .con-main-wrap .card-list .card-item .top-img img {
@@ -168,6 +206,11 @@
   border-top: 1px solid #d6d6d6;
   padding: 20px 20px 40px;
 }
+.home-research .con-main-wrap .card-list .card-item .text-wrap .title-type {
+  color: #193c8f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 .home-research .con-main-wrap .card-list .card-item .text-wrap .title {
   font-size: 18px;
   font-weight: 500;
@@ -179,7 +222,7 @@
   -webkit-line-clamp: 3;
   text-align: left;
 }
-.home-research .con-main-wrap .card-list .card-item:hover a {
+.home-research .con-main-wrap .card-list .card-item a:hover {
   color: #007306;
 }
 .home-research .con-main-wrap .card-list .card-item .text-wrap .btn {
@@ -202,7 +245,7 @@
 }
 .home-events {
   background-color: #f8f9fa;
-  padding:60px 0 100px;
+  padding: 60px 0 100px;
 }
 .home-events .con-main-wrap h3 {
   font-size: 28px;
@@ -228,6 +271,30 @@
   background-color: #ffffff;
   overflow: hidden;
 }
+.home-events .con-main-wrap .card-list .card-item.more {
+  background-color: #FF6F00;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.home-events .con-main-wrap .card-list .card-item.more a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size:28px;
+}
+.home-events .con-main-wrap .card-list .card-item.more a:hover {
+  transform: translateX(10px) scale(1.05);
+  transition: transform 0.5s ease;
+  color:#fff;
+}
+.home-events .con-main-wrap .card-list .card-item.more a svg {
+  color:#FF6F00;
+  width:16px;
+}
 .home-events .con-main-wrap .card-list .card-item:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
@@ -251,8 +318,14 @@
 .home-events .con-main-wrap .card-list .card-item .text-wrap {
   padding: 16px;
 }
+.home-events .con-main-wrap .card-list .card-item .text-wrap .title-type {
+  color: #FF6F00;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 .home-events .con-main-wrap .card-list .card-item .text-wrap .title {
   font-size: 18px;
+  font-weight: 500;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -280,7 +353,7 @@
   background-color: #005a05;
   transform: scale(1.05);
 }
-.home-events .con-main-wrap .card-list .card-item:hover a {
+.home-events .con-main-wrap .card-list .card-item a:hover {
   color: #007306;
 }
 .home-events .con-main-wrap .card-list .card-item:hover img {
@@ -323,7 +396,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  filter: brightness(0.7); /* Darken the image to make text readable */
+  filter: brightness(0.8); /* Darken the image to make text readable */
 }
 
 /* Position the text over the image */
@@ -333,7 +406,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   border-top: none;
   color: white;
   z-index: 1;
@@ -344,7 +417,7 @@
 .home-research .con-main-wrap .card-list .card-item:nth-child(1) .text-wrap .title,
 .home-research .con-main-wrap .card-list .card-item:nth-child(6) .text-wrap .title {
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   text-align: left;
 }
 
@@ -352,7 +425,7 @@
 .home-research .con-main-wrap .card-list .card-item:nth-child(1) .text-wrap .btn a,
 .home-research .con-main-wrap .card-list .card-item:nth-child(6) .text-wrap .btn a {
   color: white;
-  background-color: rgba(0,115,6,0.8);
+  background-color: rgba(0, 115, 6, 0.8);
   padding: 5px 10px;
   border-radius: 20px;
 }
@@ -388,29 +461,33 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
+  .home-wrap{
+    padding-top:600px;
+  }
   .swiper {
-    padding-top: 110px;
+    top:86px;
   }
-  
+
   .swiper .layui-carousel {
-    height: 500px !important;
+    height: 550px !important;
   }
-  
+
   .swiper .layui-carousel .swiper-blur .con-main-wrap .video-list {
     flex-direction: column;
     padding-top: 80px;
   }
-  
+
   .swiper .layui-carousel .swiper-blur .con-main-wrap .video-list .video-item {
     width: 100%;
   }
-  
+
   .swiper .layui-carousel .swiper-blur .con-main-wrap .text-content {
-    padding: 80px 20px 0;
+    padding: 30px 20px;
+    font-size:16px;
   }
-  
+
   .swiper .layui-carousel .swiper-blur .con-main-wrap .text-content h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .home-video {
     padding: 20px 16px;
@@ -452,7 +529,6 @@
     padding: 0 20px 20px;
   }
   .home-events .con-main-wrap .card-list .card-item {
-    width: 100%;
     max-width: 400px;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -461,7 +537,7 @@
     flex-direction: column;
   }
   .home-events .con-main-wrap .card-list .top-wrap .card-item a {
-    overflow:hidden
+    overflow: hidden;
   }
   .home-events .con-main-wrap .card-list .top-wrap .card-item img {
     width: 100%;
@@ -478,7 +554,7 @@
   .view-more-btn {
     margin-top: 20px;
   }
-  
+
   .view-more-btn a {
     padding: 8px 20px;
     font-size: 14px;
